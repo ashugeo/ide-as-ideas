@@ -13,13 +13,21 @@
         clear: right;
         width: 200px;
         margin-right: -250px;
-        margin-top: -1em;
+        margin-bottom: 1em;
+
+        &.sidenote-small {
+            display: none;
+        }
     }
 
     @media screen and (max-width: 899px) {
         background-color: #f2f4f6;
         padding: 1em 2em;
         margin: 1em 0;
+
+        &.sidenote-wide {
+            display: none;
+        }
     }
 
 

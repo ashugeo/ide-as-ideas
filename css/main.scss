@@ -30,6 +30,11 @@
         }
     }
 
+    cite {
+        font-style: normal;
+        color: rgba(0,0,0,.75);
+    }
+
 
     .footnote-backref {
         margin-right: .5em;
@@ -43,4 +48,14 @@
             display: none;
         }
     }
+}
+
+a[id^="fnref"] {
+    margin: 0 .25em;
+}
+
+abbr,
+abbr[title] {
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
 }

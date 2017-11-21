@@ -7,7 +7,7 @@ $(document).ready(() => {
         if (!$el.hasClass('footnote-backref')) {
             const href = $el.attr('href');
             const $note = $(href);
-            $el.parent().after(`<div id="${href.replace('#', '')}" class="sidenote"><a class="footnote-backref" href="#fnref${index}">${index}</a>${$note.html()}</div>`);
+            $el.closest('p').after(`<div id="${href.replace('#', '')}" class="sidenote"><a class="footnote-backref" href="#fnref${index}">${index}</a>${$note.html()}</div>`);
         }
     });
 

@@ -17,15 +17,20 @@
       
 <ul>
 <li><a href="#introduction">Introduction</a></li>
-<li><a href="#partie-1">Partie 1</a>
+<li><a href="#algorithmes">Algorithmes</a>
 <ul>
-<li><a href="#algorithmes">Algorithmes</a></li>
-<li><a href="#écritures">Écriture(s)</a></li>
-<li><a href="#langages">Langages</a></li>
-<li><a href="#état-de-lart-systèmes…">État de l’art (systèmes…)</a></li>
+<li><a href="#quest-ce-quun-algorithme-">Qu’est-ce qu’un algorithme ?</a></li>
+<li><a href="#algorithmes-et-programmes">Algorithmes et programmes</a></li>
+<li><a href="#approche-fondamentale">Approche fondamentale</a></li>
 </ul>
 </li>
-<li><a href="#partie-2">Partie 2</a></li>
+<li><a href="#écritures">Écriture(s)</a>
+<ul>
+<li><a href="#quest-ce-que-lécriture-">Qu’est-ce que l’écriture ?</a></li>
+<li><a href="#des-langages-naturels-aux-langages-artificiels">Des langages naturels aux langages artificiels</a></li>
+<li><a href="#outils-décriture-algorithmique">Outils d’écriture algorithmique</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -41,42 +46,20 @@
 <li>Différents contextes : montrer les situations où il y a un problème à traiter</li>
 <li>Enjeux : différents aspects, points de vue qui vont déterminer le positionnement. Montrer que les problèmes sont larges même si l’on en traite qu’une partie.</li>
 </ul>
-<h1 id="partie-1">Partie 1</h1>
-<h2 id="algorithmes">Algorithmes</h2>
-<h3 id="quest-ce-quun-algorithme-">Qu’est-ce qu’un algorithme ?</h3>
+<h1 id="algorithmes">Algorithmes</h1>
+<h2 id="quest-ce-quun-algorithme-">Qu’est-ce qu’un algorithme ?</h2>
 <p><strong>Un algorithme est une suite finie d’instructions qui vise à être exécutée afin de produire un résultat.</strong> Pour comprendre ou enseigner la notion d’algorithme, on fait bien souvent appel à des cas concrets que l’on rencontre dans la vie quotidienne. Une recette de cuisine, par exemple, constitue un algorithme : on y trouve des <em>entrées</em> – les ingrédients, quantités, ustensiles utilisés ; ainsi que des instructions – casser en morceaux, cuire au bain-marie, couper en dés. Enfin, le résultat obtenu lorsqu’on suit minutieusement cette recette de cuisine est, bien évidemment, le plat préparé. Cette vision nous fournit une première définition du concept d’algorithme, donnée par Serge Abiteboul<sup class="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup> et Gilles Dowek<sup class="footnote-ref"><a href="#fn2" id="fnref2">2</a></sup>.</p>
 <blockquote>
 <p>Un algorithme est un procédé qui permet de résoudre un problème, sans avoir besoin d’inventer une solution à chaque fois. Avec cette définition, il est clair que, depuis l’aube de l’humanité, nous inventons, utilisons et transmettons des algorithmes : cuisine, taille du silex, pêche à la ligne, culture des lentilles et du blé, etc.<sup class="footnote-ref"><a href="#fn3" id="fnref3">3</a></sup></p>
 </blockquote>
-<p>Étymologiquement, le terme <em>algorithme</em> est issu de la combinaison du mot latin <em>algorismus</em> – dérivé du nom du mathématicien <strong>Al-Khwarizmi</strong><sup class="footnote-ref"><a href="#fn4" id="fnref4">4</a></sup> – et du mot grec <em>arithmos</em>, qui signifie “nombre”. Cette proximité entre les notions d’algorithmique et de mathématiques s’est confirmé grâce aux progrès techniques et technologique du siècle passé.</p>
-<h3 id="algorithmes-et-programmes">Algorithmes et programmes</h3>
-<p><strong>Au cours du XX<sup>ème</sup> siècle, l’apparition des premières machines à calculer va transformer les usages des algorithmes.</strong> En 1834, le visionnaire britannique Charles Babbage débute le développement d’une “machine analytique”. Celle-ci reprend la principe des machines à calculer mécaniques qui existent alors depuis déjà plusieurs siècles. Mais Babbage a l’idée d’ajouter à ces systèmes le principe des cartes perforées apparues avec les métiers Jacquard. Pendant qu’il travaille sur son invention, Babbage entre en correspondance avec Ada Lovelace. C’est elle qui, quelques années plus tard, sera à l’origine du premier algorithme destiné à être exécuté sur une machine : la machine à différences de Charles Babbage.</p>
-<h3 id="approche-fondamentale">Approche fondamentale</h3>
+<p><strong>Dans cette définition générique de la notion d’algorithmes s’inscrit une catégorie spécifique plus réduite, un ensemble que l’on nomme <em>algorithmes symboliques</em>.</strong> Ceux-ci manipulent des symboles écrits : chiffres, lettres, assemblés en nombres, en mots et en phrases, et vecteurs de sens. Étymologiquement, le terme <em>algorithme</em> est d’ailleurs issu de la combinaison du mot latin <em>algorismus</em> – dérivé du nom du mathématicien Al-Khwarizmi<sup class="footnote-ref"><a href="#fn4" id="fnref4">4</a></sup> – et du mot grec <em>arithmos</em>, qui signifie “nombre”. Cette proximité entre les notions d’algorithmique et de mathématiques s’est confirmé grâce aux progrès techniques des deux siècles passés. À ce jour, par abus de langage et en raison de notre contexte technologique contemporain, la notion d’algorithmes symboliques a presque remplacé celle, plus générique, d’algorithmes : l’informatique a orienté l’emploi même du mot.</p>
+<h2 id="algorithmes-et-programmes">Algorithmes et programmes</h2>
+<p><strong>Au cours du XX<sup>ème</sup> siècle, l’apparition des premières machines à calculer va transformer les usages des algorithmes.</strong> En 1834, le visionnaire britannique Charles Babbage<sup class="footnote-ref"><a href="#fn5" id="fnref5">5</a></sup> débute le développement d’une “machine analytique”. Celle-ci reprend la principe des machines à calculer mécaniques qui existent alors depuis plusieurs siècles déjà. Mais l’inventeur a l’idée d’ajouter à ces systèmes le principe des cartes perforées apparues avec les métiers Jacquard. Pendant qu’il travaille sur ce projet, Babbage entre en correspondance avec Ada Lovelace. Pionnière de la science informatique, c’est elle qui, en 1843, sera à l’origine du premier algorithme destiné à être exécuté sur une machine : la machine à différences de Charles Babbage. Cet algorithme, considéré comme le premier programme informatique à proprement parler, sert alors à calculer la suite des nombres de Bernouilli<sup class="footnote-ref"><a href="#fn6" id="fnref6">6</a></sup>. Ada Lovelace est ainsi connue comme la première programmeuse de l’histoire.</p>
+<h2 id="approche-fondamentale">Approche fondamentale</h2>
 <p>Séquence, affectation, itération, condition</p>
-<h2 id="écritures">Écriture(s)</h2>
-<ul>
-<li>Définition générale de l’écriture</li>
-<li>Outils d’écriture</li>
-<li>Quels sont les moyens d’écriture algorithmique, systèmes d’interfaces
-<ul>
-<li>lignes de code (règles et conventions)
-<ul>
-<li>conventions de nommage (camelCase, snake_case…)</li>
-<li>lisibilité (indentation, syntax highlighting…)</li>
-</ul>
-</li>
-<li>organigrammes (flowcharts)</li>
-<li>représentation visuelle (scratch)</li>
-</ul>
-</li>
-<li>Modifier l’existant
-<ul>
-<li>refactoring</li>
-<li>versionning (git, commits, diff…)</li>
-</ul>
-</li>
-</ul>
-<h2 id="langages">Langages</h2>
+<h1 id="écritures">Écriture(s)</h1>
+<h2 id="quest-ce-que-lécriture-">Qu’est-ce que l’écriture ?</h2>
+<h2 id="des-langages-naturels-aux-langages-artificiels">Des langages naturels aux langages artificiels</h2>
 <ul>
 <li>Langages naturels</li>
 <li>Langages informatiques (classiques)
@@ -87,8 +70,25 @@
 </ul>
 </li>
 </ul>
+<h2 id="outils-décriture-algorithmique">Outils d’écriture algorithmique</h2>
+<ul>
+<li>lignes de code (règles et conventions)
+<ul>
+<li>conventions de nommage (camelCase, snake_case…)</li>
+<li>lisibilité (indentation, syntax highlighting…)</li>
+</ul>
+</li>
+<li>organigrammes (flowcharts)</li>
+<li>représentation visuelle (scratch)</li>
+<li>modifier l’existant
+<ul>
+<li>refactoring</li>
+<li>versionning (git, commits, diff…)</li>
+</ul>
+</li>
+</ul>
 <hr>
-<h2 id="état-de-lart-systèmes…">État de l’art (systèmes…)</h2>
+<h3 id="état-de-lart-systèmes…">État de l’art (systèmes…)</h3>
 <ul>
 <li>Problématiques possibles :
 <ul>
@@ -112,17 +112,20 @@
 </ul>
 </li>
 </ul>
-<h1 id="partie-2">Partie 2</h1>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>Serge Abiteboul est checheur à l’<abbr title="Institut national de recherche en informatique et en automatique">INRIA</abbr>  et professeur à l’<abbr title="École normale supérieure">ENS</abbr> de Paris-Saclay. Sa recherche porte su la gestion de données, d’information et de connaissances. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+<li id="fn1" class="footnote-item"><p>Serge Abiteboul est checheur à l’<abbr title="Institut national de recherche en informatique et en automatique">INRIA</abbr>  et professeur à l’<abbr title="École normale supérieure">ENS</abbr> de Paris-Saclay. Sa recherche porte sur la gestion de données, d’information et de connaissances. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn2" class="footnote-item"><p>Gilles Dowek est également chercheur à l’<abbr title="Institut national de recherche en informatique et en automatique">INRIA</abbr> et professeur à l’<abbr title="École normale supérieure">ENS</abbr> de Paris-Saclay. Ses travaux portent sur la formalisation des mathématiques, les systèmes de traitement des démonstrations, la physique du calcul et la sûreté des systèmes aéronautiques et spatiaux. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn3" class="footnote-item"><p><cite>1:11</cite> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn4" class="footnote-item"><p><strong>Muhammad Ibn Mūsā al-Khuwārizmī</strong>, généralement appelé <strong>Al-Khwarizmin</strong> (latinisé en Algoritmi), était un mathématicien, géographe, astrologue et astronome perse, notamment auteur d’un ouvrage classifiant les procédés algébriques existants à son époque. <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+<li id="fn4" class="footnote-item"><p>Muhammad Ibn Mūsā al-Khuwārizmī, généralement appelé <em>Al-Khwarizmin</em> (latinisé en <em>Algoritmi</em>), était un mathématicien, géographe, astrologue et astronome perse, notamment auteur d’un ouvrage classifiant les procédés algébriques existants à son époque. <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p>Charles Babbage, était un mathématicien et inventeur britannique du XIX<sup>ème</sup> siècle. Il fut l’un des principaux précurseurs de l’informatique. <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn6" class="footnote-item"><p>En mathématiques, les nombres de Bernoulli constituent une suite de nombres rationnels. Ces nombres ont d’abord été étudiés par Jacques Bernoulli, mathématicien et physicien suisse du XVII<sup>ème</sup>siècle. <a href="#fnref6" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>

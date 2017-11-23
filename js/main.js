@@ -1,6 +1,10 @@
 let refs = {};
 
 $(document).ready(() => {
+
+    // TODO: remove this
+    $.ajaxSetup({ cache: false });
+
     // Load references
     $.getJSON('../refs.json', (data) => {
         refs = data;

@@ -20,7 +20,9 @@
 <li><a href="#algorithmes">Algorithmes</a>
 <ul>
 <li><a href="#quest-ce-quun-algorithme-">Qu’est-ce qu’un algorithme ?</a></li>
+<li><a href="#approche-technico-historique">Approche technico-historique</a></li>
 <li><a href="#algorithmes-et-programmes">Algorithmes et programmes</a></li>
+<li><a href="#informatique-et-ordinateurs">Informatique et ordinateurs</a></li>
 <li><a href="#approche-fondamentale">Approche fondamentale</a></li>
 </ul>
 </li>
@@ -42,7 +44,7 @@
 <li>Qu’est-ce qui se joue en terme de design ?</li>
 <li>Pourquoi traiter ce sujet ? Pourquoi je travaille sur ça ? Pas juste un coup de cœur personnel mais une ambition plus large.</li>
 <li>Quel est le problème intellectuel, quelle est la difficulté ?</li>
-<li>Montrer l’actualité du sujet</li>
+<li>Montrer l’actualité du sujet (Abiteboul &amp; Dowek, Cardon)</li>
 <li>Différents contextes : montrer les situations où il y a un problème à traiter</li>
 <li>Enjeux : différents aspects, points de vue qui vont déterminer le positionnement. Montrer que les problèmes sont larges même si l’on en traite qu’une partie.</li>
 </ul>
@@ -53,7 +55,7 @@
 <p>Un algorithme est un procédé qui permet de résoudre un problème, sans avoir besoin d’inventer une solution à chaque fois. Avec cette définition, il est clair que, depuis l’aube de l’humanité, nous inventons, utilisons et transmettons des algorithmes : cuisine, taille du silex, pêche à la ligne, culture des lentilles et du blé, etc.<sup class="footnote-ref"><a href="#fn3" id="fnref3">3</a></sup></p>
 </blockquote>
 <p><strong>Dans cette définition générique de la notion d’algorithmes s’inscrit une catégorie spécifique plus réduite, un ensemble que l’on nomme <em>algorithmes symboliques</em>.</strong> Ceux-ci manipulent des symboles écrits : chiffres, lettres, assemblés en nombres, en mots et en phrases, et vecteurs de sens. Étymologiquement, le terme <em>algorithme</em> est d’ailleurs issu de la combinaison du mot latin <em>algorismus</em> – dérivé du nom du mathématicien Al-Khwarizmi<sup class="footnote-ref"><a href="#fn4" id="fnref4">4</a></sup> – et du mot grec <em>arithmos</em>, qui signifie “nombre”. Cette proximité entre les notions d’algorithmique et de mathématiques s’est confirmé grâce aux progrès techniques des deux siècles passés. À ce jour, par abus de langage et en raison de notre contexte technologique contemporain, la notion d’algorithmes symboliques a presque remplacé celle, plus générique, d’algorithmes : l’informatique a orienté l’emploi même du mot.</p>
-<h2 id="algorithmes-et-programmes">Algorithmes et programmes</h2>
+<h2 id="approche-technico-historique">Approche technico-historique</h2>
 <p>Remontons aux origines des algorithmes symboliques, il y a 5&nbsp;000 ans. À cette époque, les mathématiciens ont déjà mis au point des algorithmes servant à résoudre des calculs algébriques simples tels que des additions et des multiplications, mais ceux-ci sont exécutés à la main, par des personnes en chair et en os. Des tâches répétitives qu’on aurait tout intérêt à déléguer aux machines, afin que celles-ci s’effectuent <em>mécaniquement</em>.</p>
 <p>S’en suit cinq millénaires d’innovations techniques. Les premiers abaques<sup class="footnote-ref"><a href="#fn5" id="fnref5">5</a></sup>, suivis quelques siècles plus tard de leurs proches dérivés, les bouliers, assistent les hommes dans ces calculs mais ne sont pas encore autonomes. Au Moyen Âge, les cloches au sommet des cathédrales sonnent chaque heure sans intervention humaine : ce sont les premières machines capables d’exécuter des algorithmes symboliques. En 1642, l’inventeur français Blaise Pascal<sup class="footnote-ref"><a href="#fn6" id="fnref6">6</a></sup> met au point la première machine à calculer, qu’il nomme “machine arithmétique” ; elle est retravaillée quelques 30 ans plus tard par Gottfried Leibniz<sup class="footnote-ref"><a href="#fn7" id="fnref7">7</a></sup> qui y ajoute une interface permettant de réaliser de façon automatique des multiplications et des divisions.</p>
 <p>En 1801, l’inventeur lyonnais Joseph Jacquard met au point un système de métier à tisser qui portera son nom : le fameux “métier Jacquard”. Celui-ci combine les métiers à tisser classiques avec le principe de cartes perforées inventé en 1728 par Jean-Baptiste Falcon – qui lui-même reprenait l’idée des rubans perforés que Basile Bouchon, son maître, proposait trois ans plus tôt. En perçant ou non un trou à un emplacement spécifique d’une carte, on peut programmer la machine : une fois insérée en <em>entrée</em> de la machine,  les cartes guident les crochets qui soulèvent les “fils de chaînes” – dont l’agencement produit le motif sur le textile tissé. Ce dispositif est souvent considéré comme la première forme de stockage d’informations binaires (<em>tout</em> ou <em>rien</em>, <em>vrai</em> ou <em>faux</em>), et le métier Jacquard comme l’ancêtre de l’ordinateur.</p>
@@ -69,8 +71,35 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 </ul>
 </blockquote>
 <p>Pendant qu’il travaille sur ce projet, Babbage entre en correspondance avec Ada Lovelace. Pionnière de la science informatique, c’est elle qui, en 1843, sera à l’origine du premier algorithme destiné à être exécuté sur une machine : la machine à différences de Charles Babbage. Cet algorithme, considéré comme le premier programme informatique à proprement parler, sert alors à calculer la suite des nombres de Bernouilli<sup class="footnote-ref"><a href="#fn10" id="fnref10">10</a></sup>. Ada Lovelace est ainsi connue comme la première programmeuse de l’histoire.</p>
+<p>Les travaux de Lovelace et Babbage trouvent écho un siècle plus tard, dans les années 1930, grâce notamment aux recherches d’Alan Turing<sup class="footnote-ref"><a href="#fn11" id="fnref11">11</a></sup>. Cet inventeur, figure emblématique de la recherche mathématico-scientifique du XX<sup>ème</sup> siècle, conçoit en 1936 la “machine de Turing”, en vue de donner une définition précise au concept d’algorithme et à sa représentation formelle et technique de “procédure mécanique”.</p>
+<blockquote>
+<p>[La machine de Turing] consiste en deux éléments principaux :</p>
+<ol>
+<li>une machine représentée par une tête de lecture/écriture susceptible de se trouver dans un nombre fini d’états,</li>
+<li>une bande (magnétique par exemple) de longueur infinie […] devant laquelle se meut la tête de lecture et qui alimente en données cette machine. […]</li>
+</ol>
+<p>Turing montre qu’une partie de la bande peut contenir la description de la table d’actions élémentaires d’une autre machine de Turing : une machine peut en simuler une autre. C’est grâce à cette construction schématique […] que Turing peut démontrer qu’il existe des machines de Turing dites universelles capables d’imiter toute autre machine de Turing. <sup class="footnote-ref"><a href="#fn12" id="fnref12">12</a></sup></p>
+</blockquote>
+<p>Turing illustre ainsi la notion d’<em>universalité</em> telle qu’elle avait été formulé par Lovelace et Babbage. La machine de Turing universelle est considérée comme la genèse des travaux de John von Neumann, qui en 1945 propose un modèle utilisé encore aujourd’hui dans nos ordinateurs modernes : l’architecture de von Neumann.</p>
+<blockquote>
+<p>L’architecture de von Neumann décompose l’ordinateur en quatre parties distinctes :</p>
+<ul>
+<li>l’unité arithmétique et logique (UAL) ou unité de traitement, qui effectue les opérations de base ;</li>
+<li>l’unité de contrôle, qui est chargée du séquençage des opérations ;</li>
+<li>la mémoire, qui contient à la fois les données et le programme qui indique à l’unité de contrôle quels calculs faire sur ces données. La mémoire se divise en mémoire vive (programmes et données en cours de fonctionnement) et mémoire de masse (programmes et données de base de la machine) ;</li>
+<li>les dispositifs d’entrées-sorties, qui permettent de communiquer avec le monde extérieur.</li>
+</ul>
+</blockquote>
+<p>En transposant ces composantes dans notre vocabulaire matériel contemporain, on confirme la proximité entre ce modèle, vieux de plus de 70 ans, et les ordinateurs que nous utilisons au quotidien :</p>
+<ul>
+<li>le processeur effectue les opérations ;</li>
+<li>la mémoire vive (<abbr title="Random Access Memory">RAM</abbr>) stocke les données en cours d’utilisation ; et les disques durs – ou autres supports de stockage – contiennent des données pérennes ;</li>
+<li>les périphériques en tout genre permettent l’interaction en <em>entrée</em> (clavier, souris, écran tactile, microphone, caméra, port USB, lecteur de disque, etc.) et en <em>sortie</em> (écran, haut-parleurs, etc.)</li>
+</ul>
+<h2 id="algorithmes-et-programmes">Algorithmes et programmes</h2>
+<h2 id="informatique-et-ordinateurs">Informatique et ordinateurs</h2>
 <h2 id="approche-fondamentale">Approche fondamentale</h2>
-<p>Séquence, affectation, itération, condition</p>
+<p>Séquence, affectation, itération, condition<sup class="footnote-ref"><a href="#fn13" id="fnref13">13</a></sup></p>
 <h1 id="écritures">Écriture(s)</h1>
 <h2 id="quest-ce-que-lécriture-">Qu’est-ce que l’écriture ?</h2>
 <h2 id="des-langages-naturels-aux-langages-artificiels">Des langages naturels aux langages artificiels</h2>
@@ -139,7 +168,7 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 </li>
 <li id="fn5" class="footnote-item"><p>Le terme <em>abaque</em> désigne tout instrument mécanique plan facilitant le calcul. <a href="#fnref5" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn6" class="footnote-item"><p>Blaise Pascal était un mathématicien, physicien, inventeur et philosophe français. À 19 ans, il invente la première machine à calculer, dénommée <em>machine d’arithmétique</em>, puis <em>roue pascaline</em> et enfin <em>pascaline</em>. <a href="#fnref6" class="footnote-backref">↩︎</a></p>
+<li id="fn6" class="footnote-item"><p>Blaise Pascal était un mathématicien, physicien, inventeur et philosophe français. À 19 ans, il invente la première machine à calculer, dénommée <em>machine d’arithmétique</em>, puis <em>pascaline</em>. <a href="#fnref6" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn7" class="footnote-item"><p>Gottfried Leibniz était un philosophe, scientifique, mathématicien et logicien allemand. <a href="#fnref7" class="footnote-backref">↩︎</a></p>
 </li>
@@ -148,6 +177,12 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 <li id="fn9" class="footnote-item"><p><a href="https://fr.wikipedia.org/wiki/Machine_analytique">Machine analytique</a> sur Wikipédia <a href="#fnref9" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn10" class="footnote-item"><p>En mathématiques, les nombres de Bernoulli constituent une suite de nombres rationnels. Ces nombres ont d’abord été étudiés par Jacques Bernoulli, mathématicien et physicien suisse du XVII<sup>ème</sup>siècle. <a href="#fnref10" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn11" class="footnote-item"><p>Alan Turing était un mathématicien et cryptologue britannique, dont les travaux ont fondé l’informatique moderne. Après l’invention de la machine de Turing – qui contribue à la thèse de Church-Turing autour de la notion de problème <em>calculable</em> –, il participe au décryptage des codes secrets de la machine allemande Enigma pendant la Seconde Guerre Mondiale – ce qui joua un rôle essentiel dans la victoire des Alliés. Turing poursuit des recherches en informatique et formule le “test de Turing”, fondamental dans le champ de l’intelligence artificielle. Poursuivi judiciairement pour homosexualité, Turing choisit la castration chimique pour éviter la prison. Il décède en 1954 d’un empoisonnement au cyanure, vraisemblablement par suicide. <a href="#fnref11" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn12" class="footnote-item"><p><cite>3:16–18</cite> <a href="#fnref12" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn13" class="footnote-item"><p><cite>1:18–19</cite> <a href="#fnref13" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>

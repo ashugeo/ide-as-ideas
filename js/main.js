@@ -41,7 +41,7 @@ function sideNotes() {
     // Parse sidenotes
     let index = 1;
 
-    $('p').each((pId, pEl) => {
+    $('.stackedit__html > *').each((pId, pEl) => {
         const $pEl = $(pEl);
         let notesWide = '';
         let notesSmall = '';

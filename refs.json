@@ -4,5 +4,23 @@
         "author": "Serge Abiteboul & Gilles Dowek",
         "year": 2017,
         "editor": "Essai le Pommier"
+    },
+    "2": {
+        "title": "À quoi rêvent les algorithmes",
+        "author": "Dominique Cardon",
+        "year": 2015,
+        "editor": "Seuil"
+    },
+    "3": {
+        "title": "Qu'est-ce que l'informatique ?",
+        "author": "Franck Varenne",
+        "year": 2009,
+        "editor": "Vrin"
+    },
+    "4": {
+        "title": "",
+        "author": "",
+        "year": ,
+        "editor": ""
     }
 }

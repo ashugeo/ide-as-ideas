@@ -6,6 +6,7 @@ $(document).ready(() => {
         refs = data;
         references();
         sideNotes();
+        frenchTypo();
     });
 });
 
@@ -65,4 +66,9 @@ function sideNotes() {
     // Hide footnotes
     $('.footnotes-sep').hide();
     $('.footnotes').hide();
+}
+
+function frenchTypo() {
+    // “” to «»
+    document.body.innerHTML = document.body.innerHTML.replace(/“/g, '«&nbsp;').replace(/”/g, '&nbsp;»');
 }

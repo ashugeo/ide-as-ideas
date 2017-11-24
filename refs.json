@@ -16,5 +16,11 @@
         "author": "Franck Varenne",
         "year": 2009,
         "editor": "Vrin"
+    },
+    "4": {
+        "title": "WYSINWYX: What You See Is Not What You eXecute",
+        "author": "G. Balakrishnan, T. Reps, D. Melski, et T. Teitelbaum",
+        "year": 2005,
+        "link": "http://research.cs.wisc.edu/wpis/papers/wysinwyx05.pdf"
     }
 }

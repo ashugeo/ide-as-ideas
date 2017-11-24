@@ -28,7 +28,27 @@ function references() {
         // Get passage
         let passage = text.split(':')[1];
 
-        let citation = `${ref.author}, <i>${ref.title}</i> (${ref.year})`;
+        // Author
+        let citation = `${ref.author}, `;
+
+        // Title
+        if (ref.link) {
+            citation += `<i><a href="${ref.link}" target="_blank">${ref.title}</a></i>`;
+        } else {
+            citation += `<i>${ref.title}</i>`;
+        }
+
+        // Year
+        if (ref.year) {
+            citation += ` (${ref.year})`;
+        }
+
+        // Editor
+        if (ref.editor) {
+            citation += `, ${ref.editor}`;
+        }
+
+        // Passage
         if (passage) {
             citation += `, p.&nbsp;${passage}`;
         }

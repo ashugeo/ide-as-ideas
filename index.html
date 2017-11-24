@@ -33,8 +33,12 @@
 <li><a href="#la-révolution-turing">La révolution Turing</a></li>
 </ul>
 </li>
+<li><a href="#distinctions-définitionnelles">Distinctions définitionnelles</a>
+<ul>
 <li><a href="#algorithmes-et-programmes">Algorithmes et programmes</a></li>
 <li><a href="#ordinateurs-et-informatique">Ordinateurs et informatique</a></li>
+</ul>
+</li>
 <li><a href="#approche-fondamentale">Approche fondamentale</a></li>
 <li><a href="#algorithmes-pour-quoi-faire-">Algorithmes, pour quoi faire ?</a></li>
 </ul>
@@ -120,19 +124,26 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 <li>les périphériques en tout genre permettent l’interaction en <em>entrée</em> (clavier, souris, écran tactile, microphone, caméra, port <abbr title="Universal Serial Bus">USB</abbr>, lecteur de disque, etc.) et en <em>sortie</em> (écran, haut-parleurs, etc.)</li>
 </ul>
 <p>On observe une intime corrélation entre les notions d’algorithmes – et plus spécifiquement les algorithmes symboliques – et celles de programmes, ordinateurs et donc informatique. Toutefois, la proximité de ces concepts ne doit pas laisser place à la confusion ; il faut donc définir ces termes plus spécifiquement.</p>
-<h2 id="algorithmes-et-programmes">Algorithmes et programmes</h2>
+<h2 id="distinctions-définitionnelles">Distinctions définitionnelles</h2>
+<h3 id="algorithmes-et-programmes">Algorithmes et programmes</h3>
 <p>Un programme informatique est une suite d’instructions qui effectue une ou plusieurs tâches spécifiques lorsqu’elle est exécutée par un ordinateur.<sup class="footnote-ref"><a href="#fn14" id="fnref14">14</a></sup> L’universitaire français Franck Varenne attire notre attention sur une possible origine de la confusion entre algorithmes et programmes. Il cite Charles Hoare, professeur et informaticien britannique, également connu pour la conception de nombreux algorithmes encore utilisés aujourd’hui. Hoare déclare que “la programmation informatique est une science exacte en ce que toutes les propriétés d’un programme […] peuvent être découvertes à partir du texte du programme lui-même au moyen de raisonnement purement déductif.” Varenne y oppose l’argumentation de James Fetzer, philosophe américain spécialisé notamment en informatique : la vision de Hoare amène à confondre les algorithmes et les programmes. Selon lui, rien n’implique une exacte similitude entre le comportement supposé du programme – à la lecture donc – et les conséquences réelles de son exécution sur la machine.</p>
 <blockquote>
 <p>Les algorithmes sont des solutions formelles (abstraites en ce sens) et effectives pour certains problèmes bien formulés. Les programmes chargés en mémoire (exécutables) sont en revanche des modèles causaux (car physiques) de ces algorithmes. Alors que les algorithmes sont des modèles abstraits des programmes exécutables, les programmes exécutables sont des modèles causaux des algorithmes.<sup class="footnote-ref"><a href="#fn15" id="fnref15">15</a></sup></p>
 </blockquote>
 <p>Varenne qualifie donc ces modèles d’<em>imparfaits</em> : le programme ne peut jamais être vérifié formellement, mais seulement de façon empirique. En effet, on peut établir la validité d’un programme, notamment en développant une sémantique formelle qui régule le <em>code</em> écrit par le programmeur. On résout alors les erreurs de programmation : variables sans valeur définie, fautes de syntaxe, structure erronée ou illogique, etc. Toutefois, la machine peut elle-même faire preuve de dysfonctionnement de fait même de sa dimension physique : processeur défectueux, espace de stockage corrompu, mémoire vive saturée, etc.</p>
 <p>Cette marge d’incertitude entre le programme que l’on voit et ce que l’on obtient lorsqu’il est exécuté a été baptisé WYSINWYX, pour <em>What You See Is Not What You eXecute</em> – littéralement “ce que vous voyez n’est pas ce que vous exécutez”.<sup class="footnote-ref"><a href="#fn16" id="fnref16">16</a></sup> Cet acronyme est une référence au paronyme duquel il est inspiré : le terme WYSIWYG —<em>What You See Is What You Get</em>, soit “ce que vous voyez est ce que vous obtenez” – désigne, en informatique, les interfaces utilisateurs où l’on compose directement le résultat final souhaité.<sup class="footnote-ref"><a href="#fn17" id="fnref17">17</a></sup></p>
-<h2 id="ordinateurs-et-informatique">Ordinateurs et informatique</h2>
+<p><code>@TODO</code></p>
+<ul>
+<li>WYSINWYX : l’erreur comme opportunité créatrice</li>
+<li>Programme informatique, langage de programmation, langage machine</li>
+</ul>
+<h3 id="ordinateurs-et-informatique">Ordinateurs et informatique</h3>
 <p>La définition du terme “ordinateur”, dans son sens admis populairement, se base sur les travaux de Turing – comme évoqués dans la partie <em><a href="#la-r%C3%A9volution-turing">La révolution Turing</a></em>.</p>
 <blockquote>
 <p>Un ordinateur est un système de traitement de l’information programmable tel que défini par Turing et qui fonctionne par la lecture séquentielle d’un ensemble d’instructions, organisées en programmes, qui lui font exécuter des opérations logiques et arithmétiques.</p>
 </blockquote>
 <p>Les composants technologiques des ordinateurs modernes traitent des informations <em>binaires</em>. Là où les cartes perforées de Falcon utilisait des trous ou des pleins pour signifier un des deux états uniques qui composent un <em>bit</em><sup class="footnote-ref"><a href="#fn18" id="fnref18">18</a></sup>, nos ordinateurs, dont le fonctionnement est basé sur l’électricité, utilisent pour signifier une valeur la présence ou l’absence de courant, de charge ou de tension électrique – suivant qu’il soit question de stocker ou de transmettre une donnée.</p>
+<p><code>@TODO</code> Edsger Dijkstra “L’informatique n’est pas plus la science des ordinateurs que l’astronomie n’est celle des télescopes.” en réalité Michael Fellows et Ian Perberry.</p>
 <h2 id="approche-fondamentale">Approche fondamentale</h2>
 <p>Séquence, affectation, itération, condition<sup class="footnote-ref"><a href="#fn19" id="fnref19">19</a></sup></p>
 <h2 id="algorithmes-pour-quoi-faire-">Algorithmes, pour quoi faire ?</h2>

@@ -4,6 +4,22 @@
     }
 }
 
+.stackedit__toc {
+    max-height: 100vh;
+
+    ul {
+        padding-bottom: 2em;
+
+        ul {
+            padding-bottom: 1em;
+
+            ul a {
+                padding-left: 2em;
+            }
+        }
+    }
+}
+
 .sidenote {
     font-size: .8em;
 

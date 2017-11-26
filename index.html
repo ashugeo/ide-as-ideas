@@ -22,7 +22,7 @@
 <li><a href="#quest-ce-quun-algorithme-">Qu’est-ce qu’un algorithme ?</a>
 <ul>
 <li><a href="#instructions-et-résultat">Instructions et résultat</a></li>
-<li><a href="#algorithmes-symboliques">Algorithmes symboliques</a></li>
+<li><a href="#les-algorithmes-symboliques">Les algorithmes symboliques</a></li>
 </ul>
 </li>
 <li><a href="#approche-technico-historique">Approche technico-historique</a>
@@ -35,19 +35,32 @@
 </li>
 <li><a href="#distinctions-définitionnelles">Distinctions définitionnelles</a>
 <ul>
-<li><a href="#algorithmes-et-programmes">Algorithmes et programmes</a></li>
-<li><a href="#ordinateurs-et-informatique">Ordinateurs et informatique</a></li>
+<li><a href="#de-lalgorithme-au-programme">De l’algorithme au programme</a></li>
+<li><a href="#de-lordinateur-à-linformatique">De l’ordinateur à l’informatique</a></li>
 </ul>
 </li>
-<li><a href="#approche-fondamentale">Approche fondamentale</a></li>
-<li><a href="#algorithmes-pour-quoi-faire-">Algorithmes, pour quoi faire ?</a></li>
+<li><a href="#approche-fondamentale">Approche fondamentale</a>
+<ul>
+<li><a href="#séquence">Séquence</a></li>
+<li><a href="#affectation">Affectation</a></li>
+<li><a href="#itération">Itération</a></li>
+<li><a href="#condition">Condition</a></li>
+</ul>
+</li>
+<li><a href="#algorithmes-pour-quoi-faire-">Algorithmes, pour quoi faire ?</a>
+<ul>
+<li><a href="#contextes-dusage-contemporains">Contextes d’usage contemporains</a></li>
+<li><a href="#quatre-familles-de-calcul-numérique">Quatre familles de calcul numérique</a></li>
+<li><a href="#intelligences-artificielles">Intelligences artificielles</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#écritures">Écriture(s)</a>
 <ul>
 <li><a href="#quest-ce-que-lécriture-">Qu’est-ce que l’écriture ?</a></li>
 <li><a href="#des-langages-naturels-aux-langages-artificiels">Des langages naturels aux langages artificiels</a></li>
-<li><a href="#outils-décriture-algorithmique">Outils d’écriture algorithmique</a>
+<li><a href="#lécriture-algorithmique">L’écriture algorithmique</a>
 <ul>
 <li><a href="#état-de-lart-systèmes…">État de l’art (systèmes…)</a></li>
 </ul>
@@ -76,7 +89,7 @@
 <blockquote>
 <p>Un algorithme est un procédé qui permet de résoudre un problème, sans avoir besoin d’inventer une solution à chaque fois. Avec cette définition, il est clair que, depuis l’aube de l’humanité, nous inventons, utilisons et transmettons des algorithmes : cuisine, taille du silex, pêche à la ligne, culture des lentilles et du blé, etc.<sup class="footnote-ref"><a href="#fn3" id="fnref3">3</a></sup></p>
 </blockquote>
-<h3 id="algorithmes-symboliques">Algorithmes symboliques</h3>
+<h3 id="les-algorithmes-symboliques">Les algorithmes symboliques</h3>
 <p>Dans cette définition générique de la notion d’algorithmes s’inscrit une catégorie spécifique plus réduite, un ensemble que l’on nomme <em>algorithmes symboliques</em>. Ceux-ci manipulent des symboles écrits : chiffres, lettres, assemblés en nombres, en mots et en phrases, et vecteurs de sens. Étymologiquement, le terme <em>algorithme</em> est d’ailleurs issu de la combinaison du mot latin <em>algorismus</em> – dérivé du nom du mathématicien Al-Khwarizmi<sup class="footnote-ref"><a href="#fn4" id="fnref4">4</a></sup> – et du mot grec <em>arithmos</em>, qui signifie “nombre”. Cette proximité entre les notions d’algorithmique et de mathématiques s’est confirmé grâce aux progrès techniques des deux siècles passés. À ce jour, par abus de langage et en raison de notre contexte technologique contemporain, la notion d’algorithmes symboliques a presque remplacé celle, plus générique, d’algorithmes : l’informatique a orienté l’emploi même du mot.</p>
 <h2 id="approche-technico-historique">Approche technico-historique</h2>
 <h3 id="de-la-main-à-la-machine">De la main à la machine</h3>
@@ -125,7 +138,7 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 </ul>
 <p>On observe une intime corrélation entre les notions d’algorithmes – et plus spécifiquement les algorithmes symboliques – et celles de programmes, ordinateurs et donc informatique. Toutefois, la proximité de ces concepts ne doit pas laisser place à la confusion ; il faut donc définir ces termes plus spécifiquement.</p>
 <h2 id="distinctions-définitionnelles">Distinctions définitionnelles</h2>
-<h3 id="algorithmes-et-programmes">Algorithmes et programmes</h3>
+<h3 id="de-lalgorithme-au-programme">De l’algorithme au programme</h3>
 <p>Un programme informatique est une suite d’instructions qui effectue une ou plusieurs tâches spécifiques lorsqu’elle est exécutée par un ordinateur.<sup class="footnote-ref"><a href="#fn14" id="fnref14">14</a></sup> L’universitaire français Franck Varenne attire notre attention sur une possible origine de la confusion entre algorithmes et programmes. Il cite Charles Hoare, professeur et informaticien britannique, également connu pour la conception de nombreux algorithmes encore utilisés aujourd’hui. Hoare déclare que “la programmation informatique est une science exacte en ce que toutes les propriétés d’un programme […] peuvent être découvertes à partir du texte du programme lui-même au moyen de raisonnement purement déductif.” Varenne y oppose l’argumentation de James Fetzer, philosophe américain spécialisé notamment en informatique : la vision de Hoare amène à confondre les algorithmes et les programmes. Selon lui, rien n’implique une exacte similitude entre le comportement supposé du programme – à la lecture donc – et les conséquences réelles de son exécution sur la machine.</p>
 <blockquote>
 <p>Les algorithmes sont des solutions formelles (abstraites en ce sens) et effectives pour certains problèmes bien formulés. Les programmes chargés en mémoire (exécutables) sont en revanche des modèles causaux (car physiques) de ces algorithmes. Alors que les algorithmes sont des modèles abstraits des programmes exécutables, les programmes exécutables sont des modèles causaux des algorithmes.<sup class="footnote-ref"><a href="#fn15" id="fnref15">15</a></sup></p>
@@ -137,21 +150,44 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 <li>WYSINWYX : l’erreur comme opportunité créatrice</li>
 <li>Programme informatique, langage de programmation, langage machine</li>
 </ul>
-<h3 id="ordinateurs-et-informatique">Ordinateurs et informatique</h3>
+<h3 id="de-lordinateur-à-linformatique">De l’ordinateur à l’informatique</h3>
 <p>La définition du terme “ordinateur”, dans son sens admis populairement, se base sur les travaux de Turing – comme évoqués dans la partie <em><a href="#la-r%C3%A9volution-turing">La révolution Turing</a></em>.</p>
 <blockquote>
 <p>Un ordinateur est un système de traitement de l’information programmable tel que défini par Turing et qui fonctionne par la lecture séquentielle d’un ensemble d’instructions, organisées en programmes, qui lui font exécuter des opérations logiques et arithmétiques.</p>
 </blockquote>
 <p>Les composants technologiques des ordinateurs modernes traitent des informations <em>binaires</em>. Là où les cartes perforées de Falcon utilisait des trous ou des pleins pour signifier un des deux états uniques qui composent un <em>bit</em><sup class="footnote-ref"><a href="#fn18" id="fnref18">18</a></sup>, nos ordinateurs, dont le fonctionnement est basé sur l’électricité, utilisent pour signifier une valeur la présence ou l’absence de courant, de charge ou de tension électrique – suivant qu’il soit question de stocker ou de transmettre une donnée.</p>
-<p><code>@TODO</code> Edsger Dijkstra “L’informatique n’est pas plus la science des ordinateurs que l’astronomie n’est celle des télescopes.” en réalité Michael Fellows et Ian Perberry.</p>
+<p>Les racines mathématiques de l’<em>ordinateur</em> se retrouvent dans l’étymologie même du terme. En 1955, Fançois Girard, responsable du service publicité d’IBM<sup class="footnote-ref"><a href="#fn19" id="fnref19">19</a></sup> France, fait appel à son ancien professeur de lettres, Jacques Perret, afin de trouver ensemble une traduction au mot anglais “computer”. Perret propose alors l’appellation “ordinatrice électronique”, inspirée de l’<em>ordonnateur</em>, ce composant de la machine décrit par Babbage comme celui qui “prend et reporte les nombres, et les soumet à l’opération demandée”. L’intitulé est ensuite simplifié en <em>ordinateur</em> est entre rapidement dans le langage populaire.</p>
+<p>La notion d’informatique est intimement liée à l’univers des ordinateurs. Si en anglais, ordinateur se dit “computer”, la notion d’informatique est tout simplement désignée par la formule “computer science”. Certains penseurs affirment toutefois que l’on ne peut pas définir l’informatique comme “la science des ordinateurs”. On attribue notamment à Edsger Dijkstra, informaticien néerlandais reconnu, l’aphorisme suivant : “L’informatique n’est pas plus la science des ordinateurs que l’astronomie n’est celle des télescopes.” Les auteurs de cette phrase sont en réalité Michael Fellows et Ian Perberry, et la citation complète – traduite – est la suivante :</p>
+<blockquote>
+<p>L’informatique n’est pas plus la science des ordinateurs que l’astronomie n’est celle des télescopes, la biologie celle des microscopes, ou la chimie celle des <em>béchers</em> et des tubes à essais. La science de traite pas des outils. Elle traite de notre manière des les utiliser, et de ce que l’on découvre en les utilisant. <sup class="footnote-ref"><a href="#fn20" id="fnref20">20</a></sup></p>
+</blockquote>
+<p>Dans “<em>Qu’est-ce que l’informatique ?</em>”, Franck Varenne propose et critique de nombreuses ébauches définitionnelles – c’est là le cœur de l’ouvrage – avant de conclure par la description suivante :</p>
+<blockquote>
+<p>[L’informatique est] une technologie (dans son caractère instumental et de délégation opératoire) et une discipline (dans ses versants cognitifs et réthoriques) de démultiplication, d’entrelacement, d’application […] et/ou de confrontation des voies de la référence. Plus brièvement : elle est une technologie d’entrecroisement automatique et programmable des voies de la référence. <sup class="footnote-ref"><a href="#fn21" id="fnref21">21</a></sup></p>
+</blockquote>
+<p>Varenne nomme “voies de la référence” la faculté des <em>symboles</em> utilisés en informatique (nombres, lettres, signes, etc.) à faire référence à un ou plusieurs autres symboles. En ce qui concerne le calcul numérique, les <em>voies</em> sont au nombre de deux : la <em>concrétisation</em> ou l’<em>abstraction</em>. Si elle en est fondamentalement inspirée, l’informatique va au-delà du calcul et joue sur les niveaux de symboles mis en œuvre : les symboles sont hybridés via des procédés de sous-symbolisation et de simulation. Pour résumer et simplifier cette approche définitionnelle, l’informatique est le croisement de la technologie (l’ordinateur) et de la discipline (la pensée) : elle est l’ensemble qui lie théorie et pratique.</p>
 <h2 id="approche-fondamentale">Approche fondamentale</h2>
-<p>Séquence, affectation, itération, condition<sup class="footnote-ref"><a href="#fn19" id="fnref19">19</a></sup></p>
-<h2 id="algorithmes-pour-quoi-faire-">Algorithmes, pour quoi faire ?</h2>
+<p>Les algorithmes se ressemblent : ils sont constitués d’un nombre restreint d’expressions structurantes similaires, que l’on retrouve fréquemment, agencés différemment selon la finalité recherchée. Selon Abiteboul et Dowek, n’importe quel algorithme symbolique peut être exprimé à partir de quatre instructions élémentaires : la séquence, l’affectation, l’itération et la condition.<sup class="footnote-ref"><a href="#fn22" id="fnref22">22</a></sup></p>
+<h3 id="séquence">Séquence</h3>
+<p>La <em>séquence</em> est l’ordre même dans lequel les instructions sont agencées, c’est-à-dire la structure de l’algorithme elle-même : “fait <em>ceci</em>, puis <em>cela</em>”. Lorsqu’il est représenté – c’est à dire écrit ou dessiné –, on lit classiquement un algorithme de haut en bas, conformément au sens de lecture de nombreux langages. On peut parfois s’émanciper, d’une certaine manière, de cette séquence, notamment en spécifiant expressément à l’algorithme d’éluder une partie des instructions dans certains cas précis. On groupe alors les instructions en ensemble – que l’on peut appeler des <em>fonctions</em> –, auxquels on peut ensuite faire référence. La “tête de lecture”, ou <em>positionnement</em> de l’algorithme à un moment donné de son exécution, ne déroule donc pas nécessairement la structure même cet algorithme de manière linéaire : elle peut effectuer des allers-retours, sauter des parties, y revenir, etc.</p>
+<h3 id="affectation">Affectation</h3>
+<p>L’affectation est le fait d’attribuer une valeur à une <em>variable</em> – par exemple, “<em>a</em> prend la valeur de <em>b</em>”. Une variable est constituée d’un nom (son identifiant) et d’une valeur unique à chaque instant. Cette valeur peut être numérique (un nombre entier ou décimal, naturel ou relatif), textuelle (un caractère ou une chaîne de caractères) ou encore un booléen : vrai (<em>true</em>) ou faux (<em>false</em>).<sup class="footnote-ref"><a href="#fn23" id="fnref23">23</a></sup> Une variable peut également accueillir un ensemble de données comme un tableau (<em>array</em> en anglais) indexé et/ou associatif. Comme son nom l’indique, une <em>variable</em> peut prendre plusieurs valeurs au cours du temps, à l’exception des constantes – dont la valeur est figée.</p>
+<h3 id="itération">Itération</h3>
+<p>L’itération, communément appelé <em>boucle</em>, est le fait de répéter une série d’instructions. Ce concept est fondamental, puisque les algorithmes ont généralement pour but d’automatiser des tâches répétitives. On trouve plusieurs types de boucles, en voici une liste non exhaustive :</p>
 <ul>
-<li>contextes d’usage contemporains</li>
-<li>4 catégories de Cardon</li>
-<li>intelligences artificielles</li>
+<li>la boucle “pour” (<em>for loop</em> en anglais), qui exécute les instructions pour un nombre donné d’itérations : “répète 10 fois <em>ceci</em>” ;</li>
+<li>la boucle “tant que” (<em>while</em> en anglais), qui exécute les instructions tant qu’un énoncé est valide : “tant que <em>ceci</em> est vrai, fait <em>cela</em>” ;</li>
+<li>la boucle “pour chaque” (<em>for each</em> en anglais), qui exécute les instructions pour chaque entité d’une liste (des contacts dans un annuaire par exemple) : “<em>pour</em> chaque <em>ceci</em>, fait <em>cela</em>”.</li>
 </ul>
+<h3 id="condition">Condition</h3>
+<p>Enfin, la condition, ou <em>test conditionnel</em>, permet d’effectuer ou non une instruction – ou série d’instructions – selon la valeur d’une variable donnée : par exemple, “si <em>ceci</em> est vrai, faire <em>cela</em>”. On appelle généralement <em>expression conditionnel</em> le schéma “si, alors, sinon” (<em>if, then, else</em>). De plus, on trouve parfois dans ces structures un nombre plus ou moins important d’expressions du type <em>sinon si</em> (<em>else if</em>), qui permettent des conditions imbriquées. Ici encore, cette notion est extrêmement importante, en cela qu’elle permet à un algorithme de prendre des chemins différents, de s’adapter à la complexité éclectique des données réelles qui lui sont fournies, et ainsi d’être plus polyvalent.</p>
+<p><code>@TODO</code> : image Keep Talking And Nobody Explodes</p>
+<h2 id="algorithmes-pour-quoi-faire-">Algorithmes, pour quoi faire ?</h2>
+<h3 id="contextes-dusage-contemporains">Contextes d’usage contemporains</h3>
+<h3 id="quatre-familles-de-calcul-numérique">Quatre familles de calcul numérique</h3>
+<p>Dominique Cardon propose une classification des typologies d’algorithmes qui régissent notre quotidien, et notamment le web. On peut organiser selon lui le classement de l’information numérique en quatre familles, qu’il illustre spatialement en fonction de la place qu’occupe l’algorithme relativement au monde qu’il entend décrire : “les mesures peuvent se trouver <em>à côté</em>, <em>au-dessus</em>, <em>dans</em> ou <em>en dessous</em> des données numériques”.<sup class="footnote-ref"><a href="#fn24" id="fnref24">24</a></sup> Ces catégories sont également organisées chronologiquement : Cardon précise que si les quatre familles cohabitent aujourd’hui au sein du web contemporain, elles sont en réalité apparues les unes après les autres dans l’histoire d’Internet.</p>
+<p><code>@TODO</code> : image tableau</p>
+<h3 id="intelligences-artificielles">Intelligences artificielles</h3>
 <h1 id="écritures">Écriture(s)</h1>
 <h2 id="quest-ce-que-lécriture-">Qu’est-ce que l’écriture ?</h2>
 <h2 id="des-langages-naturels-aux-langages-artificiels">Des langages naturels aux langages artificiels</h2>
@@ -166,7 +202,7 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 </li>
 </ul>
 <p><cite>3:36–41</cite></p>
-<h2 id="outils-décriture-algorithmique">Outils d’écriture algorithmique</h2>
+<h2 id="lécriture-algorithmique">L’écriture algorithmique</h2>
 <ul>
 <li>lignes de code (règles et conventions)
 <ul>
@@ -213,7 +249,7 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 <ol class="footnotes-list">
 <li id="fn1" class="footnote-item"><p>Serge Abiteboul est checheur à l’<abbr title="Institut national de recherche en informatique et en automatique">INRIA</abbr>  et professeur à l’<abbr title="École normale supérieure">ENS</abbr> de Paris-Saclay. Sa recherche porte sur la gestion de données, d’information et de connaissances. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn2" class="footnote-item"><p>Gilles Dowek est également chercheur à l’<abbr title="Institut national de recherche en informatique et en automatique">INRIA</abbr> et professeur à l’<abbr title="École normale supérieure">ENS</abbr> de Paris-Saclay. Ses travaux portent sur la formalisation des mathématiques, les systèmes de traitement des démonstrations, la physique du calcul et la sûreté des systèmes aéronautiques et spatiaux. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+<li id="fn2" class="footnote-item"><p>Gilles Dowek est également chercheur à l’<abbr title="Institut national de recherche en informatique et en automatique">INRIA</abbr> et professeur à l’<abbr title="École normale supérieure">ENS</abbr> de Paris-Saclay. Ses travaux portent notamment sur la formalisation des mathématiques et les systèmes de traitement des démonstrations. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn3" class="footnote-item"><p><cite>1:11</cite> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
 </li>
@@ -247,7 +283,17 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 </li>
 <li id="fn18" class="footnote-item"><p>Le <em>bit</em>, abréviation de <em>binary digit</em> (chiffre binaire) est l’unité d’information la plus basique : un chiffre binaire ne peut avoir que deux valeurs, et ainsi être représenté avec un dispositif à deux états. Ces valeurs d’états sont le plus souvent représentés comme 0 ou 1. <a href="#fnref18" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn19" class="footnote-item"><p><cite>1:18–19</cite> <a href="#fnref19" class="footnote-backref">↩︎</a></p>
+<li id="fn19" class="footnote-item"><p>International Business Machines Corporation, connue sous l’abréviation IBM, est une société multinationale américaine fondée en 1911. Il s’agit d’un des leaders mondiaux en informatique – parallèlement sur le matériel, les services, les logiciels et la recherche. <a href="#fnref19" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn20" class="footnote-item"><p><cite>5</cite> <a href="#fnref20" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn21" class="footnote-item"><p><cite>3:67</cite> <a href="#fnref21" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn22" class="footnote-item"><p><cite>1:18–19</cite> <a href="#fnref22" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn23" class="footnote-item"><p>Un booléen est un type de variable à deux états. Cette terminologie fait référence aux travaux de George Boole, célèbre logicien et mathématicien  britannique, qui en 1845 a établit les bases de la “logique booléenne”, n’acceptant que deux valeurs numériques : 0 et 1. Cet algèbre connaîtra une importance capitale dans l’informatique et est encore énormément employée de nos jours. <a href="#fnref23" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn24" class="footnote-item"><p><cite>2:17</cite> <a href="#fnref24" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>

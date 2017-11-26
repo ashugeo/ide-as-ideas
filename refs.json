@@ -6,7 +6,7 @@
         "editor": "Essai le Pommier"
     },
     "2": {
-        "title": "À quoi rêvent les algorithmes",
+        "title": "À quoi rêvent les algorithmes – Nos vies à l'heure des big data",
         "author": "Dominique Cardon",
         "year": 2015,
         "editor": "Seuil"
@@ -22,5 +22,10 @@
         "author": "G. Balakrishnan, T. Reps, D. Melski, et T. Teitelbaum",
         "year": 2005,
         "link": "http://research.cs.wisc.edu/wpis/papers/wysinwyx05.pdf"
+    },
+    "5": {
+        "title": "SIGACT trying to get children excited about CS",
+        "author": "Michael R. Fellows et Ian Parberry",
+        "year": 1993
     }
 }

@@ -95,4 +95,7 @@ function sideNotes() {
 function frenchTypo() {
     // “” to «»
     document.body.innerHTML = document.body.innerHTML.replace(/“/g, '«&nbsp;').replace(/”/g, '&nbsp;»');
+
+    // No orphan colon (' : ')
+    document.body.innerHTML = document.body.innerHTML.replace(/ :/g, '&nbsp;:');
 }

@@ -10,6 +10,7 @@ $(document).ready(() => {
         refs = data;
         references();
         sideNotes();
+        externalLinks();
         frenchTypo();
     });
 });
@@ -90,6 +91,13 @@ function sideNotes() {
     // Hide footnotes
     $('.footnotes-sep').hide();
     $('.footnotes').hide();
+}
+
+function externalLinks() {
+    $('a:not([href^="#"])').each((id, el) => {
+        const $el = $(el);
+        $el.attr('target', '_blank');
+    });
 }
 
 function frenchTypo() {

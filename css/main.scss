@@ -65,6 +65,11 @@
     }
 }
 
+a[target="_blank"]::after {
+    content: '\a0\2197';
+    font-size: .8em;
+}
+
 a[id^="fnref"] {
     margin: 0 .25em;
 }

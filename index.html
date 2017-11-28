@@ -75,10 +75,9 @@
 </li>
 <li><a href="#systèmes-décriture-algorithmique">Systèmes d’écriture algorithmique</a>
 <ul>
-<li><a href="#lignes-de-code-règles-et-conventions">Lignes de code (règles et conventions)</a></li>
-<li><a href="#organigrammes">Organigrammes</a></li>
-<li><a href="#représentation-visuelle">Représentation visuelle</a></li>
-<li><a href="#modifier-lexistant">Modifier l’existant</a></li>
+<li><a href="#environnements-de-développement-et-workflow">Environnements de développement et workflow</a></li>
+<li><a href="#lignes-de-code-règles-et-conventions">Lignes de code, règles et conventions</a></li>
+<li><a href="#programmation-visuelle">Programmation visuelle</a></li>
 </ul>
 </li>
 </ul>
@@ -304,29 +303,46 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 <li>la programmation <em>déclarative</em> qui consiste à déclarer les données du problème, puis à le faire résoudre par le programme ;</li>
 <li>et bien d’autres familles encore. On remarquera que certains langages mêlent plusieurs paradigmes : le JavaScript par exemple, créé en 1995 et aujourd’hui un des plus présents notamment sur le web, est multi-paradigme : il est à la fois orienté objet, impératif et déclaratif.</li>
 </ul>
-<p>Je m’attarde sur deux types de langages qui me semblent se démarquer des langages de programmation “classiques”, les plus populaires de nos jours étant JavaScript, Python, Ruby, Java, PHP, C++, etc. – d’après une étude<sup class="footnote-ref"><a href="#fn44" id="fnref44">44</a></sup> menée par la plateforme de développement collaboratif GitHub<sup class="footnote-ref"><a href="#fn45" id="fnref45">45</a></sup>. À l’inverse, il existe une façon de décrire un algorithme dans un langage naturel, sans faire référence à un langage de programmation particulier : il s’agit du <em>pseudo-code</em>. Sans réelle règle ou convention établie, l’écriture en pseudo-code permet de mesurer la difficulté de la conception d’un algorithme, et ainsi d’anticiper une structure flexible et adaptée au développement réel qui a lieu dans un second temps.</p>
+<p><code>@TODO</code> : exemple code (js)</p>
+<p>Je m’attarde sur deux types de langages qui me semblent se démarquer des langages de programmation “classiques”, les plus populaires de nos jours étant JavaScript, Python, Ruby, Java, PHP ou encore C++, d’après une étude<sup class="footnote-ref"><a href="#fn44" id="fnref44">44</a></sup> menée par la plateforme de développement collaboratif GitHub<sup class="footnote-ref"><a href="#fn45" id="fnref45">45</a></sup>. À l’inverse, il existe une façon de décrire un algorithme dans un langage naturel, sans faire référence à un langage de programmation particulier : il s’agit du <em>pseudo-code</em>. Sans réelle règle ou convention établie, l’écriture en pseudo-code permet de mesurer la difficulté de la conception d’un algorithme, et ainsi d’anticiper une structure flexible et adaptée au développement réel qui a lieu dans un second temps.</p>
 <p><code>@TODO</code> : exemple pseudo-code</p>
-<p>langages ésotériques</p>
+<p>Une autre catégorie de langage qui questionne les limites des langages de programmation est celle des langages dits “ésotériques”, parfois appelés langages <em>exotiques</em> – <em>esoteric languages</em> en anglais, ou <em>esolangs</em> dans la forme contractée. Le terme “ésotérique” désigne une forme d’enseignement secret ou hermétique, réservé à des initiés. En effet, qu’ils se présentent comme des œuvres logicielles, des exercices intellectuels ou même de simples plaisanteries<sup class="footnote-ref"><a href="#fn46" id="fnref46">46</a></sup>, ces langages nécessitent une certaine maîtrise antérieure des langages de programmation classiques pour être compris, voire manipulés. Parmi les plus connus se trouve le <em>Brainfuck</em> – et sa variante <em>JSFuck</em>, basée sur le langage JavaScript valide, c’est-à-dire exécutable. En n’employant que 8 caractères distincts – 6 pour le <em>JSFuck</em> –, ce langage amène à produire du code particulièrement <em>obfusqué</em>.<sup class="footnote-ref"><a href="#fn47" id="fnref47">47</a></sup> Un autre exemple particulièrement intéressant d’<em>esolang</em> est le Piet, nommé d’après le célèbre peintre néerlandais Piet Mondrian. Ce langage n’est pas textuel mais graphique : les programmes prennent la forme d’images semblables à de l’art abstrait – librement inspiré des travaux du peintre éponyme.</p>
+<p><code>@TODO</code> : “Hello world” Brainfuck + Piet</p>
 <p><cite>3:36–41</cite></p>
+<p>Dans la suite de cet exposé, je reviens à des langages plus classiques, afin d’étudier les systèmes d’écriture les plus couramment utilisés pour produire des programmes.</p>
 <h2 id="systèmes-décriture-algorithmique">Systèmes d’écriture algorithmique</h2>
-<h3 id="lignes-de-code-règles-et-conventions">Lignes de code (règles et conventions)</h3>
+<h3 id="environnements-de-développement-et-workflow">Environnements de développement et <em>workflow</em></h3>
+<p>On parle “d’environnement de développement” ou d’<abbr title="Integrated development environment">IDE</abbr> pour désigner l’ensemble des outils employés par un programmeur pour développer un programme informatique. Un IDE est généralement un logiciel dont l’interface propose un ensemble d’outils et de fonctions : le plus généralement, on trouve un éditeur de texte où le programmeur saisit des lignes de codes. Celui-ci est généralement accompagné d’un débugger – pour débusquer et corriger les <em>bugs</em> – ou encore, si le langage l’implique, d’un compilateur – utilisé pour “traduire” le langage de programmation en <em>langage machine</em>, c’est-à-dire en instructions exécutables par l’ordinateur. Le choix de tel ou tel logiciel de programmation – de tel ou tel environnement – dépend généralement du langage utilisé dans le cadre d’un projet, ainsi que des goûts personnels du développeur. Certains outils, ayant une communauté plus active, se développent particulièrement grâce à la contribution collective – lorsque le logiciel est <em>open-source</em> – tandis que d’autres tombent en désuétude, les années passant et les technologies évoluant en conséquence.</p>
+<p><code>@TODO</code> : screen d’un IDE</p>
+<p>Les méthodes de travail d’un développeur sont souvent bien huilées. On parle de <em>workflow</em> – “flux de travaux” – pour désigner les méthodes d’organisation systématiques qu’il applique afin de fluidifier le processus de programmation et de se prévenir de complications diverses – notamment lorsque d’importantes quantités de données sont manipulées, et que l’erreur humaine peut intervenir à tout moment. Une des solutions les plus couramment appliquées de nos jours et la gestion de version – le <em>versionning</em> en anglais. J’ai déjà mentionné le logiciel <em>git</em>, qui permet d’enregistrer des points clés dans l’avancement d’un projet numérique. Pour comprendre la valeur de cette méthode, il faut noter la nature spécifique de l’écriture algorithmique – écriture au sens large de conception et représentation, pas seulement textuelle. À l’image de l’étudiant – ou de l’auteur récompensé – qui écrit un paragraphe d’un écrit, revient en arrière, effectue des modifications le lendemain, réorganise son plan et finit par rayer des parties, le développeur fait preuve d’une écriture non linéaire. Les projets prenant généralement plusieurs semaines voire plusieurs mois, l’emploi d’un système de gestion de versions semble particulièrement pertinent.</p>
+<p><code>@TODO</code> : image diff</p>
+<h3 id="lignes-de-code-règles-et-conventions">Lignes de code, règles et conventions</h3>
+<p>C’est la forme la plus connue et la plus employée. La quasi-intégralité des produits numériques, logiciels et autres applications que nous utilisons aujourd’hui ont été développés dans un éditeur de texte, ligne par ligne, symbole par symbole.  Les langages de programmation emploient une syntaxe – autrement dit un ensemble de contraintes qui régissent la combinaison des symboles – qu’il convient de respecter pour assurer la bonne exécution du programme. Sinon, le compilateur rencontrera une anormalité et le débugger (ou la <em>console</em>) va afficher un message d’erreur.</p>
+<p>Afin de faciliter la lisibilité du code, un certain nombre de principes graphiques sont utilisés. Par exemple, l’<em>indentation</em> consiste à ajouter des espaces – ou des <em>tabulations</em> – en début de chaque ligne de code de façon à structurer visuellement l’ensemble du programme. Dans la plupart des langages, les espaces vides sont ignorés lors de l’interprétation par la machine, ils sont donc utilisés selon la convenance pour faciliter la lecture. À l’inverse, dans certains langages – comme le Python –, cette structuration est essentielle car elle définit le fonctionnement même du programme, il n’est donc pas ici question uniquement de style ou de clarté. Un autre principe graphique employé pour la lisibilité : la coloration syntaxique (ou <em>syntax highlighting</em> en anglais), qui formate automatiquement les éléments du texte – notamment par le changement de couleur mais parfois aussi de typographie – afin d’en simplifier la lecture. Ce système répond d’ailleurs à un problème énoncé par François Dagognet : <code>@TODO</code> ref.</p>
+<p>Enfin, les développeurs utilisent de nombreuses conventions, couches supplémentaires permettant d’assurer une compréhension universelle du code de chacun. Voici quelques exemples de conventions :</p>
 <ul>
-<li>syntaxe (<a href="https://en.wikipedia.org/wiki/Syntax_(programming_languages)">https://en.wikipedia.org/wiki/Syntax_(programming_languages)</a></li>
-<li>conventions de nommage (camelCase, snake_case…)</li>
-<li>lisibilité (indentation, syntax highlighting…)</li>
+<li>les commentaires, exprimés en langage naturel (souvent en anglais), qui servent à clarifier le fonctionnement du programme à un endroit précis auprès de potentiels futurs lecteurs ;</li>
+<li>l’indentation, comme expliqué plus haut, dont on définit les points de retours à la ligne ou le nombre d’espaces ;</li>
+<li>la longueur des lignes, pour garantir un affichage de l’ensemble du code dans un éditeur de texte – du moins sur la largeur ;</li>
+<li>le nommage des variables, notamment sur la façon de <em>concaténer</em> – mettre bout à bout plusieurs chaînes de caractères – des intitulés. On parle notamment de <em>casse</em>, c’est-à-dire de l’usage des lettres capitales pour assurer la lisibilité d’un mot-valise ;</li>
+<li>et d’autres encore, liées au “bonnes pratiques” et principes divers qui permettent l’intelligibilité, l’efficacité, la flexibilité ou encore la sécurité d’un programme.</li>
 </ul>
-<h3 id="organigrammes">Organigrammes</h3>
+<pre class=" language-javascript"><code class="prism  language-javascript"><span class="token comment" spellcheck="true">/* Ceci est un exemple de programme simple dans le langage
+JavaScript. Ces trois lignes sont des commentaires, ils ne
+sont pas pris en compte dans l'exécution du script. */</span>
+
+<span class="token keyword">var</span> text <span class="token operator">=</span> <span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/* Ici, on attribue une valeur (dans ce cas une chaîne de
+caractères) à une variable nommée "text". */</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/* Cette fonction permet d'afficher une variable dans la
+console (par exemple celle d'un navigateur web). */</span>
+</code></pre>
+<h3 id="programmation-visuelle">Programmation visuelle</h3>
 <ul>
-<li>flowcharts</li>
-</ul>
-<h3 id="représentation-visuelle">Représentation visuelle</h3>
-<ul>
+<li>Flowcharts</li>
 <li>Scratch</li>
-</ul>
-<h3 id="modifier-lexistant">Modifier l’existant</h3>
-<ul>
-<li>refactoring</li>
-<li>versionning (git, commits, diff…)</li>
 </ul>
 <h1 id="algorithmes-et-design">Algorithmes et design</h1>
 <h2 id="la-place-du-designer">La place du designer</h2>
@@ -449,6 +465,10 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn9
 <li id="fn44" class="footnote-item"><p><a href="https://octoverse.github.com/">GitHub Octoverse 2017</a> <a href="#fnref44" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn45" class="footnote-item"><p>GitHub est une plateforme d’hébergement de gestion de versions collaborative. Basé sur le logiciel <em>git</em>, qui permet d’enregistrer des versions de son travail à différentes étapes de l’avancement du projet, GitHub est communautaire et chacun peut dupliquer le code d’autrui – si celui-ci est <em>ouvert</em>, ou <em>open-source</em> –, y apporter des modifications ou des remarques. <a href="#fnref45" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn46" class="footnote-item"><p>Le site <a href="http://esoteric.codes/">esoteric.codes</a> regroupe plusieurs exemples créatifs mettant en jeu des langages ésotériques. <a href="#fnref46" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn47" class="footnote-item"><p>En programmation, “obsfuquer” signifie rendre un programme illisible, en transformant notamment le nom des variables afin de rendre la structure globale de l’algorithme incompréhensible et inexploitable. <a href="#fnref47" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>

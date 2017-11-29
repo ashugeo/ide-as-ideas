@@ -73,6 +73,7 @@
 </li>
 </ul>
 </li>
+<li><a href="#bibliographie">Bibliographie</a></li>
 </ul>
 
     </div>
@@ -92,8 +93,8 @@
 </ul>
 <p>La présence croissante des algorithmes dans nos vies peut soulever des craintes – plus ou moins justifiées – et en font aujourd’hui un objet de débat politique. Dans ce contexte, on tend toutefois à oublier une caractéristique fondamentale : les algorithmes sont écrits par des êtres humains. Les programmes que nous utilisons au quotidien sont ou ont été développés par des développeurs, qui emploient des outils spécifiques à leur tâche. Ce sont ces outils qui forment le domaine d’étude précis de ce mémoire, avec – inévitablement – une approche de design, c’est-à-dire centrée sur les utilisateurs et les usages.<sup class="footnote-ref"><a href="#fn4" id="fnref4">4</a></sup></p>
 <p>J’aborde ce sujet en assumant une démarche très empirique : je fais partie de ces personnes qui doivent expérimenter pour comprendre. Compte tenu de la dimension relativement technique de l’écriture algorithmique, sa pratique constitue pour moi l’approche de recherche en design la plus adaptée à mon profil, et permet de concrétiser l’étude en proposant des solutions applicatives. Les contextes d’application et problématiques envisageables sont multiples : création artistique, apprentissage de la conception algorithmique, visualisation de l’immatériel, jeu avec la machine, etc. Les environnements qui questionnent ces pratiques sont le <em>creative coding</em><sup class="footnote-ref"><a href="#fn5" id="fnref5">5</a></sup>, le <em>live coding</em><sup class="footnote-ref"><a href="#fn6" id="fnref6">6</a></sup> et bien d’autres encore.</p>
-<p>S’il fallait citer en exemple un designer dont la pratique m’inspire – et fait écho avec ce mémoire –, il s’agirait sans doute de John Maeda. À la fois artiste, graphiste, enseignant et chercheur au MIT<sup class="footnote-ref"><a href="#fn7" id="fnref7">7</a></sup>, Maeda a acquis une renommée mondiale en tant que pionnier d’une discipline mêlant les arts plastiques, le design, la typographie et l’interactivité, avec pour outils récurrents l’ordinateur et la programmation. Le cœur de sa démarche est de créer les dispositifs avec lesquels il produit ensuite des œuvres, notamment graphiques. Comme l’écrit Paola Antonelli dans la préface de l’ouvrage de Maeda "<em>Design By Numbers</em>, “la partie la plus importante de sa production, et celle dont il est le plus fier, n’est pas l’objet final, mais plutôt le processus.” L’auteur italienne précise l’idée fondamentale de Maeda : “pour bien <em>designer</em> avec un ordinateur, il faut créer soi-même le programme que l’on utilise – ou à défaut, le comprendre”.<sup class="footnote-ref"><a href="#fn8" id="fnref8">8</a></sup></p>
-<p>Après avoir défini et illustré l’ensemble des notions mises en jeu par le sujet – algorithme, écriture, programmation, code –, j’essaierai de déterminer ce les différentes catégories d’interfaces d’écriture algorithmique permettent. Enfin, je m’appliquerai à questionner l’interface en soi, à travailler le <em>matériau</em> que devient l’écriture algorithmique.</p>
+<p>S’il fallait citer en exemple un designer dont la pratique m’inspire – et fait écho avec ce mémoire –, il s’agirait sans doute de John Maeda. À la fois artiste, graphiste, enseignant et chercheur au MIT<sup class="footnote-ref"><a href="#fn7" id="fnref7">7</a></sup>, Maeda a acquis une renommée mondiale en tant que pionnier d’une discipline mêlant les arts plastiques, le design, la typographie et l’interactivité, avec pour outils récurrents l’ordinateur et la programmation. Le cœur de sa démarche est de créer les dispositifs avec lesquels il produit ensuite des œuvres, notamment graphiques. Comme l’écrit Paola Antonelli dans la préface de l’ouvrage de Maeda "<em>Design By Numbers</em>, “la partie la plus importante de sa production, et celle dont il est le plus fier, n’est pas l’objet final, mais plutôt le processus.” L’auteure italienne précise l’idée fondamentale de Maeda : “pour bien <em>designer</em> avec un ordinateur, il faut créer soi-même le programme que l’on utilise – ou à défaut, le comprendre”.<sup class="footnote-ref"><a href="#fn8" id="fnref8">8</a></sup></p>
+<p>Après avoir défini et illustré l’ensemble des notions mises en jeu par le sujet – algorithme, écriture, programmation, code –, j’essaierai de déterminer ce que les différentes catégories d’interfaces d’écriture algorithmique permettent. Enfin, je m’appliquerai à questionner l’interface en soi, à travailler le <em>matériau</em> que devient l’écriture algorithmique.</p>
 <h1 id="algorithmes">Algorithmes</h1>
 <h2 id="quest-ce-quun-algorithme-">Qu’est-ce qu’un algorithme ?</h2>
 <h3 id="instructions-et-résultat">Instructions et résultat</h3>
@@ -170,8 +171,8 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn1
 </ul>
 <h3 id="condition">Condition</h3>
 <p>Enfin, la condition, ou <em>test conditionnel</em>, permet d’effectuer ou non une instruction – ou série d’instructions – selon la valeur d’une variable donnée : par exemple, “si <em>ceci</em> est vrai, faire <em>cela</em>”. On appelle généralement <em>expression conditionnel</em> le schéma “si, alors, sinon” (<em>if, then, else</em>). De plus, on trouve parfois dans ces structures un nombre plus ou moins important d’expressions du type <em>sinon si</em> (<em>else if</em>), qui permettent des conditions imbriquées. Ici encore, cette notion est extrêmement importante, en cela qu’elle permet à un algorithme de prendre des chemins différents, de s’adapter à la complexité éclectique des données réelles qui lui sont fournies, et ainsi d’être plus polyvalent.</p>
-<p><img src="img/keep-talking.png" alt="Image issue du manuel du jeu Keep Talking And Nobody Explodes">
-<em>Exemple d’expressions conditionnelles successives, issu du manuel du jeu vidéo Keep Talking And Nobody Explodes</em></p>
+<p><img src="img/keep-talking.png" alt="Image issue du manuel du jeu &quot;Keep Talking And Nobody Explodes&quot;">
+<em>Exemple d’expressions conditionnelles successives, issu du manuel du jeu vidéo “Keep Talking And Nobody Explodes”</em></p>
 <h1 id="écritures-algorithmiques">Écritures algorithmiques</h1>
 <h2 id="quest-ce-que-lécriture-">Qu’est-ce que l’écriture ?</h2>
 <h3 id="écriture-et-langage">Écriture et langage</h3>
@@ -195,13 +196,13 @@ trois types d’imprimantes sont prévus.<sup class="footnote-ref"><a href="#fn1
 <blockquote>
 <p>Tout a changé dans la pensée occidentale de l’écrit avec le <em>Coup de Dés</em> de Mallarmé. Pour la première fois de leur histoire, les héritiers de l’alphabet que nous sommes ont pris conscience du fait qu’ils ne disposaient pas simplement, avec ces quelques signes, d’un moyen plus ou moins commode de transcrire graphiquement leur parole mais d’un instrument complexe, double, auquel il suffisait de réintégrer la part visuelle – spatiale – dont il avait été privé pour lui restituer sa plénitude active d’écriture. Les premières tentatives faites en ce sens au Moyen Âge […] étaient demeurées sans suite : notre culture foncièrement orale en avait aisément éliminé la formule, d’autant que la reproduction était coûteuse, très peu de temps après l’apparition de l’imprimerie.<sup class="footnote-ref"><a href="#fn35" id="fnref35">35</a></sup></p>
 </blockquote>
-<p><img src="img/mallarme.png" alt="Extrait du &quot;Coup de dés&quot; de Mallarmé">
-<em>Extrait du “Coup de dés” de Mallarmé</em></p>
+<p><img src="img/mallarme.png" alt="Extrait du &quot;Coup de Dés&quot; de Mallarmé">
+<em>Extrait du “Coup de Dés” de Mallarmé</em></p>
 <p>Dans la même idée de mise en espace des lettres, le poète français Guillaume Apollinaire publie en 1918 un ouvrage intitulé “<em>Calligrammes</em>”, terme qu’il invente à partir de la contraction de <em>calligraphie</em> – l’art graphique du dessin de caractères – et d’<em>idéogramme</em>. Cette forme particulière de poésie est parfois nommée “poésie graphique”.</p>
 <p><img src="img/calligramme-apollinaire.png" alt="Calligramme &quot;Il Pleut&quot; d'Apollinaire">
 <em>Calligramme “Il Pleut” d’Apollinaire</em></p>
 <p>On notera que François Dagognet classe le travail d’Apollinaire dans une catégorie qu’il intitule “<em>iconographies ordinatrices et inventives</em>”. Celle-ci est constitué de productions graphiques et littéraires qui font usage de <em>métaboles</em>, qu’il emprunte au groupe µ<sup class="footnote-ref"><a href="#fn36" id="fnref36">36</a></sup> dans son ouvrage “<em>Réthorique Générale</em>” : un métabole désigne tout espèce de changement du langage.<sup class="footnote-ref"><a href="#fn37" id="fnref37">37</a></sup></p>
-<p><ins>On reportant ces distinctions au champ des algorithmes, on pourrait facilement s’interroger sur la forme que pourrait prendre une “écriture alternative” d’un algorithme, comme par exemple une écriture <em>poétique</em>. Le livre “<em>./code --poetry</em>” de Daniel Holden et Chris Kerr, ainsi que le site web associé<sup class="footnote-ref"><a href="#fn38" id="fnref38">38</a></sup> présentent des exemples de programmes s’affranchissant des conventions habituelles (voir la partie “<em><a href="#lignes-de-code-r%C3%A8gles-et-conventions">Lignes de code, règles et conventions</a></em>”) et dont le résultat est essentiellement esthétique : en résumé, du <em>code poétique</em>.
+<p><ins>En reportant ces distinctions au champ des algorithmes, on pourrait facilement s’interroger sur la forme que pourrait prendre une “écriture alternative” d’un algorithme, comme par exemple une écriture <em>poétique</em>. Le livre “<em>./code --poetry</em>” de Daniel Holden et Chris Kerr, ainsi que le site web associé<sup class="footnote-ref"><a href="#fn38" id="fnref38">38</a></sup> présentent des exemples de programmes s’affranchissant des conventions habituelles (voir la partie “<em><a href="#lignes-de-code-r%C3%A8gles-et-conventions">Lignes de code, règles et conventions</a></em>”) et dont le résultat est essentiellement esthétique : en résumé, du <em>code poétique</em>.
 <img src="img/code-poetry.png" alt="Flocking.go, un programme poétique animé dans le langage Go">
 <em><a href="http://code-poetry.com/flocking">Flocking.go</a>, un programme poétique animé dans le langage Go</em>
 </ins></p>
@@ -313,6 +314,15 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <em>Pattern Matrix, un langage de programmation tangible</em>
 </ins></p>
 <p>Ces expérimentations sont des opportunités. En prenant du recul sur la démarche d’écriture algorithmique afin de la mettre en crise, je souhaite en pointer d’autres, et par la suite discerner des pistes d’applications concrètes, notamment créatives.</p>
+<h1 id="bibliographie">Bibliographie</h1>
+<p><cite>1</cite></p>
+<p><cite>2</cite></p>
+<p><cite>3</cite></p>
+<p><cite>6</cite></p>
+<p><cite>7</cite></p>
+<p><cite>8</cite></p>
+<p><cite>9</cite></p>
+<p><cite>10</cite></p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">

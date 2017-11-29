@@ -45,5 +45,17 @@
         "author": "Anne-Marie Christin",
         "year": 1995,
         "editor": "Flammarion"
+    },
+    "9": {
+        "title": "Les trois écritures – Langue, nombre, code",
+        "author": "Clarisse Herrenschmidt",
+        "year": 2007,
+        "editor": "Gallimard"
+    },
+    "10": {
+        "title": "Design By Numbers",
+        "author": "John Maeda",
+        "year": 2001,
+        "editor": "MIT Press"
     }
 }

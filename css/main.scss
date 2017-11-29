@@ -86,4 +86,14 @@ ins {
     padding: 2em;
     background-color: hsl(210, 70%, 95%);
     color: hsl(210, 50%, 35%);
+
+    img {
+        margin-top: 1em;
+        mix-blend-mode: luminosity;
+
+        + em {
+            display: block;
+            text-align: center;
+        }
+    }
 }

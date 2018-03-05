@@ -15,6 +15,29 @@ $(document).ready(() => {
     });
 });
 
+$(document).on('click', 'a', (e) => {
+    const $el = $(e.currentTarget);
+
+    if ($el.attr('id') && $el.attr('id').indexOf('fnref') > -1) {
+        return false;
+    } else if ($el.hasClass('footnote-backref')) {
+        return false;
+    }
+});
+
+$(document).on('mouseover', 'a', (e) => {
+    const $el = $(e.currentTarget);
+
+    if ($el.attr('id') && $el.attr('id').indexOf('fnref') > -1) {
+        const note = $el.attr('id').replace('fnref', '');
+        $('#fn' + note).addClass('visible');
+    }
+});
+
+$(document).on('mouseleave', 'a', (e) => {
+    $('.sidenote').removeClass('visible');
+});
+
 function references() {
     // Parse references
     $('cite').each((id, el) => {
@@ -106,4 +129,7 @@ function frenchTypo() {
 
     // No orphan colon (' : ')
     document.body.innerHTML = document.body.innerHTML.replace(/ :/g, '&nbsp;:');
+
+    // No orphan semicolon (' ;')
+    document.body.innerHTML = document.body.innerHTML.replace(/ ;/g, '&nbsp;;');
 }

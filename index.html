@@ -86,16 +86,16 @@
 <ul>
 <li><a href="#pratiques-singulières">Pratiques singulières</a>
 <ul>
-<li><a href="#des-langages-hors-du-commun">Des langages hors du commun</a></li>
-<li><a href="#programmation-visuelle-1">Programmation visuelle</a></li>
-<li><a href="#programmation-tangible">Programmation tangible</a></li>
+<li><a href="#langages-ésotériques">Langages ésotériques</a></li>
+<li><a href="#esthétiques--beau-code-art-génératif-et-software-art">Esthétiques : beau code, art génératif et software art</a></li>
+<li><a href="#programmation-tangible--la-réflexion-par-la-main">Programmation tangible : la réflexion par la main</a></li>
 </ul>
 </li>
 <li><a href="#modes-de-représentations">Modes de représentations</a>
 <ul>
+<li><a href="#représenter-visuellement-les-algorithmes">Représenter visuellement les algorithmes</a></li>
 <li><a href="#représenter-au-sein-de-lide">Représenter au sein de l’IDE</a></li>
 <li><a href="#manipuler-au-sein-de-lide">Manipuler au sein de l’IDE</a></li>
-<li><a href="#représenter-visuellement-les-algorithmes">Représenter visuellement les algorithmes</a></li>
 </ul>
 </li>
 <li><a href="#deux-typologies-doutils">Deux typologies d’outils</a>
@@ -106,16 +106,16 @@
 </li>
 </ul>
 </li>
-<li><a href="#conclusion">Conclusion</a>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#bibliographie">Bibliographie</a>
 <ul>
 <li>
 <ul>
-<li><a href="#état-de-lart-bilan">État de l’art bilan</a></li>
+<li><a href="#état-de-lart">État de l’art</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#bibliographie">Bibliographie</a></li>
 </ul>
 
     </div>
@@ -250,7 +250,7 @@
 <p>Dans la même idée de mise en espace des lettres, le poète français Guillaume Apollinaire publie en 1918 un ouvrage intitulé “<em>Calligrammes</em>”, terme qu’il invente à partir de la contraction de <em>calligraphie</em> – l’art graphique du dessin de caractères – et d’<em>idéogramme</em>. Cette forme particulière de poésie est parfois nommée “poésie graphique”.</p>
 <p><img src="img/calligramme-apollinaire.png" alt="Calligramme &quot;Il Pleut&quot; d'Apollinaire"></p>
 <p>On notera que François Dagognet classe le travail d’Apollinaire dans une catégorie qu’il intitule “<em>iconographies ordinatrices et inventives</em>”. Celle-ci est constitué de productions graphiques et littéraires qui font usage de <em>métaboles</em>, qu’il emprunte au groupe µ<sup class="footnote-ref"><a href="#fn38" id="fnref38">38</a></sup> dans son ouvrage “<em>Réthorique Générale</em>” : un métabole désigne tout espèce de changement du langage.<sup class="footnote-ref"><a href="#fn39" id="fnref39">39</a></sup> Comme dans beaucoup de pratiques créatives, la nouveauté passe donc par le changement, l’émancipation des artistes vis-à-vis des formes ordinaires, au profit de formes nouvelles, alternatives.</p>
-<p><ins><strong>En reportant ces distinctions au champ des algorithmes, on pourrait facilement s’interroger sur la forme que pourrait prendre une “écriture alternative” d’un algorithme, comme par exemple une écriture <em>poétique</em>.</strong> Le livre “<em>./code --poetry</em>” de Daniel Holden et Chris Kerr, ainsi que le site web associé<sup class="footnote-ref"><a href="#fn40" id="fnref40">40</a></sup> présentent des exemples de programmes s’affranchissant des conventions habituelles (voir la partie “<em><a href="#lignes-de-code-r%C3%A8gles-et-conventions">Lignes de code, règles et conventions</a></em>”) et dont le résultat est essentiellement esthétique : en résumé, du <em>code poétique</em>.<br>
+<p><ins><strong>En reportant ces distinctions au champ des algorithmes, on pourrait facilement s’interroger sur la forme que pourrait prendre une “écriture alternative” d’un algorithme, comme par exemple une écriture <em>poétique</em>.</strong> Le livre “<em>./code --poetry</em>” de Daniel Holden et Chris Kerr, ainsi que le site web associé<sup class="footnote-ref"><a href="#fn40" id="fnref40">40</a></sup> présentent des exemples de programmes s’affranchissant des conventions habituelles (voir la partie “<a href="#lignes-de-code-r%C3%A8gles-et-conventions"><em>Lignes de code, règles et conventions</em></a>”) et dont le résultat est essentiellement esthétique : en résumé, du “code poétique” qui ouvre la voie à une <em>littérature algorithmique</em>.<br>
 <img src="img/code-poetry.png" alt="Flocking.go, un programme poétique animé dans le langage Go"><em><a href="http://code-poetry.com/flocking">Flocking.go</a>, un programme poétique animé dans le langage Go</em><br>
 </ins></p>
 <h2 id="lécriture-algorithmique">L’écriture algorithmique</h2>
@@ -323,7 +323,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token comment">/* Cette fonction permet d'afficher une variable dans la console (par exemple celle d'un navigateur web). */</span>
 </code></pre>
 <h2 id="outils-décriture-algorithmique">Outils d’écriture algorithmique</h2>
-<p>Comment les outils conditionnent le travail (approche/éloigne)</p>
+<p>Il existent différents outils employés dans les processus de conception algorithmique. Ceux-ci présentent des points communs et des différences, et tous conditionnent le travail de programmation d’une manière qui leur est propre. Quelles sont ces outils, ces interfaces, et quel est leur impact sur la pratique de l’usager ?</p>
 <h3 id="ide-et-éditeurs-de-texte">IDE et éditeurs de texte</h3>
 <p>On parle “d’environnement de développement” ou d’<abbr title="Integrated development environment">IDE</abbr> pour désigner l’ensemble des outils employés par un programmeur pour développer un programme informatique. Un IDE est généralement un logiciel dont l’interface propose un ensemble d’outils et de fonctions : le plus généralement, on trouve un éditeur de texte où le programmeur saisit des lignes de codes. Celui-ci est généralement accompagné d’un débugger – pour débusquer et corriger les <em>bugs</em> – ou encore, si le langage l’implique, d’un compilateur – utilisé pour “traduire” le langage de programmation en <em>langage machine</em>, c’est-à-dire en instructions exécutables par l’ordinateur. Le choix de tel ou tel logiciel de programmation – de tel ou tel environnement – dépend généralement du langage utilisé dans le cadre d’un projet, ainsi que des goûts personnels du développeur. Certains outils, ayant une communauté plus active, se développent particulièrement grâce à la contribution collective – lorsque le logiciel est <em>open-source</em> – tandis que d’autres tombent en désuétude, les années passant et les technologies évoluant en conséquence.</p>
 <p>La définition stricte d’IDE désigne donc ces outils composés, multiples, et les oppose aux simples “éditeurs de texte”. Un éditeur de texte – <em>text editor</em> en anglais – est un programme permettant l’écriture ou la modification de texte <em>brut</em>, c’est-à-dire dénué de mise en forme : ces logiciels utilisent souvent une typographie monochasse, permettant l’alignement vertical des caractères et favorisant ainsi la lisibilité du code. Les fonctions les plus courantes sont le copier/coller, la recherche et remplacement, la coloration syntaxique, etc. Par abus de langage, ces éditeurs de texte sont généralement inclus dans la définition au sens large d’IDE, à juste titre : ils font bel et bien partie de l’environnement de développement du programmeur.</p>
@@ -343,15 +343,25 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <h1 id="modes-singuliers-de-programmation-algorithmique">Modes singuliers de programmation algorithmique</h1>
 <p>Lorsqu’un designer utilise la programmation dans une recherche d’innovation formelle, il adopte une démarche créative qui transcende le matériau qu’est l’écriture algorithmique : le créatif a une pratique singulière du code, ses outils doivent donc être adaptés à cet usage, voire le favoriser.</p>
 <h2 id="pratiques-singulières">Pratiques singulières</h2>
-<h3 id="des-langages-hors-du-commun">Des langages hors du commun</h3>
-<h3 id="programmation-visuelle-1">Programmation visuelle</h3>
-<h3 id="programmation-tangible">Programmation tangible</h3>
+<h3 id="langages-ésotériques">Langages ésotériques</h3>
+<p>Langages ésotériques</p>
+<p>Ccl : l’algorithme pas seulement outil, mais également œuvre (+ notion “beau” code ?)</p>
+<h3 id="esthétiques--beau-code-art-génératif-et-software-art">Esthétiques : beau code, art génératif et software art</h3>
+<h3 id="programmation-tangible--la-réflexion-par-la-main">Programmation tangible : la réflexion par la main</h3>
 <p>En 2017, le collectif d’arts numériques transdisciplinaire <em>[foam]</em> travaille sur un langage de programmation tangible, avec une installation intitulée “<em>Pattern Matrix</em>”. Le langage a littéralement été créé de toutes pièces : on opère l’installation en tournant une série de “jetons” qui cachent des senseurs magnétiques. Des informations visuelles sont superposées grâce à la <em>réalité augmentée</em>. Un premier essai du dispositif a été fait dans le cadre d’une performance musicale live à Brighton.<sup class="footnote-ref"><a href="#fn60" id="fnref60">60</a></sup><br>
 <img src="img/pattern-matrix.png" alt="Pattern Matrix, un langage de programmation tangible"><em>Pattern Matrix, un langage de programmation tangible</em></p>
 <p>Dynamicland</p>
 <p><ins>Expé manipulation tactile</ins></p>
+<p>Ccl : on ne pense pas pareil avec un interaction tangible</p>
 <h2 id="modes-de-représentations">Modes de représentations</h2>
 <p><strong>Les différents modes de représentation des algorithmes permettent donc de s’emparer de la programmation comme matière.</strong> Quels écarts de perception existent entre la lecture d’un algorithme au sein d’un éditeur de texte, la visualisation de sa transcription visuelle, ou encore la manipulation, simulée ou tangible, de celui-ci ? En quoi l’attitude du créatif varie-t-elle selon ces cas ?</p>
+<h3 id="représenter-visuellement-les-algorithmes">Représenter visuellement les algorithmes</h3>
+<p><a href="https://github.com/tayllan/awesome-algorithms">https://github.com/tayllan/awesome-algorithms</a><br>
+<a href="http://bost.ocks.org/mike/algorithms/">bost.ocks.org/mike/algorithms/</a></p>
+<p>Ccl :</p>
+<blockquote>
+<p><strong>People understand what they can see.</strong>  If a programmer cannot see what a program is doing, she can’t understand it.</p>
+</blockquote>
 <h3 id="représenter-au-sein-de-lide">Représenter au sein de l’IDE</h3>
 <p><strong>Dans une conférence donnée au <abbr title="The Canadian University Software Engineering Conference">CUSEC</abbr> de 2012, Bret Victor<sup class="footnote-ref"><a href="#fn61" id="fnref61">61</a></sup> explique la notion du délai, qui, dans un processus créatif, sépare l’apparition d’une idée et sa matérialisation.</strong></p>
 <blockquote>
@@ -364,19 +374,16 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p>Bret Victor dénonce ici ce que l’on pourrait qualifier de “niveau zéro” de la créativité algorithmique : lorsque la conception et la réalisation d’une œuvre implique de passer constamment du code au résultat – par exemple de l’éditeur de texte à l’explorateur dans lequel s’exécute le dessin –, la créativité en est fortement diminuée. Le designer propose donc une interface binaire, scindée verticalement : à gauche le résultat, à droite l’éditeur de texte avec le programme. Lorsqu’on modifie une ligne ou une valeur dans le code, le résultat est directement visible – en cela, sa proposition ressemble beaucoup à Processing. L’expérience de la programmation est améliorée, facilitée : on est au “niveau un”. Un autre exemple pourrait être celui de la superposition du code et du résultat, comme le propose le <em>framework</em><sup class="footnote-ref"><a href="#fn63" id="fnref63">63</a></sup> <a href="https://github.com/fand/vedajs">VedaJS</a> pour la création de <em>shaders</em> – images de synthèse simulant graphiquement de la lumière, des textures et des animations.</p>
 <h3 id="manipuler-au-sein-de-lide">Manipuler au sein de l’IDE</h3>
 <p>Mais Bret Victor va plus loin que la simple juxtaposition du programme et du résultat produit. Pour simplifier l’édition des valeurs – notamment chiffrées – utilisées dans un algorithme, il propose un nouveau type d’interaction : au lieu de devoir effacer des caractères pour les remplacer, chaque valeur devient <em>draggable</em> – on peut cliquer et déplacer la souris en maintenant le clic appuyé, et c’est ce geste qui permet de faire évoluer ces variables. Sur un dessin représentant un arbre, cette interaction appliquée à une variable liée au positionnement des feuilles permet de révéler une opportunité d’animation : en faisant varier en continu une valeur, les feuilles semblent s’agiter comme si le vent soufflait, et Bret Victor souligne l’apparition d’un nouveau champ de possibles créatifs : “comment aurais-je découvert cela si j’avais dû compiler et exécuter le code entre chaque changement ?”.</p>
-<p>Bret Victor propose énormément d’autre interventions au sein d’outils de programmation dans un essai intitulé “<em>Learnable Programming</em>”<sup class="footnote-ref"><a href="#fn64" id="fnref64">64</a></sup>, ponctué d’expérimentations démonstratives. Il conçoit de nombreuses fonctionnalités et autant d’interactions liées.</p>
-  
- 
-
-<p>Ici, un <em>slider</em> permet d’explorer l’exécution du programme à chaque étape</p>
+<p>Bret Victor propose énormément d’autre interventions au sein d’outils de programmation dans un essai intitulé “<em>Learnable Programming</em>”<sup class="footnote-ref"><a href="#fn64" id="fnref64">64</a></sup>, ponctué d’expérimentations démonstratives. Il conçoit de nombreuses fonctionnalités et autant d’interactions liées :</p>
 <ul>
-<li>Voir l’évolution dans le temps du programme, via un tracé transparent symbolisant l’état d’un objet à chaque instant, ainsi qu’une <em>timeline</em> – frise chronologique – interactive</li>
-<li>Mettre en évidence les parties de l’algorithme liées à une zone précise du résultat en la pointant, et inversement</li>
-<li></li>
+<li>exploration de l’exécution du programme à chaque étape grâce à un <em>slider</em> ;</li>
+<li>visualisation de l’évolution dans le temps du programme, via un tracé transparent symbolisant l’état d’un objet à chaque instant, ainsi qu’une <em>timeline</em> – frise chronologique – interactive ;</li>
+<li>mise en évidence les parties de l’algorithme liées à une zone précise du résultat en la pointant, et inversement ;</li>
+<li>complétion automatique des expressions et fonctions fréquentes, avec valeurs par défaut, et accès rapide par des boutons ;</li>
+<li>création de fonctions intelligentes et mise en relations des variables par <em>drag and drop</em> – glisser-déposer ;</li>
+<li>et bien d’autres micro-interactions à découvrir dans son article illustré.</li>
 </ul>
-<h3 id="représenter-visuellement-les-algorithmes">Représenter visuellement les algorithmes</h3>
-<p><a href="https://github.com/tayllan/awesome-algorithms">https://github.com/tayllan/awesome-algorithms</a><br>
-<a href="http://bost.ocks.org/mike/algorithms/">bost.ocks.org/mike/algorithms/</a></p>
+<p>Ccl ?</p>
 <h2 id="deux-typologies-doutils">Deux typologies d’outils</h2>
 <p>Grille de lecture des typologies d’interfaces :</p>
 <ul>
@@ -388,7 +395,18 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <h3 id="loutil-se-rapprochant">L’outil se rapprochant</h3>
 <h3 id="loutil-séloignant">L’outil s’éloignant</h3>
 <h1 id="conclusion">Conclusion</h1>
-<h3 id="état-de-lart-bilan">État de l’art bilan</h3>
+<h1 id="bibliographie">Bibliographie</h1>
+<p><cite>1</cite></p>
+<p><cite>2</cite></p>
+<p><cite>3</cite></p>
+<p><cite>6</cite></p>
+<p><cite>7</cite></p>
+<p><cite>8</cite></p>
+<p><cite>9</cite></p>
+<p><cite>10</cite></p>
+<p><cite>11</cite></p>
+<p><cite>12</cite></p>
+<h3 id="état-de-lart">État de l’art</h3>
 <p>Distinguer catégories :</p>
 <ul>
 <li>Atom, Sublime text</li>
@@ -402,17 +420,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <li>etc.</li>
 </ul>
 <p>Critères : efficacité (shortcuts, auto-complétion…), personnalisation (plugins, “hackabilité”), flexibilité (un ou plusieurs langages), “manipulation” (déplacer, connecter), visualisation, objectif (développement/apprentissage/dessin…), etc.</p>
-<h1 id="bibliographie">Bibliographie</h1>
-<p><cite>1</cite></p>
-<p><cite>2</cite></p>
-<p><cite>3</cite></p>
-<p><cite>6</cite></p>
-<p><cite>7</cite></p>
-<p><cite>8</cite></p>
-<p><cite>9</cite></p>
-<p><cite>10</cite></p>
-<p><cite>11</cite></p>
-<p><cite>12</cite></p>
+<p>Trouver quelques exemples pertinents pour chaque aspect</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">

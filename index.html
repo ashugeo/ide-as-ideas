@@ -34,7 +34,7 @@
 </li>
 </ul>
 </li>
-<li><a href="#algorithmes">Algorithmes</a>
+<li><a href="#le-matériau-algorithme">Le matériau algorithme</a>
 <ul>
 <li><a href="#approche-technico-historique">Approche technico-historique</a>
 <ul>
@@ -55,16 +55,16 @@
 </li>
 </ul>
 </li>
-<li><a href="#écritures-algorithmiques">Écritures algorithmiques</a>
+<li><a href="#manipuler-le-matériau--lécriture-algorithmique">Manipuler le matériau : l’écriture algorithmique</a>
 <ul>
-<li><a href="#quest-ce-que-lécriture-">Qu’est-ce que l’écriture ?</a>
+<li><a href="#quest-ce-quécrire-">Qu’est-ce qu’écrire ?</a>
 <ul>
-<li><a href="#écriture-et-langage">Écriture et langage</a></li>
-<li><a href="#types-décritures">Types d’écritures</a></li>
-<li><a href="#littérature-algorithmique-et-écritures-alternatives">Littérature algorithmique et écritures alternatives</a></li>
+<li><a href="#écriture--le-langage-imagé">Écriture : le langage imagé</a></li>
+<li><a href="#écritures--3-typologies">Écritures : 3 typologies</a></li>
+<li><a href="#lécriture-émancipée">L’écriture émancipée</a></li>
 </ul>
 </li>
-<li><a href="#lécriture-informatique">L’écriture informatique</a>
+<li><a href="#lécriture-algorithmique">L’écriture algorithmique</a>
 <ul>
 <li><a href="#de-lalgorithme-au-programme">De l’algorithme au programme</a></li>
 <li><a href="#de-lordinateur-à-linformatique">De l’ordinateur à l’informatique</a></li>
@@ -84,10 +84,24 @@
 </li>
 <li><a href="#modes-singuliers-de-programmation-algorithmique">Modes singuliers de programmation algorithmique</a>
 <ul>
-<li>
+<li><a href="#pratiques-singulières">Pratiques singulières</a>
 <ul>
+<li><a href="#des-langages-hors-du-commun">Des langages hors du commun</a></li>
+<li><a href="#programmation-visuelle-1">Programmation visuelle</a></li>
 <li><a href="#programmation-tangible">Programmation tangible</a></li>
-<li><a href="#modes-de-représentation">Modes de représentation</a></li>
+</ul>
+</li>
+<li><a href="#modes-de-représentations">Modes de représentations</a>
+<ul>
+<li><a href="#représenter-au-sein-de-lide">Représenter au sein de l’IDE</a></li>
+<li><a href="#manipuler-au-sein-de-lide">Manipuler au sein de l’IDE</a></li>
+<li><a href="#représenter-visuellement-les-algorithmes">Représenter visuellement les algorithmes</a></li>
+</ul>
+</li>
+<li><a href="#deux-typologies-doutils">Deux typologies d’outils</a>
+<ul>
+<li><a href="#loutil-se-rapprochant">L’outil se rapprochant</a></li>
+<li><a href="#loutil-séloignant">L’outil s’éloignant</a></li>
 </ul>
 </li>
 </ul>
@@ -97,7 +111,6 @@
 <li>
 <ul>
 <li><a href="#état-de-lart-bilan">État de l’art bilan</a></li>
-<li><a href="#typologies-dinterfaces--se-rapprocher-séloigner">Typologies d’interfaces : se rapprocher, s’éloigner</a></li>
 </ul>
 </li>
 </ul>
@@ -150,8 +163,7 @@
 <p>Quels sont les outils qui constituent l’environnement technique du designer-codeur amateur, ou <em>bricodeur</em> ? Comment celui-ci interagit-il avec ces interfaces numériques ? Quels sont les cadres conventionnels de l’écriture du code, et quels autres cadres alternatifs, peuvent exister ? Et pour quels bénéfices ? Telles sont les questions qui structurent ce mémoire, qui s’inscrit dans la continuité des initiatives de Maeda et s’articule autour d’une question similaire : <strong>comment faciliter et encourager l’intégration de processus algorithmiques dans une pratique créative ?</strong></p>
 <p>Par ailleurs, la définition du terme “algorithme” donnée plus haut implique la notion d’<em>instruction</em>, dont la définition est double : il s’agit à la fois de l’action de disposer – mettre quelque chose dans une disposition en vue d’un résultat –, et, dans un sens métonymique, d’un discours indiquant <em>ce qui doit être fait</em>. Cette seconde vision, qui fait état de la <em>transmission</em> d’une information, implique une forme de langage : celui-ci peut prendre plusieurs formes, notamment l’écriture. <strong>J’étudierai donc les différentes formes que peut prendre l’écriture algorithmique.</strong></p>
 <p>Après avoir défini et illustré l’ensemble des notions mises en jeu par le sujet – algorithme et écriture algorithmique –, j’essaierai de déterminer quelle sont les différentes catégories d’interfaces d’écriture algorithmique et ce qu’elles permettent. Enfin, je m’appliquerai à questionner l’interface en soi, à travailler ce <em>matériau</em> que devient, dans cette conception, l’écriture algorithmique.</p>
-<h1 id="algorithmes">Algorithmes</h1>
-<p>Quelque chose qu’on peut utiliser, matière</p>
+<h1 id="le-matériau-algorithme">Le matériau algorithme</h1>
 <p>Je reviens à la première phrase de ce mémoire : “un algorithme est une séquence d’instructions qui vise à être exécutée afin de produire un résultat”. Dans cette définition générique s’inscrit une catégorie plus réduite d’algorithmes spécifiques, un ensemble que l’on nomme <em>algorithmes symboliques</em>. Par abus de langage, et en raison de notre contexte technologique contemporain, la notion d’algorithmes symboliques a presque remplacé celle, plus générique, d’algorithmes : l’informatique a orienté l’emploi même du mot. <strong>La spécificité des algorithmes symboliques est qu’ils manipulent des symboles écrits : chiffres, lettres, assemblés en nombres, en mots et en phrases, et vecteurs de sens.</strong><sup class="footnote-ref"><a href="#fn13" id="fnref13">13</a></sup></p>
 <p>Cette proximité entre les notions d’algorithmique et de mathématiques s’est confirmé grâce aux progrès techniques des deux siècles passés. Pour définir plus en détail la notion d’algorithme, j’ai donc choisi une approche chronologique : comment, et via quels progrès techniques, les algorithmes – symboliques – ont-ils évolué dans l’Histoire ? Cette question sera particulièrement traitée en focalisant sur les outils mis en œuvre au fil des époques.</p>
 <h2 id="approche-technico-historique">Approche technico-historique</h2>
@@ -208,10 +220,10 @@
 <h3 id="condition">Condition</h3>
 <p><strong>Enfin, la condition, ou <em>test conditionnel</em>, permet d’effectuer ou non une instruction – ou série d’instructions – selon la valeur d’une variable donnée : par exemple, “si <em>ceci</em> est vrai, faire <em>cela</em>”.</strong> On appelle généralement <em>expression conditionnelle</em> le schéma “si, alors, sinon” (<em>if, then, else</em>). De plus, on trouve parfois dans ces structures un nombre plus ou moins important d’expressions du type <em>sinon si</em> (<em>else if</em>), qui permettent des conditions imbriquées. Ici encore, cette notion est extrêmement importante, en cela qu’elle permet à un algorithme de prendre des chemins différents, de s’adapter à la complexité éclectique des données réelles qui lui sont fournies, et ainsi d’être plus polyvalent. À noter qu’on peut faire prendre des chemins différents à un algorithme en prenant comme conditions des valeurs générées aléatoirement : “choisis un nombre entre 1 et 10, s’il est supérieur à 5, fais <em>ceci</em>, sinon, fais <em>cela</em>”.</p>
 <p><img src="img/condition.png" alt="Condition"></p>
-<h1 id="écritures-algorithmiques">Écritures algorithmiques</h1>
+<h1 id="manipuler-le-matériau--lécriture-algorithmique">Manipuler le matériau : l’écriture algorithmique</h1>
 <p>Afin d’être exécutés par une machine, les algorithmes doivent être transposés de l’intelligence du programmeur vers un support pérenne et interprétable par cette machine. <strong>Parce que les ordinateurs ont été conçus pour manipuler des symboles, la méthode de communication qui s’est naturellement imposée est l’écriture.</strong> Programmer, vu de <em>l’extérieur</em>, c’est avant tout taper une succession de lettres et de chiffres sur un clavier. Dans cette partie, je m’intéresse donc à cette action d’écriture, mais également aux notions qu’elle implique, notamment l’emploi d’un <em>langage</em>.</p>
-<h2 id="quest-ce-que-lécriture-">Qu’est-ce que l’écriture ?</h2>
-<h3 id="écriture-et-langage">Écriture et langage</h3>
+<h2 id="quest-ce-quécrire-">Qu’est-ce qu’écrire ?</h2>
+<h3 id="écriture--le-langage-imagé">Écriture : le langage imagé</h3>
 <p>L’écriture est une méthode de communication qui consiste à représenter un langage via l’inscription de signes graphiques sur des supports variés. En cela, elle est une forme d’inscription, tel que le terme est défini par Bruno Bachimont : “l’association d’un substrat matériel à une forme d’expression”. L’écriture est née quatre millénaires avant notre ère, en Mésopotamie, afin de conserver des traces d’échanges – notamment commerciaux –, la mémoire humaine n’étant pas infaillible et encore moins illimitée. Le philosophe François Dagognet nous rappelle l’adage latin : “<em>Verba volant, scripta manent</em>” – les paroles s’envolent, les écrits restent.<sup class="footnote-ref"><a href="#fn31" id="fnref31">31</a></sup> Mais Dagognet souligne aussi que dans ce transfert de la parole à l’écrit, le discours n’est pas forcément transcrit scrupuleusement, mais peut au contraire subir des modifications.</p>
 <blockquote>
 <p>De ce que le vocalisé s’insinue dans le texte et aide à le comprendre, il ne s’ensuit pas que l’imprimé ne le dépasse pas. Si le graphisme ne supprime pas entièrement le gestuel, il l’amoindrit, tend à l’éloigner, voire à l’enjamber. <sup class="footnote-ref"><a href="#fn32" id="fnref32">32</a></sup></p>
@@ -219,7 +231,7 @@
 <p>En résumant sa pensée, je retiendrai ceci : si l’écriture découle de la parole comme une nouvelle forme d’échange communicationnel, elle n’en est pas une forme strictement identique. Un énoncé vocal ne transmet pas seulement la nature de l’énoncé, mais également sa forme – la tonalité, la prononciation, l’attitude –, au même titre que la représentation graphique joue sur des variations de représentation – graphie, tracé, composition, contraste – pour véhiculer une information qui enrichit le contenu même de l’écrit.</p>
 <p>Ce propos rejoint la thèse d’Anne-Marie Christin, professeure spécialiste de l’écriture et des relations entre texte et image. Selon elle, l’écriture ne reproduit pas la parole, mais la rend visible : <strong>elle est le résultat de la fusion entre le langage, qui régit les échanges à l’intérieur d’un groupe, et l’image, composée de figures et de supports.</strong><sup class="footnote-ref"><a href="#fn33" id="fnref33">33</a></sup></p>
 <p>L’écriture présuppose donc un emploi du langage. Selon le <abbr title="Trésor de la Langue Française informatisé">TLFi</abbr>, le terme <em>langage</em> implique une définition multiple, selon que l’on parle du langage comme faculté et comme système, ou bien comme moyen d’expression, comme usage. Un langage est généralement doté d’une sémantique, et fréquemment d’une syntaxe – deux branches de la linguistique symétriquement opposées. La sémantique étudie les <em>signifiés</em> : ce dont on parle, ce que l’on cherche à transmettre – en résumé, le <em>fond</em> de l’énoncé. La syntaxe, pour sa part, se concentre sur le <em>signifiant</em> : la langue, la représentation graphique, la grammaire employée, etc. – en résumé, la <em>forme</em> de l’énoncé. <sup class="footnote-ref"><a href="#fn34" id="fnref34">34</a></sup></p>
-<h3 id="types-décritures">Types d’écritures</h3>
+<h3 id="écritures--3-typologies">Écritures : 3 typologies</h3>
 <p>La notion d’écrit, au sens large, désigne donc les diverses formes que peuvent prendre la traduction graphique de l’information communiquée : dessins, symboles, chiffres, lettres, etc. Toutefois, le sens généralement admis du terme <em>écrit</em> désigne trois grandes catégories de systèmes : logographique, syllabique et alphabétique.</p>
 <ul>
 <li>l’écriture logographique emploie des <em>logogrammes</em>, caractères – ou <em>glyphes</em> – représentant un mot ou un <em>morphème</em> – une fraction de mot. Plus précisément, on parle d’un <em>pictogramme</em> lorsqu’on représente directement un objet (par exemple, le blé), et d’un idéogramme lorsqu’on cherche à symboliser une idée (par exemple, la vitalité).</li>
@@ -228,20 +240,20 @@
 </ul>
 <p><ins>L’écriture algorithmique appartient classiquement à cette troisième catégorie : quelle forme prendrait la programmation si l’on changeait de catégorie, en préférant par exemple une écriture logographique ? Je propose une première réponse à cette question avec une expérimentation intitulée “<em>emoji2code</em>”, permettant de coder à partir d’un enchaînement d’emoji. Ici, l’écriture n’est pas <em>classique</em> – on ne tape pas sur les touches du clavier pour former des mots et des phrases –, il est d’avantage question de composition : il suffit de cliquer sur un emoji pour le voir apparaître dans la zone de saisie. Chaque emoji correspond à une instruction (par exemple “boucler”, “écrire dans la console”) ou un élément (une variable, une opération mathématique). Dans l’exemple ci-dessous, je réalise simplement une boucle permettant de compter de 0 à 9.<img src="img/emoji2code.png" alt="emoji2code, une interface d'écriture algorithmique à l'aide d'emoji"><em>emoji2code, une interface d’écriture algorithmique à l’aide d’emoji</em><br>
 </ins></p>
-<h3 id="littérature-algorithmique-et-écritures-alternatives">Littérature algorithmique et écritures alternatives</h3>
+<h3 id="lécriture-émancipée">L’écriture émancipée</h3>
 <p>La pratique de l’écriture se place comme acte fondateur de la littérature. Par “littérature”, j’entends la conception de l’écriture comme une forme d’art. Cet art recouvre de nombreux genres et styles : genre pictural, genre narratif, genre dramatique, contenu, ou encore registre. <sup class="footnote-ref"><a href="#fn36" id="fnref36">36</a></sup></p>
-<p>Nul besoin de traiter en détail les formes d’écritures que nous connaissons le mieux : page par page, alignant des mots dans un alphabet latin, de la gauche vers la droite et du haut vers le bas. Pour questionner la notion d’écriture, je préfère m’intéresser à ses représentations moins classiques. Pour Anne-Marie Christin, l’exemple le plus pertinent qui a libéré l’écriture occidentale est une œuvre de Stéphane Mallarmé, poète français du XIX<sup>ème</sup>siècle. On le décrit aujourd’hui comme un des premiers “poèmes typographiques”.</p>
+<p>Nul besoin de traiter en détail les formes d’écritures que nous connaissons le mieux : page par page, alignant des mots dans un alphabet latin, de la gauche vers la droite et du haut vers le bas. <strong>Pour questionner le potentiel créatif de la pratique de l’écriture, je m’intéresse plus particulièrement à ses représentations moins classiques.</strong> Pour Anne-Marie Christin, l’exemple le plus pertinent qui a libéré l’écriture occidentale est une œuvre de Stéphane Mallarmé, poète français du XIX<sup>ème</sup>siècle. On le décrit aujourd’hui comme un des premiers “poèmes typographiques”.</p>
 <blockquote>
 <p>Tout a changé dans la pensée occidentale de l’écrit avec le <em>Coup de Dés</em> de Mallarmé. Pour la première fois de leur histoire, les héritiers de l’alphabet que nous sommes ont pris conscience du fait qu’ils ne disposaient pas simplement, avec ces quelques signes, d’un moyen plus ou moins commode de transcrire graphiquement leur parole mais d’un instrument complexe, double, auquel il suffisait de réintégrer la part visuelle – spatiale – dont il avait été privé pour lui restituer sa plénitude active d’écriture.<sup class="footnote-ref"><a href="#fn37" id="fnref37">37</a></sup></p>
 </blockquote>
-<p><img src="img/mallarme.png" alt="Extrait du &quot;Coup de Dés&quot; de Mallarmé"><em>Extrait du “Coup de Dés” de Mallarmé</em></p>
+<p><img src="img/mallarme.png" alt="Extrait du &quot;Coup de Dés&quot; de Mallarmé"></p>
 <p>Dans la même idée de mise en espace des lettres, le poète français Guillaume Apollinaire publie en 1918 un ouvrage intitulé “<em>Calligrammes</em>”, terme qu’il invente à partir de la contraction de <em>calligraphie</em> – l’art graphique du dessin de caractères – et d’<em>idéogramme</em>. Cette forme particulière de poésie est parfois nommée “poésie graphique”.</p>
-<p><img src="img/calligramme-apollinaire.png" alt="Calligramme &quot;Il Pleut&quot; d'Apollinaire"><em>Calligramme “Il Pleut” d’Apollinaire</em></p>
-<p>On notera que François Dagognet classe le travail d’Apollinaire dans une catégorie qu’il intitule “<em>iconographies ordinatrices et inventives</em>”. Celle-ci est constitué de productions graphiques et littéraires qui font usage de <em>métaboles</em>, qu’il emprunte au groupe µ<sup class="footnote-ref"><a href="#fn38" id="fnref38">38</a></sup> dans son ouvrage “<em>Réthorique Générale</em>” : un métabole désigne tout espèce de changement du langage.<sup class="footnote-ref"><a href="#fn39" id="fnref39">39</a></sup></p>
-<p><ins>En reportant ces distinctions au champ des algorithmes, on pourrait facilement s’interroger sur la forme que pourrait prendre une “écriture alternative” d’un algorithme, comme par exemple une écriture <em>poétique</em>. Le livre “<em>./code --poetry</em>” de Daniel Holden et Chris Kerr, ainsi que le site web associé<sup class="footnote-ref"><a href="#fn40" id="fnref40">40</a></sup> présentent des exemples de programmes s’affranchissant des conventions habituelles (voir la partie “<em><a href="#lignes-de-code-r%C3%A8gles-et-conventions">Lignes de code, règles et conventions</a></em>”) et dont le résultat est essentiellement esthétique : en résumé, du <em>code poétique</em>.<br>
+<p><img src="img/calligramme-apollinaire.png" alt="Calligramme &quot;Il Pleut&quot; d'Apollinaire"></p>
+<p>On notera que François Dagognet classe le travail d’Apollinaire dans une catégorie qu’il intitule “<em>iconographies ordinatrices et inventives</em>”. Celle-ci est constitué de productions graphiques et littéraires qui font usage de <em>métaboles</em>, qu’il emprunte au groupe µ<sup class="footnote-ref"><a href="#fn38" id="fnref38">38</a></sup> dans son ouvrage “<em>Réthorique Générale</em>” : un métabole désigne tout espèce de changement du langage.<sup class="footnote-ref"><a href="#fn39" id="fnref39">39</a></sup> Comme dans beaucoup de pratiques créatives, la nouveauté passe donc par le changement, l’émancipation des artistes vis-à-vis des formes ordinaires, au profit de formes nouvelles, alternatives.</p>
+<p><ins><strong>En reportant ces distinctions au champ des algorithmes, on pourrait facilement s’interroger sur la forme que pourrait prendre une “écriture alternative” d’un algorithme, comme par exemple une écriture <em>poétique</em>.</strong> Le livre “<em>./code --poetry</em>” de Daniel Holden et Chris Kerr, ainsi que le site web associé<sup class="footnote-ref"><a href="#fn40" id="fnref40">40</a></sup> présentent des exemples de programmes s’affranchissant des conventions habituelles (voir la partie “<em><a href="#lignes-de-code-r%C3%A8gles-et-conventions">Lignes de code, règles et conventions</a></em>”) et dont le résultat est essentiellement esthétique : en résumé, du <em>code poétique</em>.<br>
 <img src="img/code-poetry.png" alt="Flocking.go, un programme poétique animé dans le langage Go"><em><a href="http://code-poetry.com/flocking">Flocking.go</a>, un programme poétique animé dans le langage Go</em><br>
 </ins></p>
-<h2 id="lécriture-informatique">L’écriture informatique</h2>
+<h2 id="lécriture-algorithmique">L’écriture algorithmique</h2>
 <p>Attardons-nous davantage sur la spécificité de l’écriture dans le cas d’un programme informatique : <strong>quelle différence y a-t-il entre l’action de coder et la rédaction d’une article ou d’un poème ?</strong> On notera tout d’abord que dans ce contexte informatique, les algorithmes prennent la forme de programmes, rédigés dans un langage de programmation spécifique, grâce à un ordinateur. Toutefois, <em>algorithme</em> et <em>programme</em> sont deux notions différentes bien qu’étroitement liées, tout comme <em>informatique</em> et <em>ordinateur</em> : il convient donc de les clarifier.</p>
 <h3 id="de-lalgorithme-au-programme">De l’algorithme au programme</h3>
 <p>Un programme informatique est une suite d’instructions qui effectue une ou plusieurs tâches spécifiques lorsqu’elle est exécutée par un ordinateur.<sup class="footnote-ref"><a href="#fn41" id="fnref41">41</a></sup> L’universitaire français Franck Varenne attire notre attention sur une possible origine de la confusion entre algorithmes et programmes. Il cite Charles Hoare, professeur et informaticien britannique, également connu pour la conception de nombreux algorithmes encore utilisés aujourd’hui. Hoare déclare que “la programmation informatique est une science exacte en ce que toutes les propriétés d’un programme […] peuvent être découvertes à partir du texte du programme lui-même au moyen de raisonnement purement déductif.” Varenne y oppose l’argumentation de James Fetzer, philosophe américain spécialisé notamment en informatique : la vision de Hoare amène à confondre les algorithmes et les programmes. Selon Varenne, rien n’implique une exacte similitude entre le comportement supposé du programme – à la lecture donc – et les conséquences réelles de son exécution sur la machine.</p>
@@ -314,31 +326,65 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p>Comment les outils conditionnent le travail (approche/éloigne)</p>
 <h3 id="ide-et-éditeurs-de-texte">IDE et éditeurs de texte</h3>
 <p>On parle “d’environnement de développement” ou d’<abbr title="Integrated development environment">IDE</abbr> pour désigner l’ensemble des outils employés par un programmeur pour développer un programme informatique. Un IDE est généralement un logiciel dont l’interface propose un ensemble d’outils et de fonctions : le plus généralement, on trouve un éditeur de texte où le programmeur saisit des lignes de codes. Celui-ci est généralement accompagné d’un débugger – pour débusquer et corriger les <em>bugs</em> – ou encore, si le langage l’implique, d’un compilateur – utilisé pour “traduire” le langage de programmation en <em>langage machine</em>, c’est-à-dire en instructions exécutables par l’ordinateur. Le choix de tel ou tel logiciel de programmation – de tel ou tel environnement – dépend généralement du langage utilisé dans le cadre d’un projet, ainsi que des goûts personnels du développeur. Certains outils, ayant une communauté plus active, se développent particulièrement grâce à la contribution collective – lorsque le logiciel est <em>open-source</em> – tandis que d’autres tombent en désuétude, les années passant et les technologies évoluant en conséquence.</p>
-<p><img src="img/atom-ide.png" alt="Capture d'écran du logiciel de programmation Atom"><em>Capture d’écran du logiciel de programmation Atom</em></p>
-<p>Distinction IDE/éditeur de texte ici</p>
+<p>La définition stricte d’IDE désigne donc ces outils composés, multiples, et les oppose aux simples “éditeurs de texte”. Un éditeur de texte – <em>text editor</em> en anglais – est un programme permettant l’écriture ou la modification de texte <em>brut</em>, c’est-à-dire dénué de mise en forme : ces logiciels utilisent souvent une typographie monochasse, permettant l’alignement vertical des caractères et favorisant ainsi la lisibilité du code. Les fonctions les plus courantes sont le copier/coller, la recherche et remplacement, la coloration syntaxique, etc. Par abus de langage, ces éditeurs de texte sont généralement inclus dans la définition au sens large d’IDE, à juste titre : ils font bel et bien partie de l’environnement de développement du programmeur.</p>
+<p><img src="img/atom-ide.png" alt="Capture d'écran du logiciel de programmation Atom"></p>
 <h3 id="programmation-visuelle">Programmation visuelle</h3>
-<p>La programmation peut également prendre une forme graphique, visuelle. C’est le cas notamment des représentations algorithmiques en diagrammes, aussi appelées <em>algorigrammes</em> – ou <em>flowcharts</em> en anglais. Les instructions sont divisées dans autant de formes géométriques normalisés – un rectangle pour une opération, un losange pour un test, etc. – qui sont ensuite reliées entres elles pour symboliser l’enchaînement des instructions. Apparue il y a un siècle dans le domaine de l’ingénierie industrielle, cette représentation est utilisée dans certains logiciels de programmation comme Flowgorithm, qui est un intermédiaire entre la conception algorithmique visuelle et la programmation textuelle : le diagramme créé par l’utilisateur peut être traduit en un des langages de programmation les plus courants. Cette catégorie d’outils est notamment utilisée dans l’éducation, auprès de novices, afin de leur faire assimiler sans introduire les langages de programmation comme difficulté supplémentaire.</p>
+<p><strong>La programmation peut également prendre une forme graphique, visuelle. C’est le cas notamment des représentations algorithmiques en diagrammes, aussi appelées <em>algorigrammes</em> – ou <em>flowcharts</em> en anglais.</strong> Les instructions sont divisées dans autant de formes géométriques normalisés – un rectangle pour une opération, un losange pour un test, etc. – qui sont ensuite reliées entres elles pour symboliser l’enchaînement des instructions. Apparue il y a un siècle dans le domaine de l’ingénierie industrielle, cette représentation est utilisée dans certains logiciels de programmation comme Flowgorithm, qui est un intermédiaire entre la conception algorithmique visuelle et la programmation textuelle : le diagramme créé par l’utilisateur peut être traduit en un des langages de programmation les plus courants. Cette catégorie d’outils est notamment utilisée dans l’éducation, auprès de novices, afin de leur faire assimiler sans introduire les langages de programmation comme difficulté supplémentaire.</p>
 <p><img src="img/flowgorithm.png" alt="Capture d'écran du logiciel Flowgorithm"><em>Capture d’écran du logiciel Flowgorithm</em></p>
-<p>La programmation visuelle peut aussi s’affranchir de la représentation normalisée d’un algorigramme. L’exemple le plus connu est le logiciel Scratch, développé par le <abbr title="Massachusetts Institute of Technology">MIT</abbr> depuis une quinzaine d’années. Scratch propose de voir la programmation algorithmique comme un jeu de puzzle, constitué de “blocs” représentant chacun un type d’opération particulier, imbriqués pour constituer la structure du programme. Son interface simple et colorée et son intuitivité en font l’outil parfait pour les plus jeunes créatifs, et un excellent moyen d’appréhender la réflexion logisticienne et mathématique.</p>
+<p><strong>La programmation visuelle peut aussi s’affranchir de la représentation normalisée d’un algorigramme.</strong> L’exemple le plus connu est le logiciel Scratch, développé par le <abbr title="Massachusetts Institute of Technology">MIT</abbr> depuis une quinzaine d’années. Scratch propose de voir la programmation algorithmique comme un jeu de puzzle, constitué de “blocs” représentant chacun un type d’opération particulier, imbriqués pour constituer la structure du programme. Son interface simple et colorée et son intuitivité en font l’outil parfait pour les plus jeunes créatifs, et un excellent moyen d’appréhender la réflexion logisticienne et mathématique.</p>
 <p><img src="img/scratch-ide.png" alt="Capture d'écran du logiciel Scratch"><em>Capture d’écran du logiciel Scratch</em></p>
 <p><ins>Le développeur de jeux vidéo indépendant – et d’expériences interactives – Nicky Case travaille en 2017 sur <a href="http://ncase.me/joy-demo/">JOY.js</a>, une interface qui propose de manipuler et visualiser des algorithmes en langage JavaScript grâce à un éditeur de texte interactif et une visualisation en temps réel.<br>
-<img src="img/joy-js.png" alt="JOY.js, un outil interactif de manipulation de programmes JavaScript"><em>JOY.js, un outil interactif de manipulation de programmes JavaScript</em><br>
+<img src="img/joy-js.png" alt="JOY.js, un outil interactif de manipulation de programmes JavaScript"><br>
 </ins></p>
 <h3 id="workflow">Workflow</h3>
-<p>Les méthodes de travail d’un développeur sont souvent bien maîtrisées. On parle de <em>workflow</em> – “flux de travail” – pour désigner les méthodes d’organisation systématiques qu’il applique afin de fluidifier le processus de programmation et de se prévenir de complications diverses – notamment lorsque d’importantes quantités de données sont manipulées, et que l’erreur humaine peut intervenir à tout moment. Une des solutions les plus couramment appliquées de nos jours et la gestion de version – le <em>versionning</em> en anglais. J’ai déjà mentionné le logiciel <em>git</em>, qui permet d’enregistrer des points clés – des <em>commits</em> – dans l’avancement d’un projet numérique. Pour comprendre la valeur de cette méthode, il faut noter la nature spécifique de l’écriture algorithmique – écriture au sens large de conception et représentation, pas seulement textuelle. À l’image de l’étudiant – ou de l’auteur récompensé – qui écrit un paragraphe d’un écrit, revient en arrière, effectue des modifications le lendemain, réorganise son plan et finit par rayer des parties, le développeur fait preuve d’une écriture non linéaire. Les projets prenant généralement plusieurs semaines voire plusieurs mois, l’emploi d’un système de gestion de versions semble particulièrement pertinent.</p>
-<p><img src="img/github-diff.png" alt="Visualisation d'un diff sur GitHub"><em>Visualisation d’un diff – différence entre deux versions d’un extrait de code – sur GitHub : en vert ce qui a été ajouté, en rouge ce qui a été supprimé.</em></p>
+<p>Les méthodes de travail d’un développeur sont souvent bien maîtrisées. On parle de <em>workflow</em> – “flux de travail” – pour désigner les méthodes d’organisation systématiques qu’il applique afin de fluidifier le processus de programmation et de se prévenir de complications diverses – notamment lorsque d’importantes quantités de données sont manipulées, et que l’erreur humaine peut intervenir à tout moment. Une des solutions les plus couramment appliquées de nos jours et la gestion de version – le <em>versionning</em> en anglais. J’ai déjà mentionné le logiciel <em>git</em>, qui permet d’enregistrer des points clés – des <em>commits</em> – dans l’avancement d’un projet numérique. Pour comprendre la valeur de cette méthode, il faut noter la nature spécifique de l’écriture algorithmique – écriture au sens large de conception et représentation, pas seulement textuelle. À l’image de l’étudiant – ou de l’auteur récompensé – qui écrit un paragraphe d’un écrit, revient en arrière, effectue des modifications le lendemain, réorganise son plan et finit par rayer des parties, le développeur a une écriture non linéaire. <strong>Les outils sont donc adaptés à ces méthodes de travail spécifiques.</strong> Les outils de programmation, mais également les plateformes d’hébergement comme GitHub par exemple, permettent de comparer deux versions d’un même extrait de code en visualisant leurs différences, grâce aux <em>diffs</em> : les parties ajoutées sont surlignées en vert, les parties supprimées en rouge.</p>
+<p><img src="img/github-diff.png" alt="Visualisation d'un diff sur GitHub"></p>
 <p>Git pour le bricodeur</p>
 <h1 id="modes-singuliers-de-programmation-algorithmique">Modes singuliers de programmation algorithmique</h1>
-<p>Ces exemples transposent l’écriture algorithmique classique vers une démarche plus empirique et plus “physique” : les éléments constitutifs de l’algorithme sont directement <em>manipulés</em> mentalement, voire visuellement. En plus d’être une approche facilitée – car plus concrète – et ainsi souvent mise en œuvre dans l’éducation, ce décalage ouvre de nombreuses possibilités créatives : que serait un algorithmique matérialisé, hors de l’écran ? Quelles opportunités de manipulation – littéralement – cela permettrait-il ? Dans quel but ou quel contexte cette démarche pourrait-elle s’inscrire ? Je donne en exemples ci-après trois expérimentations autour de différents paradigmes de langage : langage naturel, langage iconographique, et enfin langage tangible.</p>
+<p>Lorsqu’un designer utilise la programmation dans une recherche d’innovation formelle, il adopte une démarche créative qui transcende le matériau qu’est l’écriture algorithmique : le créatif a une pratique singulière du code, ses outils doivent donc être adaptés à cet usage, voire le favoriser.</p>
+<h2 id="pratiques-singulières">Pratiques singulières</h2>
+<h3 id="des-langages-hors-du-commun">Des langages hors du commun</h3>
+<h3 id="programmation-visuelle-1">Programmation visuelle</h3>
 <h3 id="programmation-tangible">Programmation tangible</h3>
-<p>?</p>
-<p><ins>En 2017, le collectif d’arts numériques transdisciplinaire <em>[foam]</em> travaille sur un langage de programmation tangible, avec une installation intitulée “<em>Pattern Matrix</em>”. Le langage a littéralement été créé de toutes pièces : on opère l’installation en tournant une série de “jetons” qui cachent des senseurs magnétiques. Des informations visuelles sont superposées grâce à la <em>réalité augmentée</em>. Un premier essai du dispositif a été fait dans le cadre d’une performance musicale live à Brighton.<sup class="footnote-ref"><a href="#fn60" id="fnref60">60</a></sup><br>
-<img src="img/pattern-matrix.png" alt="Pattern Matrix, un langage de programmation tangible"><em>Pattern Matrix, un langage de programmation tangible</em><br>
-</ins></p>
-<h3 id="modes-de-représentation">Modes de représentation</h3>
-<p>Bret Victor : comment faire coexister différents modes de représentation (qui nourrissent la créativité)</p>
-<p>VedaJS : résultat directement dans l’éditeur</p>
-<p>Modes de représentations <strong>permettent</strong> de s’emparer de la programmation comme matière</p>
+<p>En 2017, le collectif d’arts numériques transdisciplinaire <em>[foam]</em> travaille sur un langage de programmation tangible, avec une installation intitulée “<em>Pattern Matrix</em>”. Le langage a littéralement été créé de toutes pièces : on opère l’installation en tournant une série de “jetons” qui cachent des senseurs magnétiques. Des informations visuelles sont superposées grâce à la <em>réalité augmentée</em>. Un premier essai du dispositif a été fait dans le cadre d’une performance musicale live à Brighton.<sup class="footnote-ref"><a href="#fn60" id="fnref60">60</a></sup><br>
+<img src="img/pattern-matrix.png" alt="Pattern Matrix, un langage de programmation tangible"><em>Pattern Matrix, un langage de programmation tangible</em></p>
+<p>Dynamicland</p>
+<p><ins>Expé manipulation tactile</ins></p>
+<h2 id="modes-de-représentations">Modes de représentations</h2>
+<p><strong>Les différents modes de représentation des algorithmes permettent donc de s’emparer de la programmation comme matière.</strong> Quels écarts de perception existent entre la lecture d’un algorithme au sein d’un éditeur de texte, la visualisation de sa transcription visuelle, ou encore la manipulation, simulée ou tangible, de celui-ci ? En quoi l’attitude du créatif varie-t-elle selon ces cas ?</p>
+<h3 id="représenter-au-sein-de-lide">Représenter au sein de l’IDE</h3>
+<p><strong>Dans une conférence donnée au <abbr title="The Canadian University Software Engineering Conference">CUSEC</abbr> de 2012, Bret Victor<sup class="footnote-ref"><a href="#fn61" id="fnref61">61</a></sup> explique la notion du délai, qui, dans un processus créatif, sépare l’apparition d’une idée et sa matérialisation.</strong></p>
+<blockquote>
+<p>Il est essentiel, dans un processus créatif, de pouvoir essayer une idée à l’instant où l’on y pense. S’il y a le moindre délai dans cette boucle de <em>feedback</em> [retour d’information] entre la conception d’une chose, sa visualisation et sa réalisation, alors un monde entier d’opportunités créatives disparaît. <em>Ce sont des pensées que l’on ne peut penser</em>.<sup class="footnote-ref"><a href="#fn62" id="fnref62">62</a></sup></p>
+</blockquote>
+<p>Pour illustrer son propos, Bret Victor prend l’exemple d’un dessin algorithmique, programmé en JavaScript et restitué visuellement dans un <em>canvas</em> – une toile numérique – au sein d’un explorateur web.</p>
+<blockquote>
+<p>Voici comment fonctionne la programmation : vous tapez un tas de code dans un éditeur de texte, en essayant d’imaginer ce que chaque ligne de code va faire. Puis, vous compilez et exécutez ce code, et quelque chose en sort. […] Mais s’il y a une erreur, ou si vous souhaitez faire des modifications, vous devez retourner dans le code, le modifier, compiler et exécuter à nouveau, et voir à quoi il ressemble. La majeure partie de ce processus se passe dans l’éditeur, où l’on travaille <em>aveuglément</em>, sans connexion immédiate avec ce que l’on cherche réellement à produire.</p>
+</blockquote>
+<p>Bret Victor dénonce ici ce que l’on pourrait qualifier de “niveau zéro” de la créativité algorithmique : lorsque la conception et la réalisation d’une œuvre implique de passer constamment du code au résultat – par exemple de l’éditeur de texte à l’explorateur dans lequel s’exécute le dessin –, la créativité en est fortement diminuée. Le designer propose donc une interface binaire, scindée verticalement : à gauche le résultat, à droite l’éditeur de texte avec le programme. Lorsqu’on modifie une ligne ou une valeur dans le code, le résultat est directement visible – en cela, sa proposition ressemble beaucoup à Processing. L’expérience de la programmation est améliorée, facilitée : on est au “niveau un”. Un autre exemple pourrait être celui de la superposition du code et du résultat, comme le propose le <em>framework</em><sup class="footnote-ref"><a href="#fn63" id="fnref63">63</a></sup> <a href="https://github.com/fand/vedajs">VedaJS</a> pour la création de <em>shaders</em> – images de synthèse simulant graphiquement de la lumière, des textures et des animations.</p>
+<h3 id="manipuler-au-sein-de-lide">Manipuler au sein de l’IDE</h3>
+<p>Mais Bret Victor va plus loin que la simple juxtaposition du programme et du résultat produit. Pour simplifier l’édition des valeurs – notamment chiffrées – utilisées dans un algorithme, il propose un nouveau type d’interaction : au lieu de devoir effacer des caractères pour les remplacer, chaque valeur devient <em>draggable</em> – on peut cliquer et déplacer la souris en maintenant le clic appuyé, et c’est ce geste qui permet de faire évoluer ces variables. Sur un dessin représentant un arbre, cette interaction appliquée à une variable liée au positionnement des feuilles permet de révéler une opportunité d’animation : en faisant varier en continu une valeur, les feuilles semblent s’agiter comme si le vent soufflait, et Bret Victor souligne l’apparition d’un nouveau champ de possibles créatifs : “comment aurais-je découvert cela si j’avais dû compiler et exécuter le code entre chaque changement ?”.</p>
+<p>Bret Victor propose énormément d’autre interventions au sein d’outils de programmation dans un essai intitulé “<em>Learnable Programming</em>”<sup class="footnote-ref"><a href="#fn64" id="fnref64">64</a></sup>, ponctué d’expérimentations démonstratives. Il conçoit de nombreuses fonctionnalités et autant d’interactions liées.</p>
+<p><img src="https://s3.amazonaws.com/worrydream.com/LearnableProgramming/Movies/Flow5.mp4" alt="Flow 5"></p>
+<p>Ici, un <em>slider</em> permet d’explorer l’exécution du programme à chaque étape</p>
+<ul>
+<li>Voir l’évolution dans le temps du programme, via un tracé transparent symbolisant l’état d’un objet à chaque instant, ainsi qu’une <em>timeline</em> – frise chronologique – interactive</li>
+<li>Mettre en évidence les parties de l’algorithme liées à une zone précise du résultat en la pointant, et inversement</li>
+<li></li>
+</ul>
+<h3 id="représenter-visuellement-les-algorithmes">Représenter visuellement les algorithmes</h3>
+<p><a href="https://github.com/tayllan/awesome-algorithms">https://github.com/tayllan/awesome-algorithms</a><br>
+<a href="http://bost.ocks.org/mike/algorithms/">bost.ocks.org/mike/algorithms/</a></p>
+<h2 id="deux-typologies-doutils">Deux typologies d’outils</h2>
+<p>Grille de lecture des typologies d’interfaces :</p>
+<ul>
+<li>interface qui se rapproche : s’adapte, simplifie, rend plus efficace</li>
+<li>interface qui s’éloigne : nous déplace, incite, invite</li>
+</ul>
+<p>Comment les outils conditionnent le travail</p>
+<p>Comment faciliter et encourager l’intégration de processus algorithmiques dans une pratique créative ? Deux réponses : interfaces qui se rapprochent pour favoriser la maîtrise, et interfaces qui s’éloignent pour nourrir la créativité.</p>
+<h3 id="loutil-se-rapprochant">L’outil se rapprochant</h3>
+<h3 id="loutil-séloignant">L’outil s’éloignant</h3>
 <h1 id="conclusion">Conclusion</h1>
 <h3 id="état-de-lart-bilan">État de l’art bilan</h3>
 <p>Distinguer catégories :</p>
@@ -354,13 +400,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <li>etc.</li>
 </ul>
 <p>Critères : efficacité (shortcuts, auto-complétion…), personnalisation (plugins, “hackabilité”), flexibilité (un ou plusieurs langages), “manipulation” (déplacer, connecter), visualisation, objectif (développement/apprentissage/dessin…), etc.</p>
-<h3 id="typologies-dinterfaces--se-rapprocher-séloigner">Typologies d’interfaces : se rapprocher, s’éloigner</h3>
-<p>Grille de lecture des typologies d’interfaces :</p>
-<ul>
-<li>interface qui se rapproche : s’adapte, simplifie, rend plus efficace</li>
-<li>interface qui s’éloigne : nous déplace, incite, invite</li>
-</ul>
-<p>Comment faciliter et encourager l’intégration de processus algorithmiques dans une pratique créative ? Deux réponses : interfaces qui se rapprochent pour favoriser la maîtrise, et interfaces qui s’éloignent pour nourrir la créativité.</p>
 <h1 id="bibliographie">Bibliographie</h1>
 <p><cite>1</cite></p>
 <p><cite>2</cite></p>
@@ -494,6 +533,14 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <li id="fn59" class="footnote-item"><p>Les plus connus sont le <em>camelCase</em>, le <em>PascalCase</em> et le <em>snake_case</em>, dont les intitulés même illustrent leur principe : des capitales au début de chaque mot – incluant ou non le premier –, ou des <em>underscores</em> entre les mots. <a href="#fnref59" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn60" class="footnote-item"><p><a href="https://fo.am/blog/2017/11/27/pattern-matrix-algomech2/">“<em>How to design a tangible programming language</em>”</a> sur <em>[foam]</em> <a href="#fnref60" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn61" class="footnote-item"><p>Bret Victor est un designer d’interaction et informaticien, dont le travail porte notamment sur les outils et les interfaces permettant de comprendre et de créer. <a href="#fnref61" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn62" class="footnote-item"><p><a href="https://vimeo.com/36579366">Bret Victor - Inventing on Principle</a> sur Vimeo <a href="#fnref62" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn63" class="footnote-item"><p>Un <em>framework</em>, ou “cadre de travail”, désigne un ensemble d’outils de programmation structurant les bases techniques et architecturales d’un projet. <a href="#fnref63" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn64" class="footnote-item"><p><a href="http://worrydream.com/LearnableProgramming/">Learnable Programming</a> (2012), Bret Victor <a href="#fnref64" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>

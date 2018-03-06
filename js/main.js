@@ -53,7 +53,7 @@ function references() {
         let passage = text.split(':')[1];
 
         // Author
-        let citation = `${ref.author}, `;
+        let citation = `<strong>${ref.author}</strong>, `;
 
         // Title
         if (ref.link) {

@@ -74,5 +74,11 @@
          "title": "Graphisme en France – “code <> outils <> design”",
          "author": "Centre National des Arts Plastiques",
          "year": 2012
+     },
+     "14": {
+         "title": "Learnable Programming",
+         "author": "Bret Victor",
+         "year": 2012,
+         "link": "http://worrydream.com/LearnableProgramming/"
      }
 }

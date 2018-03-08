@@ -2,6 +2,7 @@ body {
     background-color: #222426;
     color: rgba(255,255,255,.8);
     font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.8em;
 }
 
 .stackedit__html {
@@ -12,15 +13,21 @@ body {
 
 .stackedit__toc {
     max-height: 100vh;
+    line-height: 1.4em;
 
     ul {
         padding-bottom: 2em;
+        font-weight: bold;
+        color: #ccc;
 
         ul {
             padding-bottom: 1em;
+            font-weight: normal;
+            color: #ccc;
 
             ul a {
                 padding-left: 2em;
+                color: #666;
             }
         }
     }
@@ -169,4 +176,16 @@ img {
 blockquote {
     color: rgba(255,255,255,.5);
     border-left: 5px solid rgba(255,255,255,.075);
+}
+
+table {
+    border: 1px solid white;
+
+    thead {
+        background-color: rgba(255,255,255,.1);
+    }
+
+    td {
+        width: 50%;
+    }
 }

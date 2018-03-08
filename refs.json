@@ -59,7 +59,7 @@
         "editor": "MIT Press"
     },
     "11": {
-        "title": "Art++, “Bricodage”",
+        "title": "Art++ • Bricodage",
         "author": "David-Olivier Lartigaud",
         "year": 2011,
         "editor": "HYX"
@@ -80,5 +80,53 @@
          "author": "Bret Victor",
          "year": 2012,
          "link": "http://worrydream.com/LearnableProgramming/"
+     },
+     "15": {
+         "title": "Art++ • Read_Me, Run_Me, Execute_Me: Malaise dans le logiciel",
+         "author": "Inke Arns",
+         "year": 2011,
+         "editor": "HYX"
+     },
+     "16": {
+         "title": "Art++ • Dix hypothèses au sujet de l'art logiciel",
+         "author": "Florian Cramer",
+         "year": 2011,
+         "editor": "HYX"
+     },
+     "17": {
+         "title": "Art++ • Praxis de la programmation : reconsidérer “L'esthétique du code génératif”",
+         "author": "Alex McLean & Adrian Ward",
+         "year": 2011,
+         "editor": "HYX"
+     },
+     "18": {
+         "title": "Art++ • Concepts et conception de la programmation informatique “orientée art”",
+         "author": "Sylvie Tissot",
+         "year": 2011,
+         "editor": "HYX"
+     },
+     "19": {
+         "title": "Inventing on Principle",
+         "author": "Bret Victor",
+         "year": 2012,
+         "link": "https://vimeo.com/36579366"
+     },
+     "20": {
+         "title": "Drawing Dynamic Visualizations",
+         "author": "Bret Victor",
+         "year": 2013,
+         "link": "https://vimeo.com/66085662"
+     },
+     "21": {
+         "title": "Stop Drawing Dead Fish",
+         "author": "Bret Victor",
+         "year": 2013,
+         "link": "https://vimeo.com/64895205"
+     },
+     "22": {
+         "title": "Seeing Spaces",
+         "author": "Bret Victor",
+         "year": 2014,
+         "link": "https://vimeo.com/97903574"
      }
 }

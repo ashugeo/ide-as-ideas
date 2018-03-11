@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+
 body {
     background-color: #222426;
     color: rgba(255,255,255,.8);
@@ -217,4 +220,9 @@ video {
 iframe {
     width: 100%;
     border: none;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgba(0, 0, 0, .2);
 }

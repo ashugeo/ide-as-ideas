@@ -8,6 +8,7 @@ $(document).ready(() => {
     // Load references
     $.getJSON('../refs.json', (data) => {
         refs = data;
+        videos();
         references();
         sideNotes();
         externalLinks();
@@ -132,4 +133,11 @@ function frenchTypo() {
 
     // No orphan semicolon (' ;')
     document.body.innerHTML = document.body.innerHTML.replace(/ ;/g, '&nbsp;;');
+}
+
+function videos() {
+    $('.video').each((id, el) => {
+        const url = $(el).html();
+        $(el).replaceWith('<video controls><source src="/video/' + url + '" type="video/mp4"></video>')
+    });
 }

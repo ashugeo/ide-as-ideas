@@ -37,6 +37,7 @@ body {
 
 .sidenote {
     font-size: .8em;
+    line-height: 1.4rem;
 
     @media screen and (min-width: 900px) {
         display: inline-block;
@@ -166,6 +167,10 @@ ins {
     padding: 2em;
     background-color: rgba(255,255,255,.1);
     // color: hsl(210, 50%, 35%);
+
+    img {
+        margin-bottom: 0;
+    }
 }
 
 img {
@@ -186,13 +191,30 @@ blockquote {
 }
 
 table {
-    border: 1px solid white;
+    border: 1px solid #393a3c;
 
     thead {
-        background-color: rgba(255,255,255,.1);
+        background-color: rgba(255, 255, 255, .05);
+    }
+
+    td,
+    th {
+        border-right: 1px solid #393a3c;
     }
 
     td {
         width: 50%;
+        border-top: 1px solid #393a3c;
     }
+}
+
+video {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    border: none;
 }

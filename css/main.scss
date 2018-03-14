@@ -232,3 +232,53 @@ code {
     font-family: 'Source Code Pro', monospace;
     background-color: rgba(0, 0, 0, .2);
 }
+
+@media print {
+    body {
+        background-color: white;
+        color: rgba(0,0,0,.8);
+    }
+
+    .sidenote,
+    strong {
+        color: black;
+    }
+
+    .sidenote {
+        background-color: rgba(0,0,0,.05);
+        padding: 1em;
+        opacity: 1;
+        color: rgba(0,0,0,.5);
+
+        strong {
+            color: rgba(0,0,0,.7);
+        }
+
+        + .sidenote {
+            padding-top: 0;
+        }
+    }
+
+    .sidenote-wide {
+        display: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: rgba(0,0,0,.8);
+
+        &::before {
+            color: rgba(0,0,0,.3);
+        }
+    }
+
+    ins {
+        background-color: rgba(80, 227, 194, .2);
+    }
+
+
+    blockquote {
+        color: rgba(0,0,0,.5);
+        border-left: 5px solid rgba(0,0,0,.1);
+    }
+
+}

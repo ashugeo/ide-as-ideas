@@ -138,6 +138,6 @@ function frenchTypo() {
 function videos() {
     $('.video').each((id, el) => {
         const url = $(el).html();
-        $(el).replaceWith('<video controls><source src="/video/' + url + '" type="video/mp4"></video>')
+        $(el).replaceWith('<video controls preload="none"><source src="/video/' + url + '" type="video/mp4"></video>')
     });
 }

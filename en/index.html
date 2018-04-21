@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dissertation Hugo Sainte-Marie</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <link rel="stylesheet" href="../css/main.min.css" />
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#algorithms">Algorithms</a>
+<ul>
+<li><a href="#what-is-an-algorithm">What is an algorithm?</a>
+<ul>
+<li><a href="#instructions-and-result">Instructions and result</a></li>
+<li><a href="#symbolic-algorithms">Symbolic algorithms</a></li>
+</ul>
+</li>
+<li><a href="#historical-approach">Historical approach</a>
+<ul>
+<li><a href="#from-the-hand-to-the-machine">From the hand to the machine</a></li>
+<li><a href="#jacquard’s-programmed-weaving">Jacquard’s programmed weaving</a></li>
+<li><a href="#babbage’s-analytical-machine">Babbage’s analytical machine</a></li>
+<li><a href="#the-turing-revolution">The Turing revolution</a></li>
+</ul>
+</li>
+<li><a href="#fundamental-approach">Fundamental approach</a>
+<ul>
+<li><a href="#sequence">Sequence</a></li>
+<li><a href="#assignment">Assignment</a></li>
+<li><a href="#iteration">Iteration</a></li>
+<li><a href="#condition">Condition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#algorithmic-writings">Algorithmic writings</a>
+<ul>
+<li><a href="#what-is-writing">What is writing?</a>
+<ul>
+<li><a href="#writing-and-language">Writing and language</a></li>
+<li><a href="#types-of-writings">Types of writings</a></li>
+<li><a href="#alternative-writings">Alternative writings</a></li>
+</ul>
+</li>
+<li><a href="#computer-writing">Computer writing</a>
+<ul>
+<li><a href="#from-the-algorithm-to-the-program">From the algorithm to the program</a></li>
+<li><a href="#natural-languages-and-formal-languages">Natural languages and formal languages</a></li>
+<li><a href="#programming-languages">Programming languages</a></li>
+</ul>
+</li>
+<li><a href="#algorithmic-writing-systems">Algorithmic writing systems</a>
+<ul>
+<li><a href="#development-environments">Development environments</a></li>
+<li><a href="#lines-of-code">Lines of code</a></li>
+<li><a href="#visual-programming">Visual programming</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <p><code>IDE AS IDEAS</code></p>
+<p><strong>Algorithmic programming tools serving designers</strong></p>
+<h1 id="introduction">Introduction</h1>
+<p>In the last few years, algorithms have entered our lives, and we now meet them everywhere daily, without actually noticing them. In the book “<em>Le temps des algorithmes</em>”, French researchers and teachers Serge Abiteboul and Gilles Dowek list many examples of various uses of algorithms, embedded into our digital devices: calculation, managing information, communication, exploration and analysis of data, but also signal treatment, driving objects, manufacturing goods, scientific research, etc.</p>
+<p>The growing presence of algorithms in our lives might raise anxiousness and can enter the political debate. Although, we tend to forget a fundamental characteristic of algorithms: they are written by human beings. The programs we use everyday are or have been developed by programmers, who use specific tools to achieve this job. These tools are the core field of study of this dissertation, which of course will be led with a design approach – that is to say, focusing on uses and users.<sup class="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup></p>
+<p>I will tackle this topic with a very empiric way of thinking: I’m one of those people who need to experiment to understand. Considering the technical dimension of algorithmic writing, its practice is a method for me to give the study a concrete aspect by providing applied solutions. The possibilities are quite endless: musical creation, learning an algorithmic way of thinking, visualizing immateriality, playing with a machine, etc. Among other disciplines, those matters are addressed by <em>creative coding</em><sup class="footnote-ref"><a href="#fn2" id="fnref2">2</a></sup>, <em>live coding</em><sup class="footnote-ref"><a href="#fn3" id="fnref3">3</a></sup> and more.</p>
+<p>If I had to give an example of a designer whose practice inspires me, I would probably mention John Maeda. Altogether an artist, designer, teacher and researcher at the MIT, Maeda has acquired an international reputation as a pioneer of a discipline mixing visual arts, design, typography and interaction design, often using computers and programming. At the heart of his process lies the will to create devices and tools, that he uses to produce artworks. As Paola Antonelli wrote in the foreword of Maeda’s book “<em>Design By Numbers</em>”, “The most important part of Maeda’s production […] is not the final object, but rather the process. […] Maeda’s fundamental idea is that to successfully design with a computer, one has to design, or at least understand, the program one uses.”<sup class="footnote-ref"><a href="#fn4" id="fnref4">4</a></sup></p>
+<p>After defining and illustrating the main notions put into play – algorithms, writing, programming, code –, I will establish different categories of algorithmic writing interfaces and what they enable users to do. The final goal is to question the interfaces themselves, considering algorithmic writing as a <em>material</em>.</p>
+<h1 id="algorithms">Algorithms</h1>
+<h2 id="what-is-an-algorithm">What is an algorithm?</h2>
+<h3 id="instructions-and-result">Instructions and result</h3>
+<p>An algorithm is a finite sequence of instructions, which aims to be executed in order to produce a result. To understand the notion of algorithm easily, we often use concrete examples that we meet in our everyday lives. A cooking recipe, for instance, is an algorithm: it involves <em>inputs</em> (the ingredients, quantities, tools), and instructions (break in small pieces, cook in a bain-marie, cut into dices, etc.). By following the recipe thoroughly, the outcome is, obviously, the prepared dish.</p>
+<h3 id="symbolic-algorithms">Symbolic algorithms</h3>
+<p>This general definition includes a more specific kind of algorithms, which is called <em>symbolic algorithms</em>. These manipulate written symbols: digits, letters, numbers, words or sentences. Etymologically, the term <em>algorithm</em> itself comes from the combination of the latin word <em>algorismus</em> – from the name of the mathematician Al-Khwarizmi<a href="#_ftn5">&lt;![if !supportFootnotes]&gt;[5]&lt;![endif]&gt;</a> – and the greek word <em>arithmos</em>, which means “number”. This proximity between the notions of algorithmic and mathematics has been confirmed thanks to the technical progress of the last two centuries.</p>
+<h2 id="historical-approach">Historical approach</h2>
+<h3 id="from-the-hand-to-the-machine">From the hand to the machine</h3>
+<p>Let’s head back to the origins of symbolic algorithms, 5,000 years ago. At that time, mathematicians had already developed algorithms to solve simple algebraic calculations such as additions and multiplications, but these had to be executed by the hand of a scribe: repetitive tasks that could be delegated to machines.</p>
+<p>Five thousand years of technical innovation followed. The first abacus<a href="#_ftn6">&lt;![if !supportFootnotes]&gt;[6]&lt;![endif]&gt;</a> assist human beings in calculating but aren’t autonomous yet. In the Middle Age, the bells at the top of cathedrals ring every hour without any human assistance: these are the first machines capable of executing symbolic algorithms. In 1642, French inventor Blaise Pascal<a href="#_ftn7">&lt;![if !supportFootnotes]&gt;[7]&lt;![endif]&gt;</a> comes up with the first calculating machine, that he calls “arithmetic machine”.</p>
+<h3 id="jacquard’s-programmed-weaving">Jacquard’s programmed weaving</h3>
+<p>In 1801, Joseph Jacquard, an inventor from Lyon in France, creates a weaving machine that will bear his name: in French, “le métier Jacquard”. It combines classic weaving machines with punched cards, a contraption invented in 1728 by Jean-Baptiste Falcon. By punching a whole at a specific spot of a piece of cardboard, one is able to program a machine. This device is often considered the first form of binary information storage, binary being a two-state value, often called <em>true</em> or <em>false</em>. Jacquard’s weaving machine is therefore contemplated as the ancestor of computers.</p>
+<p>But these machines are not yet computers, strictly speaking. They lack a major characteristic to reach this status: <em>universality</em>. In fact, the examples cited above are only capable of one specific function, whereas a computer is polyvalent, <em>universal</em>, that is to say, capable of executing any imaginable symbolic algorithm: in short, an all-purpose machine.</p>
+<h3 id="babbage’s-analytical-machine">Babbage’s analytical machine</h3>
+<p>In 1834, British visionary Charles Babbage<a href="#_ftn8">&lt;![if !supportFootnotes]&gt;[8]&lt;![endif]&gt;</a> starts working on a new concept of machine, that he calls an “analytical machine”. Based on mechanical computing machines that had existed for a few centuries, Babbage’s contraption uses punched cards, similarly to Jacquard’s. The components of his invention are quite similar to those you may find in a modern computer.</p>
+<p>While working on this project, Babbage starts writing to Ada Lovelace, a pioneer in computer science. In 1843, Lovelace originates the first algorithm to be executed on a machine, Charles Babbage’s “differential machine”. This algorithm computes the Bernoulli numbers sequence<a href="#_ftn9">&lt;![if !supportFootnotes]&gt;[9]&lt;![endif]&gt;</a> and is considered the first computer program in history, turning Lovelace into the first known programmer to many.</p>
+<h3 id="the-turing-revolution">The Turing revolution</h3>
+<p>The works of Lovelace and Babbage are rediscovered a century later, in the 1930s, especially thanks the research of Alan Turing<a href="#_ftn10">&lt;![if !supportFootnotes]&gt;[10]&lt;![endif]&gt;</a>. This inventor, an emblematic figure of the scientific research of the twentieth century, designs his “Turing machine” in 1936, so as to give a precise definition to the concept of algorithm, and to propose a formal and technical representation of a “mechanical procedure”.</p>
+<p>Thereby, Turing illustrates the notion of <em>universality</em> as Lovelace and Babbage framed it. Turing’s machine is viewed as the genesis of John von Neumann’s works, whose model, although designed in 1945, is still used in modern computers: we call it the “Von Neumann architecture”. Transposing the hardware used back then into latter-day vocabulary confirms this proximity:</p>
+<p>&lt;![if !supportLists]&gt;· &lt;![endif]&gt;a processor performs operations ;</p>
+<p>&lt;![if !supportLists]&gt;· &lt;![endif]&gt;the Random Access Memory (RAM) stores the data in use ;</p>
+<p>&lt;![if !supportLists]&gt;· &lt;![endif]&gt;hard drives – and other storing devices – hold sustainable data ;</p>
+<p>&lt;![if !supportLists]&gt;· &lt;![endif]&gt;all kinds of peripherals allow interaction as <em>inputs</em> (keyboard, mouse, touchscreen, microphone, camera,  USB ports, etc.) and <em>outputs</em> (screen, speakers, etc.)</p>
+<h2 id="fundamental-approach">Fundamental approach</h2>
+<p>Algorithms are alike: they are made of a restrained amount of structuring expressions that are similar to one another. According to Abiteboul and Dowek, any algorithm can be conceived with only four basic instructions: sequence, assignment, iteration and condition.<a href="#_ftn11">&lt;![if !supportFootnotes]&gt;[11]&lt;![endif]&gt;</a></p>
+<h3 id="sequence">Sequence</h3>
+<p>The <em>sequence</em> is the very order in which instructions are arranges, that is to say, the structure of the algorithm itself: “do <em>this</em>, then <em>that</em>”. When represented – either written or drawn –, an algorithm is usually read from top to bottom, in accordance to the usual reading direction in many languages.</p>
+<h3 id="assignment">Assignment</h3>
+<p>An assignment is the fact of allocating a value to a <em>variable</em> – for instance, “<em>a</em> takes the value of <em>b</em>”. A variable is made of a noun (its identifier) and a unique value at any time. This value can be numerical, textual or even a boolean: <em>true</em> or <em>false</em>.<a href="#_ftn12">&lt;![if !supportFootnotes]&gt;[12]&lt;![endif]&gt;</a></p>
+<h3 id="iteration">Iteration</h3>
+<p>Commonly referred to as <em>loop</em>, an iteration is the fact of repeating a set of instructions. This concept is essential, since algorithms are generally designed to automate repetitive tasks. There are different kinds of loops depending on their purpose, such as the <em>for</em> loop, the <em>for each</em> loop or the <em>while</em> loop.</p>
+<h3 id="condition">Condition</h3>
+<p>Finally, the condition, or <em>conditional test</em>, allows to perform an instruction or not, depending on the value of a given variable: for instance, “if <em>this</em> is true, then do <em>that</em>”. The layout “<em>if</em>, <em>then</em>, <em>else</em>) is generally referred to as a <em>conditional expression.</em> These enable an algorithm to take different “paths”, and therefore to be more polyvalent and adapt to the complexity of real data.</p>
+<p>&lt;![if !vml]&gt;![](file://localhost/private/var/folders/0f/qqz31bxj2kl_yj8tgcg8349w0000gn/T/TemporaryItems/msoclip/0clip_image002.png)&lt;![endif]&gt;</p>
+<p><em>Example of successive conditional expressions,<br>
+from the manual of the video game “Keep Talking And Nobody Explodes”</em></p>
+<h1 id="algorithmic-writings">Algorithmic writings</h1>
+<h2 id="what-is-writing">What is writing?</h2>
+<h3 id="writing-and-language">Writing and language</h3>
+<p>Writing is a communication method that consists in representing a language through marking down graphic symbols on various materials. Writing was born four thousand years before our era, in Mesopotamia, in order to keep track of trades – in particular commercial ones – because of the human brain’s unreliability to remember a large amount of information for a long time.</p>
+<p>Writing involves languages. The term “language” can mean two things, either the faculty and the system, or the means of expression, the use. A language is usually composed of semantics, and, most of the time, syntax. Those two notions are the symmetrically opposite: semantics is a branch of linguistics which focuses on the signified – what one talks about – whereas syntax deals with the <em>signifier</em> – the language, the graphic representation, the grammar used, etc. In short, the <em>content</em> is opposed to the <em>format</em>.</p>
+<h3 id="types-of-writings">Types of writings</h3>
+<p>Writing usually involves at least two people: the <em>writer</em>, the one who produces the writing, and the <em>reader</em>, who receives it – by reading.  So far, I’m not necessarily talking about text. In fact, the wider notion of writing includes various ways of representing information graphically: drawings, symbols, digits, letters, etc. Nevertheless, the generally admitted meaning of the term “writing” refers to three main categories of systems: logographic – which employs <em>logograms</em> to represent an object or a notion –, syllabic – which uses symbols representing one syllable each – and alphabetical – the one we know the best, composed of <em>phonemes</em>, the smallest linguistic unit.</p>
+<h3 id="alternative-writings">Alternative writings</h3>
+<p>There is no need for me to go into further details about the writing forms that we already know: from page to page, putting words end to end in a Latin alphabet, from left to right and top to bottom. To question the notion of writing, I would rather focus on less usual representations.  According to French author Anne-Marie Christin, the most relevant example, which freed the occidental way of writing, is a piece of work by Stéphane Mallarmé, a French poet of the nineteenth century. In the “<em>Coup de dés</em>”, he spatializes letters and words, leading to what is known as a “typographic poem” – one of the first.</p>
+<p>&lt;![if !vml]&gt;![](file://localhost/private/var/folders/0f/qqz31bxj2kl_yj8tgcg8349w0000gn/T/TemporaryItems/msoclip/0clip_image004.png)&lt;![endif]&gt;</p>
+<p><em>Excerpt from Mallarmé’s “Coup de dés”</em></p>
+<p>French poet Guillaume Apollinaire played with a similar principle in his book “<em>Calligrammes</em>” published in 1918. This particular form of poetry is sometimes named “graphical poetry”.</p>
+<p>&lt;![if !vml]&gt;![](file://localhost/private/var/folders/0f/qqz31bxj2kl_yj8tgcg8349w0000gn/T/TemporaryItems/msoclip/0clip_image006.png)&lt;![endif]&gt;</p>
+<p><em>Calligramme “Il Pleut” d’Apollinaire</em></p>
+<p>By transposing these distinctions to the field of algorithms, one could easily question the form that could take an “alternative writing” of an algorithm, such as a <em>poetic</em> writing. The book “<em>./code-poetry</em>” by Daniel Holden and Chris Kerr, as well as its website, give a few examples of programs that break free from the usual conventions of code writing, and the results are essentially aesthetic: in short, <em>poetic code</em>.</p>
+<p>&lt;![if !vml]&gt;![](file://localhost/private/var/folders/0f/qqz31bxj2kl_yj8tgcg8349w0000gn/T/TemporaryItems/msoclip/0clip_image008.png)&lt;![endif]&gt;</p>
+<p><a href="http://code-poetry.com/flocking"><em>Flocking.go</em></a><em>, a poetic program written in Go giving an animated result</em></p>
+<h2 id="computer-writing">Computer writing</h2>
+<h3 id="from-the-algorithm-to-the-program">From the algorithm to the program</h3>
+<p>A computer program is a sequence of instructions that performs specific tasks when executed on a computer.<a href="#_ftn13">&lt;![if !supportFootnotes]&gt;[13]&lt;![endif]&gt;</a> French academic Franck Varenne draws our attention onto a possible origin of the confusion between algorithms and programs. In fact, even if a written algorithm seems functional, its execution might give unsuspected results, because of several possible errors, either from the software – unassigned variables, overflowed memory – or the hardware – damaged processor, etc. This uncertainty between the program one sees and what happens when it’s executed has been named <em>WYSINWYX</em>, for What You See Is Not What You Execute<a href="#_ftn14">&lt;![if !supportFootnotes]&gt;[14]&lt;![endif]&gt;</a>. This acronym is a reference to the paronym it’s inspired of: in computer science, the term <em>WYSIWYG</em> —What You See Is What You Get – refers to interfaces where the desired end result is directly composed on screen.<a href="#_ftn15">&lt;![if !supportFootnotes]&gt;[15]&lt;![endif]&gt;</a></p>
+<h3 id="natural-languages-and-formal-languages">Natural languages and formal languages</h3>
+<p>In the field of linguistics, we call “natural language” any language that has naturally evolved through human use and repetition, without particular planning or conscious premeditation. The opposite is called “formal language”, sometimes “constructed language” or “artificial language”. It refers to a  language made up from scratch in a relatively short period of time, by a much smaller population – possibly the work of a single person.  We can distinguish three categories among these constructed languages:</p>
+<p>&lt;![if !supportLists]&gt;· &lt;![endif]&gt; <em>engelangs</em> (for <em>engineered languages</em>), once again divided into logic languages (such as programming languages), philosophical or experimental languages ;</p>
+<p>&lt;![if !supportLists]&gt;· &lt;![endif]&gt;<em>auxlangs</em> (for <em>auxiliary languages</em>), created for international communication – one of the best known being Esperanto ;</p>
+<p>&lt;![if !supportLists]&gt;· &lt;![endif]&gt;<em>artlangs</em> (for <em>artistic languages</em>), like those from a work of science fiction or fantasy (like the languages ​​created by the author J. R. R. Tolkien).</p>
+<h3 id="programming-languages">Programming languages</h3>
+<p>There is a wide variety of programming languages. They all have syntax rules, vocabulary, semantics, vocabulary and identifiers of their own. The choice of one programming language to start a project with depends on a handful of parameters. For instance, all programming languages can be considered as tools, and are more or less suitable for a given task. Moreover, programmers have different skills and tastes, and pick a language consequently.</p>
+<p>&lt;![if !vml]&gt;![](file://localhost/private/var/folders/0f/qqz31bxj2kl_yj8tgcg8349w0000gn/T/TemporaryItems/msoclip/0clip_image010.png)&lt;![endif]&gt;</p>
+<p><em>An algorithm in JavaScript language to determine<br>
+the greatest common divisor of two numbers</em></p>
+<p>Let me focus on two types of languages ​​that seem to stand out from “classic” programming languages, the most popular nowadays being JavaScript, Python, Ruby, Java, PHP or C ++, according to a study<a href="#_ftn16">&lt;![if !supportFootnotes]&gt;[16]&lt;![endif]&gt;</a> conducted by the collaborative development platform GitHub<a href="#_ftn17">&lt;![if !supportFootnotes]&gt;[17]&lt;![endif]&gt;</a>. The first one is a way to describe an algorithm in a natural language, without referring to a particular programming language: we call it <em>pseudocode</em>. It has no rule or established convention, and is usually employed in order to measure the difficulty of designing a specific algorithm.</p>
+<p>&lt;![if !vml]&gt;![](file://localhost/private/var/folders/0f/qqz31bxj2kl_yj8tgcg8349w0000gn/T/TemporaryItems/msoclip/0clip_image012.png)&lt;![endif]&gt;</p>
+<p><em>An example of pseudo-code describing a solving method to the</em> <a href="http://wiki.c2.com/?FizzBuzzTest"><em>FizzBuzz</em></a> <em>problem</em></p>
+<p>Another category of language that questions the limits of programming languages ​​is one called “esoteric” languages, or <em>esolangs</em>. The term “esoteric” refers to a form of secret or hermetic teaching. In fact, whether they are used as software works, intellectual exercises or even jokes<a href="#_ftn18">&lt;![if !supportFootnotes]&gt;[18]&lt;![endif]&gt;</a>, these languages require a good knowledge of classical programming languages prior to manipulating them. One of the best known is called <em>Brainfuck</em>. By using only eight distinct characters, this language leads to particularly obfuscated code.<a href="#_ftn19">&lt;![if !supportFootnotes]&gt;[19]&lt;![endif]&gt;</a> Another particularly interesting example is <em>Piet</em>, named after the famous Dutch painter Piet Mondrian. This language is not textual but graphic: the programs are images that could be confused with abstract art, freely inspired by the works of the eponymous painter.</p>
+<p>&lt;![if !vml]&gt;![](file://localhost/private/var/folders/0f/qqz31bxj2kl_yj8tgcg8349w0000gn/T/TemporaryItems/msoclip/0clip_image014.png)&lt;![endif]&gt;</p>
+<p><em>Left: Brainfuck program that displays "Hello World!"<br>
+Middle: program in Piet that displays “Piet”.<br>
+Right: Piet program that displays “Hello World!”</em></p>
+<h2 id="algorithmic-writing-systems">Algorithmic writing systems</h2>
+<h3 id="development-environments">Development environments</h3>
+<p>An “Integrated Development Environment” (IDE) is a set of tools a developer uses to produce a computer program. An IDE generally is a software whose interface includes tools and functions: usually a text editor where the programmer writes down lines of code, a debugger to find and correct <em>bugs</em>, and sometimes – if the language needs it – a compiler to “translate” the programming language into <em>machine language</em>, that is to say instructions that the computers understands.</p>
+<p>&lt;![if !vml]&gt;![](file://localhost/private/var/folders/0f/qqz31bxj2kl_yj8tgcg8349w0000gn/T/TemporaryItems/msoclip/0clip_image016.png)&lt;![endif]&gt;</p>
+<p><em>Screenshot from the programing software Atom</em></p>
+<h3 id="lines-of-code">Lines of code</h3>
+<p>Code, as French archeologist and linguist Clarisse Herrenschmidt defines it, is “a way to encipher, specific to the machine that encrypts and decrypts.”<a href="#_ftn20">&lt;![if !supportFootnotes]&gt;[20]&lt;![endif]&gt;</a> Lines of code are the best known and most used form of programming. Almost any digital device or application that we use daily have been coded in a text editor, line by line, one symbol at a time.</p>
+<h3 id="visual-programming">Visual programming</h3>
+<p>Programming can also take a graphic, visual form. For instance, it is the case when representing algorithms with diagrams, also called flowcharts. The instructions are divided into various geometric shapes – a rectangle for an operation, a diamond for a conditional test, etc. –, which are linked altogether to symbolize the sequence of instructions. This modeling, particularly used in education, is employed in programming software such as Flowgorithm.</p>
+<p>&lt;![if !vml]&gt;![](file://localhost/private/var/folders/0f/qqz31bxj2kl_yj8tgcg8349w0000gn/T/TemporaryItems/msoclip/0clip_image018.png)&lt;![endif]&gt;</p>
+<p><em>Capture d’écran du logiciel Flowgorithm</em></p>
+<p>Visual programming can also break free from the standardized representation of a flowchart. The best-known example is Scratch, a software that researchers of the MIT have been developing for about fifteen years. Scratch depicts algorithmic programming as a puzzle game, made up different kind of “blocks”, each representing a particular type of operation. The blocks are nested to shape the structure of the program. Its simple and colorful interface and its intuitiveness make it the perfect tool for young creative pupils, and Scratch is overall a great way to understand logistician thinking.</p>
+<p>&lt;![if !vml]&gt;![](file://localhost/private/var/folders/0f/qqz31bxj2kl_yj8tgcg8349w0000gn/T/TemporaryItems/msoclip/0clip_image020.png)&lt;![endif]&gt;</p>
+<p><em>Capture d’écran du logiciel Scratch</em> <strong><em>= in English!</em></strong></p>
+<p><strong>Singular modes of algorithmic programming</strong></p>
+<p>These examples transpose classic algorithmic writing into a more empiric and physical way of thinking: the components that make up the algorithm are directly manipulated, mentally. This opens the way towards wide creative possibilities: what would be a material algorithm, out of the screen? What kind of “manipulation” opportunities would that allow?</p>
+<p>For the future of my project, I aim to point out such opportunities by taking a step back on the different ways of writing algorithms, to then produce a few concrete applications, especially creative ones.</p>
+<p><strong>Mémoire de recherche en Anglais UE 11 – DSAA Lycée Léonard de Vinci, VILLEFONTAINE</strong></p>
+<p>NOM: Hugo Sainte Marie</p>
+<p><strong>CONTENU</strong></p>
+<p><strong>Degré 1</strong></p>
+<p>Très insuffisant</p>
+<p>(0 - 4)</p>
+<p><strong>Degré 2</strong></p>
+<p>Insuffisant</p>
+<p>(4-8)</p>
+<p><strong>Degré 3</strong></p>
+<p>Correct</p>
+<p>(8-12)</p>
+<p><strong>Degré 4</strong></p>
+<p>Satisfaisant</p>
+<p>(12-16)</p>
+<p><strong>Degré 5</strong></p>
+<p>Très satisfaisant</p>
+<p>(16-20)</p>
+<p>Plan &amp;</p>
+<p>Structure</p>
+<p>x</p>
+<p>Logique globale du propos</p>
+<p>x</p>
+<p>Clarté des idées énoncées</p>
+<p>x</p>
+<p><strong>LANGUE</strong></p>
+<p>Correction grammaticale et syntaxique</p>
+<p>x</p>
+<p>Etendue lexicale: richesse et pertinence</p>
+<p>x</p>
+<p>Adéquation notionnelle et finesse des usages</p>
+<p>x</p>
+<p>Fluidité et maîtrise</p>
+<p>globales</p>
+<p>x</p>
+<p>Note:  17  /20</p>
+<p>Commentaire: <strong>Ta conclusion mériterait d’être un peu étoffée  pour établir plus précisemment ce que tu vas essayer de faire car si tes explications sont claires et logiques, le lien avec la pratique design n’est pas évidente. Par ailleurs, la langue est de très bonne qualité. C’est bien.</strong></p>
+<p>&lt;![if !supportFootnotes]&gt;</p>
+<hr>
+<p>&lt;![endif]&gt;</p>
+<p><a href="#_ftnref1">&lt;![if !supportFootnotes]&gt;[1]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[1]&lt;![endif]&gt; Numerous examples of algorithms being used in the field of design are listed on the website <a href="http://algorithms.design/">algorithms.design</a>, especially those involving artificial intelligence, a branch standing in the spotlight nowadays.</p>
+<p><a href="#_ftnref2">&lt;![if !supportFootnotes]&gt;[2]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[2]&lt;![endif]&gt; <em>Creative coding</em> is a kind of computer programming where languages are used in order to produce an expressive or artistic outcome rather than a functional one.</p>
+<p><a href="#_ftnref3">&lt;![if !supportFootnotes]&gt;[3]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[3]&lt;![endif]&gt; <em>Live coding</em> is a practice in which programming becomes an improvised performance – often a musical one.</p>
+<p><a href="#_ftnref4">&lt;![if !supportFootnotes]&gt;[4]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[4]&lt;![endif]&gt; John Maeda, <em>Design By Numbers</em> (2001), MIT Press, p. 10–11</p>
+<p><a href="#_ftnref5">&lt;![if !supportFootnotes]&gt;[5]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[5]&lt;![endif]&gt; Muhammad Ibn Mūsā al-Khuwārizmī was a Persian mathematician, geographer, astrologer and astronomer. He’s the author of a book classifying existing algebraic processes of his time.</p>
+<p><a href="#_ftnref6">&lt;![if !supportFootnotes]&gt;[6]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[6]&lt;![endif]&gt; The term <em>abacus</em> means any mechanical device that helps calculation.</p>
+<p><a href="#_ftnref7">&lt;![if !supportFootnotes]&gt;[7]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[7]&lt;![endif]&gt; Blaise Pascal was a French mathematician, physicist, inventor and philosopher. At the age of 19, he invented the first computing machine.</p>
+<p><a href="#_ftnref8">&lt;![if !supportFootnotes]&gt;[8]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[8]&lt;![endif]&gt; Charles Babbage was a British mathematician and inventor during the nineteenth century. He was one of the first researchers in computer science.</p>
+<p><a href="#_ftnref9">&lt;![if !supportFootnotes]&gt;[9]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[9]&lt;![endif]&gt; In mathematics, the Bernoulli numbers are a sequence of numbers that were first studied by Jacques Bernoulli, a Swiss mathematician and physicist during the eighteenth century.</p>
+<p><a href="#_ftnref10">&lt;![if !supportFootnotes]&gt;[10]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[10]&lt;![endif]&gt; Alan Turing was a British mathematician and cryptologist, whose works founded modern computer science. After designing the Turing machine, he takes part in the decryption of the German “Enigma machine” during World War II – which played a significant role in the victory of the Allies. Turing carries on with his studies in computer science and formulates the “Turing test”, a key notion in the field of artificial intelligence. Judicially pursued for his homosexuality, Turing chose chemical castration to avoid imprisonment. He died in 1954 of cyanide poisoning, presumably by suicide.</p>
+<p><a href="#_ftnref11">&lt;![if !supportFootnotes]&gt;[11]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[11]&lt;![endif]&gt; Serge Abiteboul &amp; Gilles Dowek, <em>Le temps des algorithmes</em> (2017), Essai le Pommier, p. 18–19</p>
+<p><a href="#_ftnref12">&lt;![if !supportFootnotes]&gt;[12]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[12]&lt;![endif]&gt; Un Boolean is a two-state kind of variable. Its name comes from the works of George Boole, a famous British mathematician and logistician who establishes the basics of “Boolean logic”, which deals with two numeric values only: 0 and 1. This way of thinking is of capital importance in computer science and is still widely used nowadays.</p>
+<p><a href="#_ftnref13">&lt;![if !supportFootnotes]&gt;[13]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[13]&lt;![endif]&gt; <a href="https://en.wikipedia.org/wiki/Computer_program"><em>Computer program</em></a> on Wikipedia</p>
+<p><a href="#_ftnref14">&lt;![if !supportFootnotes]&gt;[14]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[14]&lt;![endif]&gt; G. Balakrishnan, T. Reps, D. Melski, et T. Teitelbaum, <em>WYSINWYX: What You See Is Not What You eXecute</em> (2005)</p>
+<p><a href="#_ftnref15">&lt;![if !supportFootnotes]&gt;[15]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[15]&lt;![endif]&gt; <a href="https://en.wikipedia.org/wiki/WYSIWYG"><em>WYSIWYG</em></a> on Wikipedia</p>
+<p><a href="#_ftnref16">&lt;![if !supportFootnotes]&gt;[16]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[16]&lt;![endif]&gt; <a href="https://octoverse.github.com/"><em>GitHub Octoverse 2017</em></a></p>
+<p><a href="#_ftnref17">&lt;![if !supportFootnotes]&gt;[17]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[17]&lt;![endif]&gt; GitHub is a collaborative hosting platform for file versioning. Based of the utility <em>git</em>, that allow to save checkpoints of one’s work – called <em>commits</em> –, GitHub lets everyone share his code and anyone can get involved: this practice is called <em>open-source</em>.</p>
+<p><a href="#_ftnref18">&lt;![if !supportFootnotes]&gt;[18]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[18]&lt;![endif]&gt; The website  <a href="http://esoteric.codes/"><em>esoteric.codes</em></a> gathers several creative examples involving esoteric languages.</p>
+<p><a href="#_ftnref19">&lt;![if !supportFootnotes]&gt;[19]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[19]&lt;![endif]&gt; In programming, to “obfuscate” means  making a program unreadable for human beings.</p>
+<p><a href="#_ftnref20">&lt;![if !supportFootnotes]&gt;[20]&lt;![endif]&gt;</a></p>
+<p>&lt;![if !supportFootnotes]&gt;[20]&lt;![endif]&gt; 9:395</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Numerous examples of algorithms being used in the field of design are listed on the website <a href="http://algorithms.design/">algorithms.design</a>, especially those involving artificial intelligence, a branch standing in the spotlight nowadays. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><em>Creative coding</em> is a kind of computer programming where languages are used in order to produce an expressive or artistic outcome rather than a functional one. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><em>Live coding</em> is a practice in which programming becomes an improvised performance – often a musical one. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"> <a href="#fnref4" class="footnote-backref">↩︎</a></li>
+</ol>
+</section>
+
+    </div>
+  </div>
+</body>
+
+</html>

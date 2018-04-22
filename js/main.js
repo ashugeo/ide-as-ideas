@@ -5,14 +5,14 @@ $(document).ready(() => {
     $.ajaxSetup({ cache: false });
 
     // Load references
-    $.getJSON('../refs.json', (data) => {
+    $.getJSON('refs.json', (data) => {
         refs = data;
         videos();
         references();
         sideNotes();
         externalLinks();
 
-        if (window.location.pathname === '/') {
+        if (window.location.pathname === '/ide-as-ideas/') {
             frenchTypo();
         }
     });

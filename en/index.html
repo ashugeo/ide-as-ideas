@@ -4,18 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dissertation Hugo Sainte-Marie</title>
+  <title>IDE AS IDEAS</title>
+  <link rel="icon" type="image/png" href="/icon.png" />
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
-  <link rel="stylesheet" href="../css/main.min.css" />
-  <script src="../js/jquery-3.2.1.min.js"></script>
-  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="css/main.min.css" />
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 
 <body class="stackedit">
   <div class="stackedit__left">
     <div class="stackedit__toc">
-      
+
 <ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#the-algorithmic-material">The algorithmic material</a>
@@ -78,6 +79,7 @@
     <div class="stackedit__html">
       <p><code>IDE AS IDEAS</code></p>
 <p><strong>Algorithmic programming tools serving designers</strong></p>
+<p>This is a shortened version of my final year dissertation. For the full text, please refer to the <a href="/">French version</a>.</p>
 <h1 id="introduction">Introduction</h1>
 <p>In the last few years, algorithms have entered our lives, and we now meet them everywhere daily, without actually noticing them. In the book “<em>Le temps des algorithmes</em>”, French researchers and teachers Serge Abiteboul and Gilles Dowek list many examples of various uses of algorithms, embedded into our digital devices: calculation, managing information, communication, exploration and analysis of data, but also signal treatment, driving objects, manufacturing goods, scientific research, etc.</p>
 <p>The growing presence of algorithms in our lives might raise anxiousness and can enter the political debate. Although, we tend to forget a fundamental characteristic of algorithms: they are written by human beings. The programs we use everyday are or have been developed by programmers, who use specific tools to achieve this job. These tools are the core field of study of this dissertation, which of course will be led with a design approach – that is to say, focusing on uses and users.<sup class="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup></p>
@@ -112,16 +114,16 @@
 <h2 id="fundamental-approach">Fundamental approach</h2>
 <p>Algorithms are alike: they are made of a restrained amount of structuring expressions that are similar to one another. According to Abiteboul and Dowek, any algorithm can be conceived with only four basic instructions: sequence, assignment, iteration and condition.<sup class="footnote-ref"><a href="#fn11" id="fnref11">11</a></sup></p>
 <h3 id="sequence">Sequence</h3>
-<p><img src="img/en/sequence.png" alt="Sequence"></p>
+<p><img src="img/sequence.png" alt="Sequence"></p>
 <p>The <em>sequence</em> is the very order in which instructions are laid out, that is to say, the structure of the algorithm itself: “do <em>this</em>, then <em>that</em>”. When represented – either written or drawn –, an algorithm is usually read from top to bottom, in accordance to the usual reading direction in many languages.</p>
 <h3 id="assignment">Assignment</h3>
-<p><img src="img/en/affectation.png" alt="Assignment"></p>
+<p><img src="img/affectation.png" alt="Assignment"></p>
 <p>An assignment is the fact of allocating a value to a <em>variable</em> – for instance, “<em>a</em> takes the value of <em>b</em>”. A variable is made of a noun (its identifier) and a unique value at any time. This value can be numerical, textual or even a boolean: <em>true</em> or <em>false</em>.<sup class="footnote-ref"><a href="#fn12" id="fnref12">12</a></sup></p>
 <h3 id="iteration">Iteration</h3>
-<p><img src="img/en/iteration.png" alt="Iteration"></p>
+<p><img src="img/iteration.png" alt="Iteration"></p>
 <p>Commonly referred to as <em>loop</em>, an iteration is the fact of repeating a set of instructions. This concept is essential, since algorithms are generally designed to automate repetitive tasks. There are different kinds of loops depending on their purpose, such as the <em>for</em> loop, the <em>for each</em> loop or the <em>while</em> loop.</p>
 <h3 id="condition">Condition</h3>
-<p><img src="img/en/condition.png" alt="Condition"></p>
+<p><img src="img/condition.png" alt="Condition"></p>
 <p>Finally, the condition, or <em>conditional test</em>, allows to perform an instruction or not, depending on the value of a given variable: for instance, “if <em>this</em> is true, then do <em>that</em>”. The layout “<em>if</em>, <em>then</em>, <em>else</em>) is generally referred to as a <em>conditional expression.</em> These enable an algorithm to take different “paths”, and therefore to be more flexible and adapt to the complexity of real data.</p>
 <h1 id="algorithmic-writings">Algorithmic writings</h1>
 <h2 id="what-is-writing">What is writing?</h2>
@@ -132,11 +134,11 @@
 <p>Writing usually involves at least two people: the <em>writer</em>, the one who produces the writing, and the <em>reader</em>, who receives it – by reading.  So far, I’m not necessarily talking about text. In fact, the wider notion of writing includes various ways of representing information graphically: drawings, symbols, digits, letters, etc. Nevertheless, the generally admitted meaning of the term “writing” refers to three main categories of systems: logographic – which employs <em>logograms</em> to represent an object or a notion –, syllabic – which uses symbols representing one syllable each – and alphabetical – the one we know the best, composed of <em>phonemes</em>, the smallest linguistic unit.</p>
 <h3 id="alternative-writings">Alternative writings</h3>
 <p>There is no need for me to go into further details about the writing forms that we already know: from page to page, putting words end to end in a Latin alphabet, from left to right and top to bottom. To question the notion of writing, I would rather focus on less usual representations.  According to French author Anne-Marie Christin, the most relevant example, which freed the western way of writing, is a piece of work by Stéphane Mallarmé, a French poet of the nineteenth century. In the “<em>Coup de dés</em>”, he spatializes letters and words, leading to what is known as a “typographic poem” – one of the first.</p>
-<p><img src="img/en/mallarme.png" alt="Excerpt of Mallarmé's &quot;Coup de Dés&quot;"></p>
+<p><img src="img/mallarme.png" alt="Excerpt of Mallarmé's &quot;Coup de Dés&quot;"></p>
 <p>French poet Guillaume Apollinaire played with a similar principle in his book “<em>Calligrammes</em>” published in 1918. This particular form of poetry is sometimes named “graphical poetry”.</p>
 <p><img src="img/calligramme-apollinaire.png" alt="Apollinaire's &quot;Il Pleut&quot;"></p>
 <p>By transposing these distinctions to the field of algorithms, one could easily question the form that could take an “alternative writing” of an algorithm, such as a <em>poetic</em> writing. The book “<em>./code-poetry</em>” by Daniel Holden and Chris Kerr, as well as its website, give a few examples of programs that break free from the usual conventions of code writing, and the results are essentially aesthetic: in short, <em>poetic code</em>.</p>
-<p><img src="img/en/code-poetry.png" alt="Flocking.go, a poetic animated program in Go language"></p>
+<p><img src="img/code-poetry.png" alt="Flocking.go, a poetic animated program in Go language"></p>
 <h2 id="computer-writing">Computer writing</h2>
 <h3 id="from-the-algorithm-to-the-program">From the algorithm to the program</h3>
 <p>A computer program is a sequence of instructions that performs specific tasks when executed on a computer.<sup class="footnote-ref"><a href="#fn13" id="fnref13">13</a></sup> French academic Franck Varenne draws our attention onto a possible origin of the confusion between algorithms and programs. In fact, even if a written algorithm seems functional, its execution might give unsuspected results, because of several possible errors, either from the software – unassigned variables, overflowed memory – or the hardware – damaged processor, etc. This uncertainty between the program one sees and what happens when it’s executed has been named <em>WYSINWYX</em>, for What You See Is Not What You Execute<sup class="footnote-ref"><a href="#fn14" id="fnref14">14</a></sup>. This acronym is a reference to the paronym it’s inspired of: in computer science, the term <em>WYSIWYG</em> —What You See Is What You Get – refers to interfaces where the desired end result is directly composed on screen.<sup class="footnote-ref"><a href="#fn15" id="fnref15">15</a></sup></p>
@@ -152,7 +154,7 @@
 <p>Let me focus on two types of languages ​​that seem to stand out from “classic” programming languages, the most popular nowadays being JavaScript, Python, Ruby, Java, PHP or C ++, according to a study<sup class="footnote-ref"><a href="#fn16" id="fnref16">16</a></sup> conducted by the collaborative development platform GitHub<sup class="footnote-ref"><a href="#fn17" id="fnref17">17</a></sup>. The first one is a way to describe an algorithm using a natural language, without referring to a particular programming language: we call it <em>pseudocode</em>. It has no rule or established convention, and is usually employed in order to measure the difficulty of designing a specific algorithm.</p>
 <p><img src="img/pseudo-code.png" alt="An example of pseudo-code"></p>
 <p>Another category of language that questions the limits of programming languages ​​is one called “esoteric” languages, or <em>esolangs</em>. The term “esoteric” refers to a form of secret or hermetic teaching. In fact, whether they are used as software works, intellectual exercises or even jokes<sup class="footnote-ref"><a href="#fn18" id="fnref18">18</a></sup>, these languages require a good knowledge of classical programming languages prior to manipulating them. One of the best known is called <em>Brainfuck</em>. By using only eight distinct characters, this language leads to particularly obfuscated code.<sup class="footnote-ref"><a href="#fn19" id="fnref19">19</a></sup> Another particularly interesting example is <em>Piet</em>, named after the famous Dutch painter Piet Mondrian. This language is not textual but graphic: the programs are images that could be confused with abstract art, freely inspired by the works of the eponymous painter.</p>
-<p><img src="img/en/esolangs.png" alt="Examples of esoteric languages"></p>
+<p><img src="img/esolangs.png" alt="Examples of esoteric languages"></p>
 <h2 id="algorithmic-writing-systems">Algorithmic writing systems</h2>
 <h3 id="development-environments">Development environments</h3>
 <p>An “Integrated Development Environment” (IDE) is a set of tools a developer uses to produce a computer program. An IDE generally is a software whose interface includes tools and functions: usually a text editor where the programmer writes down lines of code, a debugger to find and correct <em>bugs</em>, and sometimes – if the language needs it – a compiler to “translate” the programming language into <em>machine language</em>, that is to say instructions that the computers understands.</p>
@@ -161,9 +163,9 @@
 <p>Code, as French archaeologist and linguist Clarisse Herrenschmidt defines it, is “a way to encipher, specific to the machine that encrypts and decrypts.”<sup class="footnote-ref"><a href="#fn20" id="fnref20">20</a></sup> Lines of code are the best known and most used form of programming. Almost any digital device or application that we use daily have been coded in a text editor, line by line, one symbol at a time.</p>
 <h3 id="visual-programming">Visual programming</h3>
 <p>Programming can also take a graphic, visual form. For instance, it is the case when representing algorithms with diagrams, also called flowcharts. The instructions are divided into various geometric shapes – a rectangle for an operation, a diamond for a conditional test, etc. –, which are linked altogether to symbolize the sequence of instructions. This modeling, particularly used in education, is employed in programming software such as Flowgorithm.</p>
-<p><img src="img/en/flowgorithm.png" alt="Screenshot of Flowgorithm software"><em>Screenshot of Flowgorithm software</em></p>
+<p><img src="img/flowgorithm.png" alt="Screenshot of Flowgorithm software"><em>Screenshot of Flowgorithm software</em></p>
 <p>Visual programming can also break free from the standardized representation of a flowchart. The best-known example is Scratch, a software that researchers of the MIT have been developing for about fifteen years. Scratch depicts algorithmic programming as a puzzle game, made up different kind of “blocks”, each representing a particular type of operation. The blocks are nested to shape the structure of the program. Its simple and colorful interface and its intuitiveness make it the perfect tool for young creative pupils, and Scratch is overall a great way to understand logical thinking.</p>
-<p><img src="img/en/scratch-ide.png" alt="Screenshoft of Scratch software"><em>Screenshoft of Scratch software</em></p>
+<p><img src="img/scratch-ide.png" alt="Screenshoft of Scratch software"><em>Screenshoft of Scratch software</em></p>
 <h3 id="singular-modes-of-algorithmic-programming">Singular modes of algorithmic programming</h3>
 <p>These examples transpose classic algorithmic writing into a more empirical and physical way of thinking: the components that make up the algorithm are directly manipulated, mentally. This opens the way towards wide creative possibilities: what would be a material algorithm, out of the screen? What kind of “manipulation” opportunities would that allow?</p>
 <p>For the future of my project, I aim to point out such opportunities by taking a step back on the different ways of writing algorithms, to then produce a few concrete applications, especially creative ones.</p>
@@ -214,6 +216,14 @@
 </section>
 
     </div>
+  </div>
+  <div class="ctrl">
+      <!-- <div class="toc">
+          T
+      </div> -->
+      <div class="lang">
+          <span><a href="/">FR</a></span><span class="active">EN</span>
+      </div>
   </div>
 </body>
 

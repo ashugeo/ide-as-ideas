@@ -5,6 +5,7 @@ $(document).ready(() => {
     $.ajaxSetup({ cache: false });
 
     // Load references
+    // $.getJSON('https://ashugeo.com/ide-as-ideas/refs.json', (data) => {
     $.getJSON('refs.json', (data) => {
         refs = data;
         videos();
@@ -28,6 +29,13 @@ $(document).on('click', 'a', (e) => {
     }
 });
 
+// $(document).on('click', '.stackedit__toc a', (e) => {
+//     const $el = $(e.currentTarget);
+//     const $anchor = $($el.attr('href'));
+//     $('html, body').animate({scrollTop: $anchor.offset().top}, 500);
+//     return false;
+// });
+
 $(document).on('mouseover', 'a', (e) => {
     const $el = $(e.currentTarget);
 
@@ -39,6 +47,22 @@ $(document).on('mouseover', 'a', (e) => {
 
 $(document).on('mouseleave', 'a', (e) => {
     $('.sidenote').removeClass('visible');
+});
+
+$(document).on('click', '.ctrl div', (e) => {
+    const $el = $(e.currentTarget);
+    const tool = $el.attr('data-tool');
+
+    if (tool === 'toc') {
+        $('.stackedit__left').toggleClass('open');
+    } else if (tool === 'smaller' || tool === 'bigger') {
+        let size = parseInt($('body').css('font-size'));
+        size += tool === 'bigger' ? 1 : -1;
+        size = Math.min(Math.max(size, 12), 24);
+        $('body').css('font-size', size);
+    } else if (tool === 'mode') {
+        $('body').toggleClass('dark');
+    }
 });
 
 function references() {
@@ -122,7 +146,7 @@ function sideNotes() {
 function externalLinks() {
     $('.stackedit__html a:not([href^="#"])').each((id, el) => {
         const $el = $(el);
-        if ($el[0].pathname === "/") return;
+        if ($el[0].pathname === "/ide-as-ideas/") return;
         $el.attr('target', '_blank');
     });
 }

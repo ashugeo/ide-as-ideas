@@ -135,4 +135,16 @@
          "year": 2010,
          "editor": "Ressources vives"
      },
+     "24": {
+         "title": "Protocol: how control exists after decentralization",
+         "author": "Alexander R. Galloway",
+         "year": 2004,
+         "editor": "MIT Press"
+     },
+     "25": {
+         "title": "Designing Design Tools",
+         "author": "Nolwenn Maudet",
+         "year": 2017,
+         "link": "http://www.designing-design-tools.nolwennmaudet.com/"
+     }
 }

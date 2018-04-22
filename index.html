@@ -10,10 +10,18 @@
   <link rel="stylesheet" href="css/main.min.css" />
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/main.js"></script>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 
 <body class="stackedit">
+    <div class="header-wrap">
+        <div class="header">
+            <h1>IDE AS<br>IDEAS</h1>
+            <h2>Les outils de<br>programmation algorithmique<br>au service du designer</h2>
+            <h3>Hugo Sainte-Marie<br>Mémoire de recherche professionnel – 2018<br>DSAA Design interactif<br>Pôle supérieur de Design – Villefontaine</h3>
+        </div>
+    </div>
+    <div class="content">
+
   <div class="stackedit__left">
     <div class="stackedit__toc">
 
@@ -128,8 +136,6 @@
   </div>
   <div class="stackedit__right">
     <div class="stackedit__html">
-      <p><code>IDE AS IDEAS</code></p>
-<p><strong>Les outils de programmation algorithmique au service du designer</strong></p>
 <h1 id="préface">Préface</h1>
 <p>Lorsque je préparais, il y a deux ans, ma soutenance de diplôme en design graphique, une professeure m’a permis de comprendre la spécificité de ma pratique en tant que designer : j’ai un profil résolument technicien. Cela m’a amené à répondre à des sujets d’une façon assez personnelle, parfois alternative, en développant par exemple des outils générateurs de logotypes, ou encore en réalisant des expérimentations graphiques à l’aide d’algorithmes. J’aborde donc ce travail de recherche en assumant une démarche  très empirique : comme beaucoup, je dois expérimenter pour comprendre. Compte tenu de la dimension relativement technique de l’écriture algorithmique, sa pratique constitue pour moi l’approche de recherche en design la plus adaptée à mon profil, et permet de concrétiser l’étude théorique en proposant des solutions appliquées.</p>
 <p>Dans ce mémoire, je ne cherche pas répondre à une question récurrente notamment sur les réseaux sociaux : “les designers devraient-ils coder ?”<sup class="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup> En effet, je ne vois pas la pratique du code comme une compétence dont la nécessité devrait être débattue. Selon moi, il s’agit plutôt d’un outil dont le designer peut s’emparer, voire même d’un <em>matériau</em> dont la manipulation – l’écriture algorithmique – met en jeu des outils. Ce mémoire s’intéresse donc à ces outils, les interfaces d’écriture de programmes, en particulier dans les pratiques créatives telles que le design.</p>
@@ -563,7 +569,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p>Je remercie également l’ensemble de l’équipe pédagogique du DSAA pour leur accompagnement, et celle du Pôle Supérieur de Design plus généralement pour ces cinq années où j’ai pu m’épanouir pleinement en découvrant le métier de designer.</p>
 <p>Enfin, je remercie ma famille pour leur présence indéfectible et mes camarades de promotion sans qui, assurément, mes études n’auraient pas eu la même saveur.</p>
 <h1 id="à-propos">À propos</h1>
-<p>Ce mémoire a été rédigé en Markdown grâce à l’application web <a href="https://stackedit.io/">StackEdit</a>, et publié régulièrement sur <a href="https://github.com/Ashugeo/ashugeo.github.io">GitHub</a> pour assurer la conservation d’un historique de versions. Les caractères utilisés sont <em>Source Sans Pro</em> et <em>Source Code Pro</em>, dessinés par Paul D. Hunt. Le choix d’une publication web plutôt qu’imprimée a non seulement été motivé par le sujet même de cette recherche, mais s’inspire également des thèses d’<a href="http://www.softphd.com/">Anthony Masure</a> et de <a href="http://www.designing-design-tools.nolwennmaudet.com">Nolwenn Maudet</a>.</p>
+<p>Ce mémoire a été rédigé en Markdown grâce à l’application web <a href="https://stackedit.io/">StackEdit</a>, et publié régulièrement sur <a href="https://github.com/Ashugeo/ashugeo.github.io">GitHub</a> pour assurer la conservation d’un historique de versions. Les caractères utilisés sont <em>Source Sans Pro</em> et <em>Source Code Pro</em>, dessinés par Paul D. Hunt. Le choix d’une publication web plutôt qu’imprimée a non seulement été motivé par le sujet même de cette recherche, mais s’inspire également des thèses d’<a href="http://www.softphd.com/">Anthony Masure</a> et de <a href="http://www.designing-design-tools.nolwennmaudet.com">Nolwenn Maudet</a>. La mise en page <em>reponsive</em> – adaptée à toutes les tailles d'écrans – a été réalisée en HTML et CSS, et les interactions en JavaScript et jQuery avec le l'éditeur de texte Atom : il est possible de changer la taille du texte à la convenance du lecteur, et également de passer en mode "nuit" pour une lecture plus confortable dans un environnement sombre.</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
@@ -757,13 +763,19 @@ console<span class="token punctuation">.</span><span class="token function">log<
     </div>
   </div>
   <div class="ctrl">
-      <!-- <div class="toc">
-          T
-      </div> -->
+      <div class="clickable" data-tool="toc" data-tooltip="Sommaire"></div>
+      <div class="clickable" data-tool="bigger" data-tooltip="Augmenter la taille des caractères"></div>
+      <div class="clickable" data-tool="smaller" data-tooltip="Réduire la taille des caractères"></div>
+      <div class="clickable" data-tool="mode" data-tooltip="Mode jour/nuit"></div>
+      <div class="spacer">
+
+      </div>
       <div class="lang">
           <span class="active">FR</span><span><a href="/en">EN</a></span>
       </div>
   </div>
+</div>
+
 </body>
 
 </html>

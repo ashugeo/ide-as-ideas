@@ -1,7 +1,6 @@
 let refs = {};
 
 $(document).ready(() => {
-
     // TODO: remove this
     $.ajaxSetup({ cache: false });
 
@@ -12,7 +11,10 @@ $(document).ready(() => {
         references();
         sideNotes();
         externalLinks();
-        frenchTypo();
+
+        if (window.location.pathname === '/') {
+            frenchTypo();
+        }
     });
 });
 
@@ -54,7 +56,7 @@ function references() {
         let passage = text.split(':')[1];
 
         // Author
-        let citation = `<strong>${ref.author}</strong>, `;
+        let citation = `${ref.author}, `;
 
         // Title
         if (ref.link) {
@@ -118,8 +120,9 @@ function sideNotes() {
 }
 
 function externalLinks() {
-    $('a:not([href^="#"])').each((id, el) => {
+    $('.stackedit__html a:not([href^="#"])').each((id, el) => {
         const $el = $(el);
+        if ($el[0].pathname === "/") return;
         $el.attr('target', '_blank');
     });
 }
@@ -138,6 +141,6 @@ function frenchTypo() {
 function videos() {
     $('.video').each((id, el) => {
         const url = $(el).html();
-        $(el).replaceWith('<video controls preload="none"><source src="/video/' + url + '" type="video/mp4"></video>')
+        $(el).replaceWith('<video controls><source src="/video/' + url + '" type="video/mp4"></video>')
     });
 }

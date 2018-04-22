@@ -4,18 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mémoire Hugo Sainte-Marie</title>
+  <title>IDE AS IDEAS</title>
+  <link rel="icon" type="image/png" href="/icon.png" />
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
-  <link rel="stylesheet" href="../css/main.min.css" />
-  <script src="../js/jquery-3.2.1.min.js"></script>
-  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="css/main.min.css" />
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 
 <body class="stackedit">
   <div class="stackedit__left">
     <div class="stackedit__toc">
-      
+
 <ul>
 <li><a href="#préface">Préface</a></li>
 <li><a href="#introduction">Introduction</a>
@@ -445,7 +446,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <blockquote>
 <p>Pas d’écrans, pas d’appareils. Simplement des matériaux physiques ordinaires – papier et pâte à modeler, jetons et voitures en plastique – rendus vivants grâce à une technologie dissimulée au plafond. […] Dynamicland est un ordinateur avec lequel on travaille <em>ensemble</em>, en face-à-face, les yeux dans les yeux et avec les mains – beaucoup de mains. […] On pense avec nos mains. On pense avec nos corps. On s’étale, on se déplace, on compare différentes possibilités. On improvise, on expérimente, avec <em>tout</em>.</p>
 </blockquote>
-<p><img src="dynamicland.jpg" alt="Des utilisateurs interagissant avec Dynamicland"></p>
+<p><img src="img/dynamicland.png" alt="Des utilisateurs interagissant avec Dynamicland"></p>
 <p>Dans le cas de <em>Dynamicland</em>, on manipule des objets, captés par des caméras et reconnus grâce à un système de points colorés : ils sont ainsi interprétés par des algorithmes “classiques”.<sup class="footnote-ref"><a href="#fn79" id="fnref79">79</a></sup> Si le mode d’interaction est nouveau, la matière algorithmique, dissimulée, n’est pas directement tangibilisée et manipulée. <strong>Quelle forme prendrait un langage de programmation tangible ?</strong> Le collectif d’arts numériques transdisciplinaire <em>[foam]</em> propose une réponse : ils travaillent en 2017 sur une installation nommée “<em>Pattern Matrix</em>”, qui n’est autre qu’un langage de programmation matériel, tangible. Celui-ci a littéralement été créé de toutes pièces : on opère l’installation en tournant une série de “jetons” qui cachent des senseurs magnétiques. Des informations visuelles, sont superposées grâce à la <em>réalité augmentée</em>, permettant de visualiser – et ainsi de comprendre – les états de chaque composant et les échanges qui s’exercent entre eux. Un premier essai du dispositif a été fait dans le cadre d’une performance musicale live à Brighton : bien qu’expérimentale et particulièrement singulière, cette interface-outil peut nourrir une pratique créative.<sup class="footnote-ref"><a href="#fn80" id="fnref80">80</a></sup></p>
 <p><img src="img/pattern-matrix.png" alt="Pattern Matrix, un langage de programmation tangible"></p>
 <p><ins><strong>Je me suis interrogé sur la nature qu’aurait une interface de programmation “hors de l’écran”, au travers d’une expérimentation mettant en jeu la manipulation</strong> : en utilisant la surface tactile d’un smartphone, et en transmettant les données en temps réel à un ordinateur connecté, un algorithme de reconnaissance de formes permet de comprendre une forme “tracée” du doigt, et attribuée à une fonction précise. Par exemple, le dessin d’une boucle peut faire apparaître une boucle itérative dans le code, ou l’exécuter de façon éphémère. On peut également faire réagir des variables ou des objets virtuels grâce à cette interaction : modification d’une valeur, déplacement dans un espace en deux ou trois dimensions. On peut également tirer parti des fonctionnalités technique du smartphone, notamment l’accéléromètre et le gyroscope. L’appareil devient alors une extension de l’interface de programmation, tel une télécommande programmable.</ins></p>
@@ -472,8 +473,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 </blockquote>
 <p>Victor dénonce ici ce que l’on pourrait qualifier de “niveau zéro” de la créativité algorithmique : <strong>lorsque la conception et la réalisation d’une œuvre implique de passer constamment du code au résultat, cela impose un délai dans le <em>feedback</em>, et la fluidité que suppose une démarche créative en est mécaniquement impactée.</strong> Il propose donc une interface binaire, scindée verticalement : à gauche le résultat, à droite l’éditeur de texte avec le programme. Lorsqu’on modifie une ligne ou une valeur dans le code, le résultat est directement visible, en temps réel – en cela, sa proposition ressemble beaucoup à <em>Processing</em>. L’expérience de la programmation est améliorée, facilitée : on est au “niveau un”. Un autre exemple pourrait être celui de la superposition du code et du résultat, comme le propose <a href="https://github.com/fand/vedajs">VedaJS</a>, un <em>framework</em><sup class="footnote-ref"><a href="#fn86" id="fnref86">86</a></sup> adapté à la création de <em>shaders</em> – images de synthèse simulant graphiquement de la lumière, des textures et des animations.</p>
 <h3 id="manipuler-au-sein-de-lide">Manipuler au sein de l’IDE</h3>
-<p>Mais Bret Victor va plus loin que la simple juxtaposition du programme et du résultat produit. Pour simplifier l’édition des valeurs – notamment chiffrées – utilisées dans un algorithme, il propose un nouveau type d’interaction : au lieu de devoir effacer des caractères pour les remplacer, chaque valeur devient <em>draggable</em><sup class="footnote-ref"><a href="#fn87" id="fnref87">87</a></sup>, ce qui permet de faire évoluer ces variables. On peut également modifier les couleurs via une palette. Cet usage innovant est aussi disponible dans <em>Processing</em> via le mode “Tweak Mode”, ainsi que dans la librairie JavaScript <em>dat.GUI</em><sup class="footnote-ref"><a href="#fn88" id="fnref88">88</a></sup> pour un usage sur le web.</p>
-<iframe src="https://player.vimeo.com/video/74028935?byline=0&amp;portrait=0" height="375" allowfullscreen=""></iframe>
+<p>Mais Bret Victor va plus loin que la simple juxtaposition du programme et du résultat produit. Pour simplifier l’édition des valeurs – notamment chiffrées – utilisées dans un algorithme, il propose un nouveau type d’interaction : au lieu de devoir effacer des caractères pour les remplacer, chaque valeur devient <em>draggable</em><sup class="footnote-ref"><a href="#fn87" id="fnref87">87</a></sup>, ce qui permet de faire évoluer ces variables. On peut également modifier les couleurs via une palette. Cet usage innovant est aussi disponible dans <em>Processing</em> via le mode “<a href="https://vimeo.com/74028935">Tweak Mode</a>”, ainsi que dans la librairie JavaScript <em>dat.GUI</em><sup class="footnote-ref"><a href="#fn88" id="fnref88">88</a></sup> pour un usage sur le web.</p>
 <p>Dans sa conférence <em>Inventing on Principle</em>, Bret Victor applique cette interaction à une variable liée au positionnement des feuilles dans un dessin d’arbre. Cela permet de révéler une opportunité d’animation : en faisant varier en continu une valeur, les feuilles semblent s’agiter comme si le vent soufflait, et le designer souligne l’apparition d’un nouveau champ de possibles créatifs : <strong>“comment aurais-je découvert cela si j’avais dû compiler et exécuter le code entre chaque changement ?”</strong>.</p>
 <p>Bret Victor propose en ce sens diverses interventions au sein d’outils de programmation dans sont essai “<em>Learnable Programming</em>”, ponctué d’expérimentations démonstratives. Il conçoit de nombreuses fonctionnalités et autant d’interactions liées, qu’il illustre dans des vidéos que je présente en partie ici.</p>
 <div class="video">Vocab13.mp4</div>
@@ -755,6 +755,14 @@ console<span class="token punctuation">.</span><span class="token function">log<
 </section>
 
     </div>
+  </div>
+  <div class="ctrl">
+      <!-- <div class="toc">
+          T
+      </div> -->
+      <div class="lang">
+          <span class="active">FR</span><span><a href="/en">EN</a></span>
+      </div>
   </div>
 </body>
 

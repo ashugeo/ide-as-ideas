@@ -6,7 +6,7 @@ $(document).ready(() => {
 
     // Load references
     // $.getJSON('https://ashugeo.com/ide-as-ideas/refs.json', (data) => {
-    $.getJSON('refs.json', (data) => {
+    $.getJSON('./refs.json', (data) => {
         refs = data;
         videos();
         references();
@@ -28,6 +28,25 @@ $(document).on('click', 'a', (e) => {
         return false;
     }
 });
+
+let target = [{id: ''}];
+let newTarget;
+
+$(window).on('scroll', (e) => {
+    $('h1, h2, h3').each((id, el) => {
+        const $el = $(el);
+        if ($el.offset().top > window.scrollY) {
+            return;
+        }
+        newTarget = $el;
+    });
+
+    if (newTarget[0].id !== target[0].id) {
+        target = newTarget;
+        $('.stackedit__toc a.active').removeClass('active');
+        $('.stackedit__toc a[href="#' + target[0].id + '"]').addClass('active');
+    }
+})
 
 // $(document).on('click', '.stackedit__toc a', (e) => {
 //     const $el = $(e.currentTarget);
@@ -165,6 +184,6 @@ function frenchTypo() {
 function videos() {
     $('.video').each((id, el) => {
         const url = $(el).html();
-        $(el).replaceWith('<video controls><source src="/video/' + url + '" type="video/mp4"></video>')
+        $(el).replaceWith('<video controls><source src="video/' + url + '" type="video/mp4"></video>')
     });
 }

@@ -1,0 +1,150 @@
+{
+    "1": {
+        "title": "Le temps des algorithmes",
+        "author": "Serge Abiteboul & Gilles Dowek",
+        "year": 2017,
+        "editor": "Essai le Pommier"
+    },
+    "2": {
+        "title": "À quoi rêvent les algorithmes – Nos vies à l'heure des big data",
+        "author": "Dominique Cardon",
+        "year": 2015,
+        "editor": "Seuil"
+    },
+    "3": {
+        "title": "Qu'est-ce que l'informatique ?",
+        "author": "Franck Varenne",
+        "year": 2009,
+        "editor": "Vrin"
+    },
+    "4": {
+        "title": "WYSINWYX: What You See Is Not What You eXecute",
+        "author": "G. Balakrishnan, T. Reps, D. Melski & T. Teitelbaum",
+        "year": 2005,
+        "link": "http://research.cs.wisc.edu/wpis/papers/wysinwyx05.pdf"
+    },
+    "5": {
+        "title": "SIGACT trying to get children excited about CS",
+        "author": "Michael R. Fellows & Ian Parberry",
+        "year": 1993
+    },
+    "6": {
+        "title": "L'intelligence artificielle en images",
+        "author": "Henry Brighton & Howard Selina",
+        "year": 2015,
+        "editor": "EDP Sciences"
+    },
+    "7": {
+        "title": "Écriture et iconographie",
+        "author": "François Dagognet",
+        "year": 1973,
+        "editor": "Vrin"
+    },
+    "8": {
+        "title": "L'image écrite ou la déraison graphique",
+        "author": "Anne-Marie Christin",
+        "year": 1995,
+        "editor": "Flammarion"
+    },
+    "9": {
+        "title": "Les trois écritures – Langue, nombre, code",
+        "author": "Clarisse Herrenschmidt",
+        "year": 2007,
+        "editor": "Gallimard"
+    },
+    "10": {
+        "title": "Design By Numbers",
+        "author": "John Maeda",
+        "year": 2001,
+        "editor": "MIT Press"
+    },
+    "11": {
+        "title": "Art++ • Bricodage",
+        "author": "David-Olivier Lartigaud",
+        "year": 2011,
+        "editor": "HYX"
+    },
+     "12": {
+         "title": "La Pensée Sauvage",
+         "author": "Claude Lévy-Strauss",
+         "year": 1962,
+         "editor": "Pocket"
+     },
+     "13": {
+         "title": "Graphisme en France – “code <> outils <> design”",
+         "author": "Centre National des Arts Plastiques",
+         "year": 2012
+     },
+     "14": {
+         "title": "Learnable Programming",
+         "author": "Bret Victor",
+         "year": 2012,
+         "link": "http://worrydream.com/LearnableProgramming/"
+     },
+     "15": {
+         "title": "Art++ • Read_Me, Run_Me, Execute_Me: Malaise dans le logiciel",
+         "author": "Inke Arns",
+         "year": 2011,
+         "editor": "HYX"
+     },
+     "16": {
+         "title": "Art++ • Dix hypothèses au sujet de l'art logiciel",
+         "author": "Florian Cramer",
+         "year": 2011,
+         "editor": "HYX"
+     },
+     "17": {
+         "title": "Art++ • Praxis de la programmation : reconsidérer “L'esthétique du code génératif”",
+         "author": "Alex McLean & Adrian Ward",
+         "year": 2011,
+         "editor": "HYX"
+     },
+     "18": {
+         "title": "Art++ • Concepts et conception de la programmation informatique “orientée art”",
+         "author": "Sylvie Tissot",
+         "year": 2011,
+         "editor": "HYX"
+     },
+     "19": {
+         "title": "Inventing on Principle",
+         "author": "Bret Victor",
+         "year": 2012,
+         "link": "https://vimeo.com/36579366"
+     },
+     "20": {
+         "title": "Drawing Dynamic Visualizations",
+         "author": "Bret Victor",
+         "year": 2013,
+         "link": "https://vimeo.com/66085662"
+     },
+     "21": {
+         "title": "Stop Drawing Dead Fish",
+         "author": "Bret Victor",
+         "year": 2013,
+         "link": "https://vimeo.com/64895205"
+     },
+     "22": {
+         "title": "Seeing Spaces",
+         "author": "Bret Victor",
+         "year": 2014,
+         "link": "https://vimeo.com/97903574"
+     },
+     "23": {
+         "title": "Le numérique comme support de la connaissance : entre matérialisation et interprétation",
+         "author": "Bruno Bachimont",
+         "year": 2010,
+         "editor": "Ressources vives"
+     },
+     "24": {
+         "title": "Protocol: how control exists after decentralization",
+         "author": "Alexander R. Galloway",
+         "year": 2004,
+         "editor": "MIT Press"
+     },
+     "25": {
+         "title": "Designing Design Tools",
+         "author": "Nolwenn Maudet",
+         "year": 2017,
+         "link": "http://www.designing-design-tools.nolwennmaudet.com/"
+     }
+}

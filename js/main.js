@@ -1,22 +1,20 @@
 let refs = {};
 
 $(document).ready(() => {
-    // TODO: remove this
-    $.ajaxSetup({ cache: false });
-
     // Load references
-    // $.getJSON('https://ashugeo.com/ide-as-ideas/refs.json', (data) => {
     $.getJSON('./refs.json', (data) => {
         refs = data;
-        videos();
-        references();
-        sideNotes();
+        parseVideos();
+        parseReferences();
+        parseSidenotes();
         externalLinks();
 
-        if (window.location.pathname === '/ide-as-ideas/') {
+        if ($('html').attr('lang') === 'fr') {
             frenchTypo();
         }
     });
+
+    autoNightMode();
 });
 
 $(document).on('click', 'a', (e) => {
@@ -35,7 +33,7 @@ let newTarget;
 $(window).on('scroll', (e) => {
     $('h1, h2, h3').each((id, el) => {
         const $el = $(el);
-        if ($el.offset().top > window.scrollY) {
+        if ($el.offset().top - 1 > window.scrollY) {
             return;
         }
         newTarget = $el;
@@ -84,7 +82,7 @@ $(document).on('click', '.ctrl div', (e) => {
     }
 });
 
-function references() {
+function parseReferences() {
     // Parse references
     $('cite').each((id, el) => {
         $el = $(el);
@@ -127,7 +125,7 @@ function references() {
     });
 }
 
-function sideNotes() {
+function parseSidenotes() {
     // Parse sidenotes
     let index = 1;
 
@@ -181,9 +179,28 @@ function frenchTypo() {
     document.body.innerHTML = document.body.innerHTML.replace(/ ;/g, '&nbsp;;');
 }
 
-function videos() {
+function parseVideos() {
     $('.video').each((id, el) => {
         const url = $(el).html();
         $(el).replaceWith('<video controls><source src="video/' + url + '" type="video/mp4"></video>')
     });
 }
+
+function autoNightMode() {
+    const time = new Date().getHours();
+    if (time < 7 || time > 21) {
+        $('body').addClass('dark');
+        $('.auto-dark').addClass('visible');
+    }
+}
+
+$(document).on('click', '.auto-dark .close', () => {
+    $('.auto-dark').removeClass('visible');
+});
+
+$(document).on('click', '.auto-dark .back-light', () => {
+    console.log('OK');
+    $('body').removeClass('dark');
+    $('.auto-dark').removeClass('visible');
+    return false;
+});

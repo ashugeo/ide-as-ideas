@@ -90,7 +90,7 @@ body {
             color: rgba(255, 255, 255, .5);
 
             &:hover,
-            &.active {
+            &.visible {
                 color: white;
             }
         }
@@ -220,7 +220,7 @@ body {
         line-height: 1.2em;
 
         &.active {
-            color: #50E3C2;
+            color: #50E3C2 !important;
             font-weight: bold;
         }
     }
@@ -251,7 +251,7 @@ body {
 
 .sidenote {
     font-size: .8em;
-    line-height: 1.4rem;
+    line-height: 1.6em;
 
     @media screen and (min-width: 900px) {
         display: inline-block;
@@ -364,10 +364,10 @@ h3::before {
 }
 
 strong {
-    font-weight: normal;
+    // font-weight: bold;
     // color: black;
-    background-color: rgba(80, 227, 194, .15);
-    padding: .25em;
+    // background-color: rgba(80, 227, 194, .15);
+    // padding: .25em;
 }
 
 cite {
@@ -471,6 +471,54 @@ iframe {
 code {
     font-family: 'Source Code Pro', monospace;
     background-color: rgba(0, 0, 0, .1);
+}
+
+.auto-dark {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: .8em;
+    line-height: 1.4em;
+    background-color: #222;
+    padding: 1em 3em;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease;
+    box-shadow: 0 16px 16px rgba(0,0,0,.2);
+    min-width: 280px;
+    color: white;
+
+    &.visible {
+        opacity: 1;
+        bottom: 32px;
+        pointer-events: all;
+
+        @media screen and (max-width: 600px) {
+            bottom: 80px;
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        opacity: .5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+
+    p {
+        margin: 0;
+    }
 }
 
 .ctrl {

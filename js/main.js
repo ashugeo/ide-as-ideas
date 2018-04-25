@@ -39,7 +39,7 @@ $(window).on('scroll', (e) => {
         newTarget = $el;
     });
 
-    if (newTarget[0].id !== target[0].id) {
+    if (newTarget && [0].id !== target[0].id) {
         target = newTarget;
         $('.stackedit__toc a.active').removeClass('active');
         $('.stackedit__toc a[href="#' + target[0].id + '"]').addClass('active');

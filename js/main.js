@@ -199,7 +199,6 @@ $(document).on('click', '.auto-dark .close', () => {
 });
 
 $(document).on('click', '.auto-dark .back-light', () => {
-    console.log('OK');
     $('body').removeClass('dark');
     $('.auto-dark').removeClass('visible');
     return false;

@@ -768,4 +768,9 @@ code {
     a[target="_blank"]::after {
         content: " (" attr(href) ")";
     }
+
+    p {
+        page-break-after: always;
+        page-break-inside: avoid;
+    }
 }

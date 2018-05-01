@@ -743,13 +743,29 @@ code {
     }
 
     ins {
-        background-color: rgba(80, 227, 194, .2);
+        background-color: rgba(0,0,0,.05);
     }
 
+    abbr[title] {
+        border-bottom: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
 
     blockquote {
         color: rgba(0,0,0,.5);
         border-left: 5px solid rgba(0,0,0,.1);
     }
 
+    .ctrl,
+    .stackedit__left {
+        display: none;
+    }
+
+    a[href^="http"]::after,
+    a[target="_blank"]::after {
+        content: " (" attr(href) ")";
+    }
 }

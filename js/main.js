@@ -177,6 +177,9 @@ function frenchTypo() {
 
     // No orphan semicolon (' ;')
     document.body.innerHTML = document.body.innerHTML.replace(/ ;/g, '&nbsp;;');
+
+    // No orphan question mark (' ?')
+    document.body.innerHTML = document.body.innerHTML.replace(/ \?/g, '&nbsp;?');
 }
 
 function parseVideos() {

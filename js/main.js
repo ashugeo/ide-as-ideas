@@ -184,8 +184,9 @@ function frenchTypo() {
 
 function parseVideos() {
     $('.video').each((id, el) => {
-        const url = $(el).html();
-        $(el).replaceWith('<video controls><source src="video/' + url + '" type="video/mp4"></video>')
+        const $el = $(el)
+        const url = $el.html();
+        $el.replaceWith('<video class="' + ($el.hasClass('selected') ? 'selected' : '') + '" controls><source src="video/' + url + '" type="video/mp4"></video>')
     });
 }
 

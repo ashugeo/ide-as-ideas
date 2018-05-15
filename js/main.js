@@ -33,7 +33,7 @@ let newTarget;
 $(window).on('scroll', (e) => {
     $('h1, h2, h3').each((id, el) => {
         const $el = $(el);
-        if ($el.offset().top - 1 > window.scrollY) {
+        if ($el.offset().top - 10 > window.scrollY) {
             return;
         }
         newTarget = $el;
